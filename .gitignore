@@ -1,0 +1,11 @@
+.venv/
+.work/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+_build/
+.jupyter_cache/
+.DS_Store
+Thumbs.db
+.env
+*.log

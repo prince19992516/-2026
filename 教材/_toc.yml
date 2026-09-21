@@ -1,0 +1,35 @@
+format: jb-book
+root: 前言
+chapters:
+  - file: 第01章-误差/正文
+    sections:
+      - file: 第01章-误差/实验
+      - file: 第01章-误差/习题
+  - file: 第02章-函数逼近/正文
+    sections:
+      - file: 第02章-函数逼近/实验
+      - file: 第02章-函数逼近/习题
+  - file: 第03章-微分方程数值方法/正文
+    sections:
+      - file: 第03章-微分方程数值方法/实验
+      - file: 第03章-微分方程数值方法/习题
+  - file: 第04章-线性代数/正文
+    sections:
+      - file: 第04章-线性代数/实验
+      - file: 第04章-线性代数/习题
+  - file: 第05章-FFT与谱方法/正文
+    sections:
+      - file: 第05章-FFT与谱方法/实验
+      - file: 第05章-FFT与谱方法/习题
+  - file: 第06章-PINN与神经算子/正文
+    sections:
+      - file: 第06章-PINN与神经算子/实验
+      - file: 第06章-PINN与神经算子/习题
+  - file: 第07章-泛化与可信性/正文
+    sections:
+      - file: 第07章-泛化与可信性/实验
+      - file: 第07章-泛化与可信性/习题
+  - file: 第08章-降阶模型/正文
+    sections:
+      - file: 第08章-降阶模型/实验
+      - file: 第08章-降阶模型/习题
