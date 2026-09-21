@@ -11,6 +11,8 @@ html:
   use_repository_button: true
   use_issues_button: true
 sphinx:
+  local_extensions:
+    local_images: _ext
   config:
     language: zh_CN
     html_title: "科学计算 · 2026协作教材"
