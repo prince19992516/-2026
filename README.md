@@ -2,7 +2,7 @@
 
 [![教材检查](https://github.com/prince19992516/-2026/actions/workflows/教材检查.yml/badge.svg)](https://github.com/prince19992516/-2026/actions/workflows/教材检查.yml)
 
-学生以 Jupyter Notebook 共编一本包含课程讲解、可运行代码和课后习题的教材。每章经过 **A组AI辅助编写 → B组另一AI辅助验证 → C组人工推导与独立代码复核 → A组修订、B/C复测 → 助教验收**。
+学生以 Jupyter Notebook 共编一本包含课程讲解、可运行代码和课后习题的教材。每章经过 **A组AI辅助编写 → B组另一AI辅助验证 → C组AI辅助批判与人工核验 → A组修订、B/C复测 → 助教验收**。
 
 **当前是可运行的教学脚手架，不是已完成教材。** 8章起步实验与1份实验模板可执行，B/C验证Notebook和三组报告明确留待学生完成。自动检查通过只说明指定代码运行和文件结构符合要求，不表示数学正确、没有AI陷阱或已获得教师批准。
 
@@ -10,24 +10,27 @@
 
 | 你要做什么 | 入口 |
 | --- | --- |
+| JupyterLab已打开，终端不能继续输入 | [窗口A/窗口B操作说明](教程/00-已经打开JupyterLab接下来怎么办.md) |
 | 第一次安装和运行 | [环境安装教程](教程/01-环境安装与运行.md) |
 | 学生提交第一份作业 | [GitHub协作教程](教程/02-GitHub协作与提交.md) |
 | 编写Notebook教材 | [Notebook写作与验收](教程/03-Notebook教材写作.md) |
 | 了解三组职责与交付 | [三组协作规则](协作管理/三组协作规则.md) |
+| B组在全新环境复现实验 | [独立复现教程](教程/07-B组如何在干净环境复现.md) |
 | 分组与跟踪章节 | [分组名单](协作管理/分组名单.md)、[章节分工表](协作管理/章节分工表.md) |
 | 助教组织教学 | [助教操作手册](教程/04-助教操作手册.md) |
 | 合成一本教材 | [构建与发布教程](教程/05-构建与发布教材.md) |
 | 复制模板 | [模板目录](模板/README.md) |
+| 查看Conda/Docker和原始命令 | [进阶环境说明（选读）](教程/06-进阶环境与原始命令.md) |
 
 ## 三组每章各交一份报告
 
 | 组别 | 方法 | 主要交付 | 报告 |
 | --- | --- | --- | --- |
-| A | 用AI辅助内容、代码与习题编写，并人工整理来源与修改 | 正文、实验Notebook、习题与参考解答、AI记录 | 编写报告.md |
-| B | 使用与A不同的AI工具或模型，独立设计测试并真实运行 | 验证Notebook、边界/误差/收敛性测试、问题与复测证据 | 验证报告.md |
-| C | 人工推导、手写代码，检查A和B共同遗漏的假设或陷阱 | 手动推导、人工复核Notebook、反例与陷阱记录 | 批判报告.md |
+| A | 用AI辅助内容、推导、代码和习题；人工核验公式与引用、运行代码、补充自己的解释和例子 | 正文、实验Notebook、习题与参考解答、AI记录 | 编写报告.md |
+| B | 先独立推导和建立预期，再用另一AI辅助，在新环境复现A版本 | 独立推导、验证Notebook、修正清单、复测证据 | 验证报告.md |
+| C | 用AI寻找候选漏洞、反例和对比方法，由组员人工核验并判断 | 关键推导、人工复核Notebook、批判报告、AI陷阱集 | 批判报告.md |
 
-B/C报告必须注明被审完整commit。C组模板没有代写推导或代码，避免把AI生成内容冒充人工工作。每组另交期末综合报告。
+B/C报告必须注明被审完整commit。三组都可以使用AI；人工核验与AI辅助部分分别记录，不把AI输出冒充独立手算。每组另交期末综合报告。
 
 ## 八章内容
 
@@ -57,19 +60,43 @@ B/C报告必须注明被审完整commit。C组模板没有代写推导或代码�
 审阅/           期中、期末、三组综合报告
 发布/           发布记录和验收清单（构建产物不提交Git）
 .github/        自动检查、Issue和PR模板
+course.cmd      Windows双击菜单或命令入口
+course.py       跨平台课程助手，自动选择本仓库环境
 ```
 
-## 快速运行（完成环境安装后，在仓库根目录）
+## 初学者如何操作
 
-```bash
-python -m jupyterlab
-python 脚本/检查结构.py
-python 脚本/验证AI陷阱.py
-python 脚本/检查笔记本.py
-python 脚本/构建教材.py
+**先阅读[完整安装教程](教程/01-环境安装与运行.md)**，安装Python 3.12与Git，下载或更新本仓库。Windows可以双击根目录的 `course.cmd`，用数字菜单安装、打开JupyterLab、检查或构建；不需要手动激活Python环境。
+
+也可以在课程根目录打开PowerShell，首次运行下面这一条，等待“安装完成”并返回提示符：
+
+```powershell
+.\course.cmd setup
 ```
 
-HTML输出位于 `教材/_build/html/`；执行后的Notebook与检测汇总位于 `_build/executed/`。GitHub Actions同时检查Windows与Linux，并在通过后提供 `textbook-html` 下载产物。
+**窗口A只启动JupyterLab，并保持打开：**
+
+```powershell
+.\course.cmd lab
+```
+
+浏览器打开后，窗口A持续显示日志是正常运行。保存Notebook，再在课程根目录**另开一个PowerShell作为窗口B**，输入：
+
+```powershell
+.\course.cmd check
+```
+
+检查完成会返回提示符。需要整本HTML时，在窗口B运行：
+
+```powershell
+.\course.cmd build
+```
+
+等“构建完成”后，再运行 `.\course.cmd preview` 并在浏览器打开 [本地教材](http://127.0.0.1:8000)。preview也会持续占用终端，按Ctrl+C结束；**不要把lab和后续检查命令一次性连续粘贴**。每条命令在哪里执行、何时等待、怎样关闭，详见[操作说明](教程/00-已经打开JupyterLab接下来怎么办.md)。
+
+macOS/Linux用 `python3.12 course.py setup` 等对应助手命令，窗口安排相同，详见安装教程第10节。Conda/Docker为选读替代路线。
+
+HTML位于 `教材/_build/html/`；执行结果位于 `_build/executed/`。GitHub Actions检查Windows与Linux并提供 `textbook-html` 下载产物。初始汇总的9个passed是起步实验和模板，16个placeholder是尚待学生完成的B/C Notebook。
 
 ## 资料依据与待教学团队填写
 

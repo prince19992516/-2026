@@ -32,13 +32,12 @@ jobs:
           python-version: '3.12'
           cache: pip
           cache-dependency-path: 环境/requirements.txt
-      - run: python -m pip install -r 环境/requirements.txt
-      - run: python -m pip check
-      - run: python -m ipykernel install --sys-prefix --name python3 --display-name "Python 3 (course-2026)"
-      - run: python -m unittest discover -s 脚本 -p "test_*.py"
-      - run: python 脚本/检查结构.py
-      - run: python 脚本/验证AI陷阱.py
-      - run: python 脚本/检查笔记本.py
+      - name: Install through the student setup command
+        run: python course.py setup
+      - name: Test helper and execution failure handling
+        run: python -c "import subprocess, course; subprocess.run([str(course.ENV_PYTHON), '-m', 'unittest', 'discover', '-s', '脚本', '-p', 'test_*.py'], check=True)"
+      - name: Check through the student command
+        run: python course.py check
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -60,9 +59,8 @@ jobs:
           python-version: '3.12'
           cache: pip
           cache-dependency-path: 环境/requirements.txt
-      - run: python -m pip install -r 环境/requirements.txt
-      - run: python -m ipykernel install --sys-prefix --name python3
-      - run: python 脚本/构建教材.py
+      - run: python course.py setup
+      - run: python course.py build
       - uses: actions/upload-artifact@v4
         with:
           name: textbook-html

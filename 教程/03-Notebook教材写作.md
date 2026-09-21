@@ -1,5 +1,11 @@
 # 03 Notebook教材写作与验收
 
+## 第一次写作先做这个小练习
+
+按[环境教程](01-环境安装与运行.md)从课程助手打开JupyterLab。在左侧进入第一章并打开实验.ipynb；选中一个单元，工具栏“+”可以新增单元，类型下拉框选择Markdown或Code。Markdown写标题、正文与公式，Code写Python；Shift+Enter运行，Ctrl+S保存。
+
+修改后先“Kernel → Restart Kernel and Run All Cells”，确认顺序执行成功，再保存。最后在[另一个终端窗口B](00-已经打开JupyterLab接下来怎么办.md)运行课程检查；终端命令不写进普通Code单元。关闭浏览器不会替你上传GitHub，上传需要按提交教程操作。
+
 ## 一个Notebook应当像一章教材
 
 按“学习目标 → 问题定义和假设 → 数学推导 → 算法 → 实验 → 误差分析 → 练习 → 来源与局限”组织Markdown与代码。先解释代码为何存在，再给出实现，最后解释输出代表什么。

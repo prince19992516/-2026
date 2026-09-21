@@ -3,3 +3,4 @@
 *.py text eol=lf
 *.yml text eol=lf
 *.ipynb text eol=lf
+*.cmd text eol=crlf

@@ -9,7 +9,8 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = ["README.md", "正文.md", "实验.ipynb", "习题.md", "习题参考解答.md", "AI对话记录.md",
-            "编写报告.md", "验证.ipynb", "验证报告.md", "手动推导.md", "人工复核.ipynb", "批判报告.md", "AI陷阱.md"]
+            "编写报告.md", "B组独立推导.md", "验证.ipynb", "验证报告.md", "修正清单.md",
+            "手动推导.md", "人工复核.ipynb", "批判报告.md", "AI陷阱.md"]
 
 
 def main():
