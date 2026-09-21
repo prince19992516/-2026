@@ -1,1 +1,134 @@
+English
+scientific-computing-ai/
+├── .github/
+│   ├── workflows/
+│   └── ISSUE_TEMPLATE/
+├── book/
+│   ├── chapter-01-error/
+│   │   ├── figures/
+│   │   └── data/
+│   ├── chapter-02-approximation/
+│   ├── chapter-03-fdm-fem/
+│   ├── chapter-04-linear-svd/
+│   ├── chapter-05-fft/
+│   ├── chapter-06-pinn-fno/
+│   ├── chapter-07-generalization/
+│   └── chapter-08-rom/
+├── coordination/
+│   ├── weekly-reports/
+│   ├── review-forms/
+│   └── meeting-notes/
+├── templates/
+├── scripts/
+├── environment/
+│   └── requirements.txt
+├── reviews/
+│   ├── midterm/
+│   └── final/
+├── data/
+│   ├── burgers/
+│   ├── poisson/
+│   └── navier-stokes/
+├── releases/
+│   └── v1.0/
+├── README.md
+├── CONTRIBUTING.md
+└── LICENSE
 
+
+Chinese
+科学计算-AI时代融合建模/
+│
+├── .github/                          # GitHub 自动化配置
+│   ├── workflows/                    # 自动检查任务
+│   │   ├── 检查笔记本.yml            # 检查所有 Notebook 可运行
+│   │   ├── 检查Markdown格式.yml      # 检查 Markdown 格式
+│   │   ├── 检查链接.yml              # 检查链接有效性
+│   │   ├── 构建教材.yml              # 构建 Jupyter Book
+│   │   └── 验证AI陷阱.yml            # 检查 AI 陷阱格式
+│   └── ISSUE_TEMPLATE/               # 任务模板
+│       ├── 任务.md                   # 任务分配
+│       ├── 问题.md                   # Bug 报告
+│       ├── AI陷阱.md                 # AI 陷阱提交
+│       └── 审阅.md                   # 审阅意见
+│
+├── 教材/                             # 教材正文（每章一个目录）
+│   ├── 第01章-误差/                  # 第1章 误差、条件数与稳定性
+│   │   ├── 正文.md                   # A组：正文
+│   │   ├── 实验.ipynb                # A组：可运行实验
+│   │   ├── 习题.md                   # A组：习题与答案
+│   │   ├── AI对话记录.md             # A组：关键 AI 对话
+│   │   ├── AI陷阱.md                 # C组：AI 陷阱记录
+│   │   ├── 验证报告.md               # B组：验证报告
+│   │   ├── 批判报告.md               # C组：批判报告
+│   │   ├── 图片/                     # 本章图片
+│   │   └── 数据/                     # 本章数据
+│   ├── 第02章-函数逼近/              # 第2章 函数逼近、数值积分与自动微分
+│   ├── 第03章-微分方程数值方法/      # 第3章 有限差分与有限元
+│   ├── 第04章-线性代数/              # 第4章 线性方程组、特征值与SVD
+│   ├── 第05章-FFT与谱方法/           # 第5章 FFT与谱方法
+│   ├── 第06章-PINN与神经算子/        # 第6章 PINN与神经算子
+│   ├── 第07章-泛化与可信性/          # 第7章 泛化、误差界与可信性
+│   └── 第08章-降阶模型/              # 第8章 学习型预条件子与降阶模型
+│
+├── 协作管理/                         # 分组、轮换、周报
+│   ├── 分组名单.md                   # 8个写作组 + 2个整合检查组
+│   ├── 轮换表.md                     # 每章 A/B/C 组分配
+│   ├── 周报/                         # 每周周报
+│   │   ├── 第01周.md
+│   │   ├── 第02周.md
+│   │   └── ...
+│   ├── 审阅表/                       # 期中/期末审阅表
+│   │   ├── 期中审阅表.md
+│   │   └── 期末审阅表.md
+│   └── 组长会议记录/                 # 每两周一次
+│       ├── 2026-09-01.md
+│       └── ...
+│
+├── 模板/                             # 所有模板
+│   ├── 章节模板.md                   # 章节写作模板
+│   ├── 实验模板.ipynb                # Notebook 模板
+│   ├── 周报模板.md                   # 周报模板
+│   ├── 验证报告模板.md               # B组验证模板
+│   ├── 批判报告模板.md               # C组批判模板
+│   ├── AI陷阱模板.md                 # AI陷阱记录模板
+│   └── 审阅表模板.md                 # 审阅表模板
+│
+├── 脚本/                             # 自动化脚本
+│   ├── 检查笔记本.py                 # 检查 Notebook 可运行
+│   ├── 构建教材.sh                   # 构建 Jupyter Book
+│   ├── 生成轮换表.py                 # 生成轮换表
+│   ├── 验证AI陷阱.py                 # 验证 AI 陷阱格式
+│   └── 汇总周报.py                   # 汇总周报
+│
+├── 环境/                             # 运行环境
+│   ├── Dockerfile                    # Docker 镜像
+│   ├── requirements.txt              # Python 依赖
+│   └── environment.yml               # Conda 环境
+│
+├── 审阅/                             # 期中/期末审阅
+│   ├── 期中/
+│   │   ├── 整合报告.md               # 整合组报告
+│   │   ├── 检查报告.md               # 检查组报告
+│   │   └── 修订总纲.md               # 修订总纲
+│   └── 期末/
+│       ├── 整合报告.md
+│       ├── 检查报告.md
+│       └── 投票结果.md               # 投票结果
+│
+├── 数据/                             # 公共数据集
+│   ├── 说明.md                       # 数据说明
+│   ├── Burgers方程/                  # Burgers 方程数据
+│   ├── Poisson方程/                  # Poisson 方程数据
+│   └── Navier-Stokes方程/            # Navier-Stokes 数据
+│
+├── 发布/                             # 发布版本
+│   └── v1.0/
+│       ├── 教材.pdf                  # 生成的 PDF
+│       ├── 教材.html                 # 生成的 HTML
+│       └── 发布说明.md               # 发布说明
+│
+├── 说明.md                           # 项目总览、快速开始
+├── 贡献指南.md                       # 学生必读
+├── 行为准则.md                       # 行为准则
+└── 许可证                            # CC BY-NC-SA 4.0
