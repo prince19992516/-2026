@@ -1,8 +1,9 @@
 # Optional; starter notebooks do not need this file.
 -r requirements.txt
-torch==2.6.0
+torch==2.7.1
 torchdiffeq==0.2.5
 jax==0.4.35
 jaxlib==0.4.35
 optax==0.2.4
+chex==0.1.87
 scikit-image==0.24.0

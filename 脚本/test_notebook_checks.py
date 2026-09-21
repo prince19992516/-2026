@@ -19,7 +19,9 @@ SPEC.loader.exec_module(CHECKS)
 class NotebookCheckTests(unittest.TestCase):
     def execute(self, cells_by_file):
         with tempfile.TemporaryDirectory() as folder:
-            root = Path(folder)
+            # Windows runners may expose TEMP using an 8.3 alias or junction.
+            # Match the resolved repository paths used by the production checker.
+            root = Path(folder).resolve()
             notebooks = root / "教材"
             notebooks.mkdir()
             for name, cells in cells_by_file.items():
