@@ -1,50 +1,50 @@
 [
   {
     "id": "01",
-    "directory": "第01章-误差",
-    "title": "误差、条件数与稳定性",
+    "directory": "第01章-误差的代价",
+    "title": "误差的代价",
     "status": "待编写与复核"
   },
   {
     "id": "02",
-    "directory": "第02章-函数逼近",
-    "title": "函数逼近、数值积分与自动微分",
+    "directory": "第02章-逼近的智慧",
+    "title": "逼近的智慧",
     "status": "待编写与复核"
   },
   {
     "id": "03",
-    "directory": "第03章-微分方程数值方法",
-    "title": "有限差分与有限元",
+    "directory": "第03章-离散的世界",
+    "title": "离散的世界",
     "status": "待编写与复核"
   },
   {
     "id": "04",
-    "directory": "第04章-线性代数",
-    "title": "线性方程组、特征值与 SVD",
+    "directory": "第04章-矩阵的解剖",
+    "title": "矩阵的解剖",
     "status": "待编写与复核"
   },
   {
     "id": "05",
-    "directory": "第05章-FFT与谱方法",
-    "title": "FFT 与谱方法",
+    "directory": "第05章-频域的魔法",
+    "title": "频域的魔法",
     "status": "待编写与复核"
   },
   {
     "id": "06",
-    "directory": "第06章-PINN与神经算子",
-    "title": "PINN 与神经算子",
+    "directory": "第06章-神经网络求解PDE",
+    "title": "神经网络求解PDE",
     "status": "待编写与复核"
   },
   {
     "id": "07",
-    "directory": "第07章-泛化与可信性",
-    "title": "泛化、误差界与可信性",
+    "directory": "第07章-可信的AI",
+    "title": "可信的AI",
     "status": "待编写与复核"
   },
   {
     "id": "08",
-    "directory": "第08章-降阶模型",
-    "title": "学习型预条件子与降阶模型",
+    "directory": "第08章-加速的秘诀",
+    "title": "加速的秘诀",
     "status": "待编写与复核"
   }
 ]
