@@ -14,14 +14,14 @@ git config user.name "你的姓名或昵称"
 git config user.email "你的GitHub提交邮箱"
 git switch main
 git pull --ff-only origin main
-git switch -c chapter-01-a-g01
+git switch -c chapter-01-a-g1
 ```
 
-分支名示例中01是章节，a是本章角色，g01是实际学生小组编号；这三部分按实际任务修改。B/C角色分别用b/c；每次新任务从更新后的main建立新分支。
+分支名示例中01是章节，a是本章角色，g1是实际学生小组编号；这三部分按实际任务修改。B/C角色分别用b/c；每次新任务从更新后的main建立新分支。
 
 ## 修改、亲自运行、保存与提交
 
-只修改本组当前角色负责的文件。下面以G01在第一章承担A角色为例：
+只修改本组当前角色负责的文件。下面以G1在第一章承担A角色为例：
 
 1. 在JupyterLab中完成文字和代码修改。
 2. 点击 **Kernel → Restart Kernel and Run All Cells**，等待全部单元结束。
@@ -34,7 +34,7 @@ git status
 git add 教材/第01章-误差的代价/A组-实验.ipynb 教材/第01章-误差的代价/A组-编写报告.md
 git diff --cached --stat
 git commit -m "第01章 A组：补充误差实验与编写报告"
-git push -u origin chapter-01-a-g01
+git push -u origin chapter-01-a-g1
 ```
 
 上面只暂存两个示范文件；本次修改了正文、习题等文件时逐个加入。不要把 `.venv`、密钥、运行缓存和无关资料一并上传。
@@ -92,7 +92,7 @@ Notebook是JSON文件，不宜盲目编辑冲突标记。先保留双方备份�
 ```bash
 git switch main
 git pull --ff-only origin main
-git switch -c chapter-02-b-g01
+git switch -c chapter-02-b-g1
 ```
 
-Fork用户使用upstream更新main。例子中G01从第01章的A角色换到第02章的B角色，之后还需在另一个章节完成C角色；分支名按实际章节、角色和小组编号填写。
+Fork用户使用upstream更新main。例子中G1从第01章的A角色换到第02章的B角色，之后还需在另一个章节完成C角色；分支名按实际章节、角色和小组编号填写。

@@ -56,7 +56,12 @@ def lab(port, no_browser=False):
 
 def build():
     require_environment()
-    run([ENV_PYTHON, ROOT / "脚本/构建教材.py"])
+    executable = ENV_PYTHON.parent / ("jupyter-book.exe" if os.name == "nt" else "jupyter-book")
+    if not executable.is_file():
+        raise RuntimeError("课程环境缺少jupyter-book。请按教程/01-环境安装与运行.md，用.venv中的Python安装jupyter-book==1.0.4.post1和sphinx==7.4.7。")
+    print("正在生成HTML教材。Notebook输出来自已保存的文件；请先在JupyterLab运行并保存。", flush=True)
+    run([executable, "build", ROOT / "教材", "--all"])
+    print(f"HTML: {ROOT / '教材/_build/html/index.html'}")
     command = ".\\course.cmd preview" if os.name == "nt" else "python3.12 course.py preview"
     print(f"构建完成并返回终端。运行 {command} 后，在浏览器访问 http://127.0.0.1:8000 。")
 

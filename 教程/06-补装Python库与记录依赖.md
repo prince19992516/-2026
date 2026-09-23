@@ -65,9 +65,9 @@ macOS/Linux：
 | 助手命令 | 做什么 | 终端是否持续占用 |
 | --- | --- | --- |
 | lab | 启动本课程.venv里的JupyterLab | 是，Ctrl+C停止 |
-| build | 调用脚本/构建教材.py生成HTML | 否，完成后返回 |
+| build | 由course.py生成HTML | 否，完成后返回 |
 | preview | 在本机8000端口提供教材网页 | 是，Ctrl+C停止 |
 
-Windows可双击course.cmd，菜单1启动、2生成、3预览、0退出。直接启动Jupyter也可在根目录输入 `.\.venv\Scripts\python.exe -m jupyterlab`；Mac/Linux对应 `.venv/bin/python -m jupyterlab`。直接生成教材的命令见[脚本说明](../脚本/README.md)。
+Windows可双击course.cmd，菜单1启动、2生成、3预览、0退出。直接启动Jupyter也可在根目录输入 `.\.venv\Scripts\python.exe -m jupyterlab`；Mac/Linux对应 `.venv/bin/python -m jupyterlab`。生成教材的命令见[生成与查看教材](05-生成与查看教材.md)。
 
 本课程的教材配置使用Jupyter Book 1.x；安装时按入门教程中的版本操作。调整依赖前先保存工作，记录变更原因，再由B组亲自复现。
