@@ -1,102 +1,245 @@
-# 03 GitHub协作与提交
+# 03 GitHub协作与提交：把本机文件交到课程仓库
 
-## 第一次准备
-先完成[环境安装与首次运行](01-环境安装与运行.md)，注册GitHub账号。以下Git命令在**课程根目录的空闲终端窗口B**输入；运行JupyterLab的窗口A保持打开。新建分支、更新文件前先保存并关闭相关Notebook标签页，避免浏览器把旧版本重新保存到磁盘。
+先完成[01环境安装](01-环境安装与运行.md)。本教程中的Git命令在**课程根目录的空闲终端窗口B**输入，不在Notebook代码单元、GitHub搜索框或运行Jupyter的窗口A输入。每条命令单独回车，成功后才执行下一条。
 
-“保存Notebook”只保存到本机；“commit”建立本地版本记录；“push”上传到GitHub；“PR”申请将你的分支合并到课程main。四件事不同。下面代码块中的命令逐行执行，每行回车，确认成功再下一行；不要连接成一行。
+## 1. 先分清保存、提交、上传、合并
 
-在仓库根目录配置自己的提交身份（姓名和邮箱替换成自己的，不要照抄示例）：
+| 操作 | 改变哪里 | 是否已经进入课程main |
+| --- | --- | --- |
+| JupyterLab中Ctrl+S | 自己电脑的文件 | 否 |
+| git add | 选择这次要交的文件 | 否 |
+| git commit | 在本机保存一个有编号的版本 | 否 |
+| git push | 把版本传到GitHub上的分支 | 否 |
+| 创建Pull request（PR） | 请助教审阅并合并这组修改 | 否，仍待处理 |
+| PR显示Merged | 修改已合并到目标分支 | 是，目标为课程main时 |
 
-先确认自己已经接受助教的协作者邀请；没有邀请的同学先看下面“没有仓库写权限”，配置自己的Fork后再继续。GitHub用户名、提交姓名、邮箱是不同字段：用户名用于登录和邀请，提交姓名用于版本记录。提交邮箱可在GitHub个人 **Settings → Emails** 查看；若使用GitHub提供的隐私邮箱，完整复制其noreply地址。
+“分支”可以理解为本次任务的一条修改路线。每台电脑仍使用同一个课程文件夹，Git根据当前分支显示对应文件；切换前必须保存、关闭相关Notebook标签，防止浏览器把旧内容再次写回来。
 
-```bash
-git config user.name "你的姓名或昵称"
-git config user.email "你的GitHub提交邮箱"
-git switch main
-git pull --ff-only origin main
-git switch -c chapter-01-a-g22
-```
+## 2. 第一次配置：先确认自己把文件上传到哪里
 
-分支名示例中01是章节，a是本章角色，g22是实际学生小组编号；这三部分按[章节分工表](../协作管理/章节分工表.md)修改。B/C角色分别用b/c；每次新任务从更新后的main建立新分支。
-
-## 修改、亲自运行、保存与提交
-
-只修改本组当前角色负责的文件。下面以G22在第一章承担A角色为例。同一章节同一角色有两个小组，先约定各自负责的小节或文件，再分支提交；报告与AI对话按小组编号分段，保留彼此的记录，不覆盖另一组的内容。
-
-1. 在JupyterLab中完成文字和代码修改。
-2. 点击 **Kernel → Restart Kernel and Run All Cells**，等待全部单元结束。
-3. 逐项核对输出是否符合公式、参考值和适用条件，记录实际结果；有报错或差异就如实分析，不删除问题凑结论。
-4. 按 **Ctrl+S** 保存Notebook，保存对应报告。
-5. 在课程根目录新开窗口B，逐行执行下列Git命令，每次回车后等待完成：
+在课程根目录输入：
 
 ```bash
-git status
-git add 教材/第01章-误差的代价/A组-实验.ipynb 教材/第01章-误差的代价/A组-编写报告.md
-git diff --cached --stat
-git commit -m "第01章 A组：补充误差实验与编写报告"
-git push -u origin chapter-01-a-g22
+git remote -v
 ```
 
-上面只暂存两个示范文件；本次修改了正文、习题等文件时逐个加入。不要把 `.venv`、密钥、运行缓存和无关资料一并上传。
+`origin`是上传地址的简称。按下表选一条路线，**不要两条都做**。
 
-公开的分工表、报告与AI对话记录只填写小组编号，不填写学生姓名、GitHub账号或私人联系方式；含成员信息的原始Excel不上传。Git提交身份会出现在版本记录中，可使用昵称和GitHub的noreply邮箱。
+| 情况 | 选择 |
+| --- | --- |
+| 已接受课程仓库的协作者邀请，origin是课程仓库 | 路线一，继续第3节 |
+| 没有课程仓库写权限，希望从个人副本提交 | 路线二，先完成下方Fork设置 |
 
-成功时commit输出本次版本编号和修改摘要，push显示分支已上传；浏览器可能提示登录GitHub，请使用自己的账号。出现权限错误则先确认邀请是否接受，或采用下方Fork流程。`nothing to commit`通常表示没有已保存的新改动，或忘了git add；先看git status，不要反复提交空版本。
+公开仓库允许查看和下载，不代表任何人能直接上传。账号密码只用于网页登录，不要在公开报告中填写。
 
-在GitHub仓库打开 **Pull requests → New pull request**，base选main，compare选自己的分支。填写PR模板和报告链接，说明亲自运行的步骤、实际输出及未解决问题，按审阅意见继续在同一分支提交即可。合并通常由助教负责。
+### 路线二：没有写权限，先设置个人Fork
 
-## 没有仓库写权限
-
-Fork是把课程仓库复制到自己的GitHub账号下，之后向自己的副本上传，再申请合并到课程仓库。
-
-1. 登录GitHub，打开课程仓库，点击右上角 **Fork**，在创建页面确认Owner是自己，点击 **Create fork**。
-2. 创建后，页面左上角的所有者应是你的用户名；点击绿色 **Code → HTTPS**，复制自己的仓库地址。
-3. 如果已经按安装教程clone了课程仓库，**保留现有文件和环境**。在课程根目录运行 `git remote -v`，检查origin目前指向哪里；然后将下行地址替换为刚复制的个人Fork地址，执行：
+1. 登录GitHub，打开[课程仓库](https://github.com/prince19992516/-2026)，点击右上角 **Fork**，Owner选择自己，点击 **Create fork**。已经有自己的Fork就直接打开，不重复创建。
+2. 在自己的副本中点绿色 **Code → HTTPS**，复制地址。地址的所有者应是自己，不是课程仓库所有者。
+3. 已按01下载课程的同学继续用现有课程文件夹，不需要重新安装环境。下行中“你的GitHub用户名”必须换成自己的用户名；如果Fork改过仓库名，以刚复制的完整地址为准：
 
 ```bash
 git remote set-url origin https://github.com/你的GitHub用户名/-2026.git
 ```
 
-4. 再运行 `git remote -v`，确认origin的所有者已是自己。这只是改变上传地址，不会删除本机修改。如果尚未下载文件，直接按安装教程clone自己的Fork地址即可。
-5. 将课程仓库设为upstream（用于取得老师更新）。以下add只在首次配置时执行；如果提示upstream已存在，先用 `git remote -v` 核对地址，不重复添加。工作区干净时依次运行：
+4. 再运行`git remote -v`，确认origin指向自己的Fork。将课程仓库添加为`upstream`，这个名字专门用于获取课程更新：
 
 ```bash
 git remote add upstream https://github.com/prince19992516/-2026.git
-git fetch upstream
+```
+
+5. 再运行`git remote -v`，应同时看到origin（自己的副本）和upstream（课程仓库）。提示`upstream already exists`时先检查已有地址；正确就继续，不重复添加。
+
+以后**从upstream取得课程更新，向origin上传作业**。这两者不同；不要照搬有写权限同学的更新命令。
+
+## 3. 设置本机提交身份，只需在这个副本设置一次
+
+提交身份用于Git历史，和网页登录是两回事。下面引号中的内容必须换成自己的昵称和提交邮箱。可在GitHub个人 **Settings → Emails** 找到隐私用的noreply邮箱，完整复制，不要自己拼地址。
+
+```bash
+git config user.name "你的昵称"
+```
+
+```bash
+git config user.email "你的GitHub提交邮箱"
+```
+
+公开分工表、报告和AI对话只填G编号，不填姓名、GitHub账号和私人联系方式；原始分组Excel不上传。Git的版本历史另外保存提交身份，所以这里可以用昵称与隐私邮箱。
+
+## 4. 每次新任务：先更新main，再建自己的分支
+
+在浏览器保存并关闭课程Notebook和文字编辑标签，回窗口B输入：
+
+```bash
+git status
+```
+
+看到`working tree clean`才继续。如果列出了modified、Untracked files或Changes to be committed，说明还有未保存成版本的改动：先在**当前任务分支**按第6节提交。安装练习造成的改动也不要不看内容就删除；不确定时保留并请助教协助。
+
+切回main：
+
+```bash
 git switch main
+```
+
+**路线一（课程仓库协作者）**运行：
+
+```bash
+git pull --ff-only origin main
+```
+
+**路线二（Fork）**运行下面两条，不执行上面那条代替它：
+
+```bash
+git fetch upstream
+```
+
+```bash
 git merge --ff-only upstream/main
 ```
 
-之后回到上文的新建分支、修改、检查和提交流程，向自己的origin执行push。浏览器进入自己的Fork，选择 **Contribute → Open pull request**，或在课程仓库的New pull request中选择 **compare across forks**。目标仓库选`prince19992516/-2026`、base选`main`，来源选自己的Fork与作业分支；核对修改后点击 **Create pull request**，等待助教审阅。
+成功后才新建任务分支。下面是**G22担任第01章A角色的真实示例**，其他组先改编号：
 
-如果本地main有个人提交导致快进失败，先把工作保存到分支，再请助教协助整理；不要使用强推覆盖课程历史。GitHub HTTPS认证使用凭据管理器或令牌，不使用账号密码作为Git密码。
+```bash
+git switch -c chapter-01-a-g22
+```
 
-## B/C如何固定被审版本
+```bash
+git branch --show-current
+```
+
+第二条应输出刚建的分支名，不再是main。各角色的实际示例见[08操作指南](08-各组具体操作指南.md)。提示分支已存在时，本次只是继续原任务就用`git switch 分支名`；新一轮任务则取新名字，如末尾加`-r2`，不要删除已有分支硬凑。
+
+如果课程更新失败，不继续建分支。`--ff-only`失败说明本地与远程历史分叉；保留当前工作并请助教协助，不使用强推或reset清空历史。
+
+## 5. 编辑、运行、保存：先按角色完成任务
+
+回JupyterLab重新打开自己角色的文件，按[08操作指南](08-各组具体操作指南.md)填写。`.md`文件的编辑、Notebook运行与图片操作见[02写作教程](02-Notebook教材写作.md)。
+
+同一章同一角色有两个小组：先约定小节/文件范围，各用自己的分支。报告按G编号分别记录，实验Notebook按小节约定交接；不要同时改同一段再互相覆盖。具体做法在08第一部分。
+
+改了实验或验证代码时，重启内核、运行全部、核对实际结果，最后Ctrl+S。B/C遇到报错可以提交真实失败报告，不必把错误删除成“全部通过”。只修改排版的D/E也不需要伪称运行过所有实验。
+
+## 6. 在本机保存一个版本
+
+先运行`git status`，确认当前分支和本次修改的文件。以下仍以G22修改第一章的实验与编写报告为例，**只添加自己实际修改的文件**：
+
+```bash
+git add "教材/第01章-误差的代价/A组-实验.ipynb" "教材/第01章-误差的代价/A组-编写报告.md"
+```
+
+正文、习题、图片或AI记录也改了，就按相同写法分别`git add "相对路径"`。不要把字面上的“相对路径”当作文件名。相对路径从课程根目录开始；JupyterLab可右键文件选择Copy Path后核对。不要直接`git add .`把无关文件一起提交。
+
+检查所选文件：
+
+```bash
+git diff --cached --stat
+```
+
+输出应只有这次准备交的文件。文本内容可用下面命令查看：
+
+```bash
+git diff --cached
+```
+
+显示较长、底部出现冒号或`(END)`时，按`q`退出查看，不是在文件里输入q。Notebook差异可能是JSON，回JupyterLab查看实际单元。选错文件时用`git restore --staged "实际文件路径"`取消暂存，文件内容仍保留；修改完文件后需重新git add。
+
+确认后保存版本：
+
+```bash
+git commit -m "第01章 G22 A角色：补充误差实验与编写报告"
+```
+
+成功会显示版本编号与文件摘要。`nothing to commit`表示没有暂存的新内容，先核对是否Ctrl+S、是否git add，以及是否位于正确副本。`Author identity unknown`时回第3节设置身份，再执行commit。
+
+## 7. 上传分支，并在网页创建PR
+
+第一次上传当前分支：
+
+```bash
+git push -u origin HEAD
+```
+
+这里HEAD代表当前分支。执行前可用`git branch --show-current`确认没有留在main。以后同一分支补交修改，先add、commit，再`git push`即可。
+
+若弹出登录窗口，使用有权访问目标origin的账号完成登录。出现403或`Permission denied`，先检查邀请是否接受、登录账号与origin地址；没有权限就按第2节Fork路线处理。不要反复输账号密码或把访问令牌写进文件。[GitHub上传说明](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository)
+
+上传成功后在浏览器操作：
+
+1. 打开[课程仓库](https://github.com/prince19992516/-2026)，点击 **Pull requests → New pull request**。
+2. 路线一：base选择`main`，compare选择刚上传的任务分支。
+3. 路线二：点击 **compare across forks**，base repository选课程仓库、base选main；head repository选自己的Fork、compare选自己的任务分支。
+4. 先查看 **Files changed** 或页面下方差异，确认没有别组被删除的内容、私人信息和环境文件。点击 **Create pull request**。
+5. 标题写“第01章 G22 A角色：初稿/第1次修订”等。正文填写出现的PR模板：改了什么、报告在哪、运行了什么、还有什么没完成。不适用项直接写“不适用：原因”，不要为了全勾选而造假。
+6. 点击最终的 **Create pull request**。若初稿未齐，可在按钮下拉选择 **Create draft pull request**（草稿PR），并写清尚未完成；准备好后再改为Ready for review。
+7. 成功会进入一张带编号的PR页面，如`#123`。复制浏览器地址给需要复核的B/C和助教；不要把127.0.0.1的本机地址当提交链接。
+
+PR里建议这样写，按实际情况替换，不直接交占位词：
+
+```markdown
+章节/组别/角色/轮次：第01章 / G22 / A / 初稿
+本次范围：1.1节正文、对应实验和习题
+报告位置：教材/第01章-误差的代价/A组-编写报告.md 中G22记录
+实际运行：说明系统、内核、运行的Notebook与输出核对结果
+尚未完成：列出未完成小节或问题；没有则说明已核对的范围
+需要谁处理：对应B/C复核，或D/E统一格式
+```
+
+## 8. 给B/C一个确切版本，而不是“最新版”
+
+在A的任务分支已经commit且push成功后执行：
 
 ```bash
 git rev-parse HEAD
 ```
 
-在报告填写该完整SHA。查看某份A组PR时，先获取其分支，再以其实际commit为准。需要保持当前工作目录时，使用独立worktree检查某个版本：
+复制完整输出（本仓库是40位十六进制编号），连同PR链接、章节范围、额外依赖和待验证项给B/C。B报告完成后也这样给C提供自己的版本。新的commit会产生新编号；旧报告不能只把编号换成新的就算复测过。
+
+B/C在自己的报告里写**被审内容版本**，不要求把报告自身尚未产生的编号写进自己。取得未合并PR、固定版本并运行的详细命令在[06复现教程](06-B组如何在干净环境复现.md)。
+
+## 9. 收到修改意见后怎么继续
+
+PR仍未合并时，在同一任务分支改文件、运行相关实验、保存、add、commit、push。原PR会自动出现新提交，通常不再新建一张。回复具体问题时写“修改位置、修复版本、实际复测结果”，不能只写“已改”。
+
+PR合并后再收到新任务或修订要求：按第4节从更新后的main建新分支，如`chapter-01-a-g22-r2`。原PR已Merged时继续往旧分支push不会自动把新改动合入main。
+
+自己的任务分支需要取得已合并的同角色另一组修改时：先保存并提交当前工作，关闭相关编辑标签，保持在**自己的任务分支**。路线一执行：
 
 ```bash
-git worktree add --detach ../course-review 完整commitSHA
+git fetch origin
 ```
-
-把“完整commitSHA”替换为真实值，不要照抄。B组审A的版本，C组同时记录A的内容版本与B的报告/验证代码版本。A修复后新建复测条目，不能只悄悄修改旧SHA。
-
-## Notebook冲突
-
-Notebook是JSON文件，不宜盲目编辑冲突标记。先保留双方备份，确定本次基准版本，在Jupyter逐个移入需要保留的单元；检查公式、代码和输出，再重启内核运行全部。若不确定，请助教共同处理，不能直接丢弃他组证据。
-
-## 合并后开始下一任务
 
 ```bash
-git switch main
-git pull --ff-only origin main
-git switch -c chapter-02-b-g22
+git merge --no-edit origin/main
 ```
 
-Fork用户使用upstream更新main。例子中G22从第01章的A角色换到第02章的B角色，再在第03章完成C角色；分支名按实际章节、角色和小组编号填写。
+路线二（Fork）改为执行：
 
-D/E整合组不用套用ABC轮换示例。按[整合任务](../协作管理/章节分工表.md)在更新后的main上建立如`integrate-ch01-04-d1-g2`的分支，提交实际整合的文件；PR说明整合范围、解决的问题和仍需A/B/C处理的事项。生成整本网页的步骤见[生成与查看教材](05-生成与查看教材.md)。
+```bash
+git fetch upstream
+```
+
+```bash
+git merge --no-edit upstream/main
+```
+
+只选自己的路线。`--no-edit`使用默认合并说明，避免弹出额外文字编辑器；不会自动解决冲突。这是在任务分支合入最新课程内容，和第4节在main上更新不同。成功后重新打开文件、核对自己的内容与另一组内容均保留，受影响的Notebook重新运行保存，再提交和push。
+
+若出现CONFLICT或unmerged，按下一节处理；冲突未解决前不继续提交新的实验结果。
+
+## 10. 常见卡点
+
+| 看见什么 | 先做什么 |
+| --- | --- |
+| 终端一直显示Jupyter日志，输入git没反应 | 打开空闲窗口B，在课程根目录输入命令 |
+| not a git repository | 当前目录不对，回能看到course.cmd的课程根目录；ZIP下载不含Git历史 |
+| git status显示文件名是反斜线和数字 | 可运行`git -c core.quotepath=false status`查看中文路径 |
+| push报non-fast-forward/rejected | 可能另一人修改了同一远程分支；停止强推，核对分支并请助教协助合并 |
+| PR没有可比较的修改 | 确认已经commit和push、选对compare分支，且不是已经合并的旧任务 |
+| GitHub上看不到刚改的单元 | 依次确认Ctrl+S、add、commit、push；再确认网页正在查看自己的分支 |
+| Notebook提示磁盘文件已变化 | 先保留未保存内容，停止重复保存旧标签；确认Git更新后版本，再重新打开 |
+| 出现CONFLICT、`<<<<<<<`等标记 | 是版本冲突，不是数学错误；保留双方内容，联系同组/助教共同处理 |
+
+Notebook是JSON，不宜直接随便删冲突标记。先保留双方副本，再在Jupyter中逐单元合并需要的内容，运行、核对、保存；不要简单选择“全部采用我的”丢弃另一组证据。初学者遇到冲突应保留现场并求助，不照抄网上的强制覆盖命令。
+
+提交完成的判断：GitHub上能打开自己的PR，文件与报告齐全，状态清楚；合并完成的判断：页面显示Merged。两者不要混为一谈。
