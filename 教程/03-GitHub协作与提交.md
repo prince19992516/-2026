@@ -14,14 +14,14 @@ git config user.name "你的姓名或昵称"
 git config user.email "你的GitHub提交邮箱"
 git switch main
 git pull --ff-only origin main
-git switch -c chapter-01-a-g1
+git switch -c chapter-01-a-g22
 ```
 
-分支名示例中01是章节，a是本章角色，g1是实际学生小组编号；这三部分按实际任务修改。B/C角色分别用b/c；每次新任务从更新后的main建立新分支。
+分支名示例中01是章节，a是本章角色，g22是实际学生小组编号；这三部分按[章节分工表](../协作管理/章节分工表.md)修改。B/C角色分别用b/c；每次新任务从更新后的main建立新分支。
 
 ## 修改、亲自运行、保存与提交
 
-只修改本组当前角色负责的文件。下面以G1在第一章承担A角色为例：
+只修改本组当前角色负责的文件。下面以G22在第一章承担A角色为例。同一章节同一角色有两个小组，先约定各自负责的小节或文件，再分支提交；报告与AI对话按小组编号分段，保留彼此的记录，不覆盖另一组的内容。
 
 1. 在JupyterLab中完成文字和代码修改。
 2. 点击 **Kernel → Restart Kernel and Run All Cells**，等待全部单元结束。
@@ -34,10 +34,12 @@ git status
 git add 教材/第01章-误差的代价/A组-实验.ipynb 教材/第01章-误差的代价/A组-编写报告.md
 git diff --cached --stat
 git commit -m "第01章 A组：补充误差实验与编写报告"
-git push -u origin chapter-01-a-g1
+git push -u origin chapter-01-a-g22
 ```
 
 上面只暂存两个示范文件；本次修改了正文、习题等文件时逐个加入。不要把 `.venv`、密钥、运行缓存和无关资料一并上传。
+
+公开的分工表、报告与AI对话记录只填写小组编号，不填写学生姓名、GitHub账号或私人联系方式；含成员信息的原始Excel不上传。Git提交身份会出现在版本记录中，可使用昵称和GitHub的noreply邮箱。
 
 成功时commit输出本次版本编号和修改摘要，push显示分支已上传；浏览器可能提示登录GitHub，请使用自己的账号。出现权限错误则先确认邀请是否接受，或采用下方Fork流程。`nothing to commit`通常表示没有已保存的新改动，或忘了git add；先看git status，不要反复提交空版本。
 
@@ -92,7 +94,9 @@ Notebook是JSON文件，不宜盲目编辑冲突标记。先保留双方备份�
 ```bash
 git switch main
 git pull --ff-only origin main
-git switch -c chapter-02-b-g1
+git switch -c chapter-02-b-g22
 ```
 
-Fork用户使用upstream更新main。例子中G1从第01章的A角色换到第02章的B角色，之后还需在另一个章节完成C角色；分支名按实际章节、角色和小组编号填写。
+Fork用户使用upstream更新main。例子中G22从第01章的A角色换到第02章的B角色，再在第03章完成C角色；分支名按实际章节、角色和小组编号填写。
+
+D/E整合组不用套用ABC轮换示例。按[整合任务](../协作管理/章节分工表.md)在更新后的main上建立如`integrate-ch01-04-d1-g2`的分支，提交实际整合的文件；PR说明整合范围、解决的问题和仍需A/B/C处理的事项。生成整本网页的步骤见[生成与查看教材](05-生成与查看教材.md)。
