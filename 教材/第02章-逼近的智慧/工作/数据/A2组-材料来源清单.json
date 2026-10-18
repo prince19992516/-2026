@@ -1,0 +1,85 @@
+[
+  {
+    "file": "book2.pdf",
+    "bytes": 42197332,
+    "sha256": "3002ca24e9cc0dec79696cc846aaade72fc67314ee168592ae13ce9e25a7fc78",
+    "pages": 298,
+    "has_text_layer": false,
+    "visual_check": "PDF第1、4、12、22、23页图像已查看；扫描书为高立《数值最优化方法》2014年第1版；PDF第22页对应书内第8页"
+  },
+  {
+    "file": "ch01a Lagrange插值.ppt",
+    "bytes": 863232,
+    "sha256": "8354cdddbfb482b488ed15bde24c3768eef376a71a6e2db5a6669c6d1b044272",
+    "extracted_text_records": 258,
+    "use": "课程插值背景；未作为数值积分、自动微分或PINN的直接出处"
+  },
+  {
+    "file": "ch01b Newton插值.ppt",
+    "bytes": 394752,
+    "sha256": "8cf3befb5aa9cbd13e13439657736201a02bf607c1e2e5749d7fbc06be8de0d4",
+    "extracted_text_records": 533,
+    "use": "课程插值背景；未作为数值积分、自动微分或PINN的直接出处"
+  },
+  {
+    "file": "ch01c 埃尔米特插值.ppt",
+    "bytes": 240640,
+    "sha256": "07c83b2b3ddd9c1b4e65627bed510bb5e06c31c21c91ace92e7f83740b55e09c",
+    "extracted_text_records": 66,
+    "use": "课程插值背景；未作为数值积分、自动微分或PINN的直接出处"
+  },
+  {
+    "file": "ch01d 三次样条插值.ppt",
+    "bytes": 846848,
+    "sha256": "cd9624eaafc8f9fcc919b878300ae726df798b42ff3568ec2c75d2e23dce4fa0",
+    "extracted_text_records": 214,
+    "use": "课程插值背景；未作为数值积分、自动微分或PINN的直接出处"
+  },
+  {
+    "file": "第一章-数值分析与科学计算引论.pdf",
+    "bytes": 519753,
+    "sha256": "b8c269d9b54de9f312bd203d3ba59bbc8e3e56b9add60c3a65a6967a4af6a33a",
+    "pages": 56,
+    "has_text_layer": true,
+    "relevant_pages": {
+      "误差从哪里来": [
+        2
+      ],
+      "截断误差与舍入误差": [
+        3
+      ],
+      "绝对误差": [
+        4,
+        5,
+        40,
+        43,
+        45
+      ]
+    }
+  },
+  {
+    "file": "第二章-插值法-线条漫画版.pdf",
+    "bytes": 4971648,
+    "sha256": "90076a7c81ac9f9d6f8aa39629fb549d92eab4f487da9eef30b5bcce242385bb",
+    "pages": 56,
+    "has_text_layer": true,
+    "relevant_pages": {
+      "两个节点": [],
+      "插值余项": [
+        9,
+        19
+      ],
+      "余项证明": [
+        10
+      ],
+      "分段线性插值": [
+        35,
+        50
+      ],
+      "分段低次插值": [
+        1,
+        32
+      ]
+    }
+  }
+]
