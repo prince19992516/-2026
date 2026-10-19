@@ -1,0 +1,4 @@
+﻿k,value_error_at_witness,first_error_at_zero,second_error_at_witness
+10,0.1,1.0,10.0
+100,0.01,1.0,100.0
+1000,0.001,1.0,1000.0

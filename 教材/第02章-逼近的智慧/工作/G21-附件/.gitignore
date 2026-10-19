@@ -1,0 +1,5 @@
+.venv/
+.runtime/
+.ipython/
+.matplotlib/
+__pycache__/
