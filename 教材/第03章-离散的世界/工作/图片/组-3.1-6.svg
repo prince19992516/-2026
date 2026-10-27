@@ -1,0 +1,76 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="80 45 800 550" font-family="KaiTi, STKaiti, serif">
+  <defs>
+    <marker id="ax4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#22303c"/>
+    </marker>
+    <marker id="h4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5b6670"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="900" height="600" fill="#fdfcf8"/>
+
+  <!-- 坐标轴 -->
+  <line x1="120" y1="470" x2="862" y2="470" stroke="#22303c" stroke-width="2.2" marker-end="url(#ax4)"/>
+  <line x1="120" y1="470" x2="120" y2="66" stroke="#22303c" stroke-width="2.2" marker-end="url(#ax4)"/>
+  <text x="846" y="496" font-size="19" fill="#22303c">t</text>
+  <text x="94" y="86" font-size="19" fill="#22303c">f</text>
+
+  <!-- 四块矩形 -->
+  <rect x="240" y="342" width="73" height="128" fill="#9fb7cf" fill-opacity="0.28" stroke="#6f8ba6" stroke-width="1.4"/>
+  <rect x="313" y="290" width="147" height="180" fill="#9fb7cf" fill-opacity="0.28" stroke="#6f8ba6" stroke-width="1.4"/>
+  <rect x="460" y="232" width="147" height="238" fill="#9fb7cf" fill-opacity="0.28" stroke="#6f8ba6" stroke-width="1.4"/>
+  <rect x="607" y="180" width="73" height="290" fill="#9fb7cf" fill-opacity="0.28" stroke="#6f8ba6" stroke-width="1.4"/>
+
+  <!-- 曲线 -->
+  <path d="M200,372 C270,354 300,342 340,322 C400,296 430,272 470,252
+           C520,228 560,206 600,196 C650,183 700,179 740,169 C762,163 778,157 790,150"
+        stroke="#22303c" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- 竖直虚线 -->
+  <line x1="240" y1="342" x2="240" y2="470" stroke="#5b6670" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <line x1="400" y1="288" x2="400" y2="470" stroke="#5b6670" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <line x1="500" y1="232" x2="500" y2="470" stroke="#5b6670" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <line x1="680" y1="180" x2="680" y2="470" stroke="#5b6670" stroke-width="1.5" stroke-dasharray="6 6"/>
+
+  <!-- 四个采样点 -->
+  <circle cx="240" cy="342" r="7" fill="#22303c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="400" cy="288" r="7" fill="#22303c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="500" cy="232" r="7" fill="#22303c" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="680" cy="180" r="7" fill="#22303c" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- k 标注 -->
+  <text x="196" y="330" font-size="21" fill="#22303c">k₁</text>
+  <text x="372" y="272" font-size="21" fill="#22303c">k₂</text>
+  <text x="470" y="214" font-size="21" fill="#22303c">k₃</text>
+  <text x="694" y="168" font-size="21" fill="#22303c">k₄</text>
+
+  <!-- 函数标注 -->
+  <text x="150" y="300" font-size="17" fill="#5b6670">f(t(k), y(k))</text>
+  <text x="556" y="130" font-size="17" fill="#5b6670">f(t(k+1), y(k+1))</text>
+
+  <!-- 横轴刻度 -->
+  <line x1="240" y1="470" x2="240" y2="480" stroke="#22303c" stroke-width="1.8"/>
+  <line x1="680" y1="470" x2="680" y2="480" stroke="#22303c" stroke-width="1.8"/>
+  <text x="214" y="502" font-size="18" fill="#22303c">t(k)</text>
+  <text x="654" y="502" font-size="18" fill="#22303c">t(k+1)</text>
+
+  <!-- 步长分解条 -->
+  <line x1="240" y1="540" x2="680" y2="540" stroke="#5b6670" stroke-width="1.6" marker-end="url(#h4)"/>
+  <line x1="680" y1="540" x2="240" y2="540" stroke="#5b6670" stroke-width="1.6" marker-end="url(#h4)"/>
+  <line x1="240" y1="532" x2="240" y2="548" stroke="#5b6670" stroke-width="1.8"/>
+  <line x1="313" y1="532" x2="313" y2="548" stroke="#5b6670" stroke-width="1.8"/>
+  <line x1="460" y1="532" x2="460" y2="548" stroke="#5b6670" stroke-width="1.8"/>
+  <line x1="607" y1="532" x2="607" y2="548" stroke="#5b6670" stroke-width="1.8"/>
+  <line x1="680" y1="532" x2="680" y2="548" stroke="#5b6670" stroke-width="1.8"/>
+
+  <text x="260" y="526" font-size="17" fill="#5b6670">h/6</text>
+  <text x="368" y="526" font-size="17" fill="#5b6670">h/3</text>
+  <text x="514" y="526" font-size="17" fill="#5b6670">h/3</text>
+  <text x="624" y="526" font-size="17" fill="#5b6670">h/6</text>
+  <text x="440" y="578" font-size="19" fill="#5b6670">h</text>
+
+  <!-- 加权公式 -->
+  <text x="694" y="330" font-size="18" fill="#22303c">(h/6)k₁ + (h/3)k₂</text>
+  <text x="694" y="356" font-size="18" fill="#22303c">+ (h/3)k₃ + (h/6)k₄</text>
+  <line x1="690" y1="312" x2="640" y2="250" stroke="#8a949c" stroke-width="1.2"/>
+</svg>

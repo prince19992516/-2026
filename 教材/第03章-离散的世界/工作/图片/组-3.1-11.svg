@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" font-family="KaiTi, STKaiti, serif">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef5fb"/>
+      <stop offset="1" stop-color="#fdfcf8"/>
+    </linearGradient>
+    <radialGradient id="flame" cx="0" cy="0.5" r="1">
+      <stop offset="0" stop-color="#ffd166"/>
+      <stop offset="0.6" stop-color="#ef8a3c"/>
+      <stop offset="1" stop-color="#ef8a3c" stop-opacity="0"/>
+    </radialGradient>
+    <g id="cloud">
+      <ellipse cx="0" cy="0" rx="34" ry="14" fill="#ffffff" opacity="0.9"/>
+      <ellipse cx="-18" cy="4" rx="22" ry="11" fill="#ffffff" opacity="0.9"/>
+      <ellipse cx="18" cy="4" rx="24" ry="12" fill="#ffffff" opacity="0.9"/>
+    </g>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="340" fill="url(#sky)"/>
+  <use href="#cloud" x="170" y="74"/>
+  <use href="#cloud" x="640" y="58"/>
+  <use href="#cloud" x="470" y="100" transform="scale(0.85)" opacity="0.7"/>
+
+  <!-- 地面 -->
+  <path d="M0,286 L900,286 L900,340 L0,340 Z" fill="#dfe9d8"/>
+  <path d="M0,286 L900,286" stroke="#b9c9ad" stroke-width="2"/>
+
+  <!-- 弹道 -->
+  <path d="M112,268 C 260,120 470,70 782,156" fill="none" stroke="#2f6fb5" stroke-width="3" stroke-dasharray="8 9" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- 发射架 -->
+  <rect x="88" y="244" width="46" height="42" rx="4" fill="#cfd8df" stroke="#9aa4ad" stroke-width="2"/>
+  <line x1="100" y1="244" x2="100" y2="214" stroke="#9aa4ad" stroke-width="3"/>
+  <line x1="100" y1="214" x2="120" y2="206" stroke="#9aa4ad" stroke-width="3"/>
+  <line x1="88" y1="286" x2="134" y2="286" stroke="#9aa4ad" stroke-width="3"/>
+  <text x="74" y="316" font-size="17" fill="#5b6670">发射点</text>
+
+  <!-- 导弹 -->
+  <g transform="translate(300,152) rotate(-33)">
+    <path d="M-58,0 L-30,-13 L30,-11 L58,0 L30,11 L-30,13 Z" fill="#e8edf2" stroke="#5b6670" stroke-width="2"/>
+    <path d="M58,0 L34,-10 L34,10 Z" fill="#e07b39" stroke="#b35a1f" stroke-width="1.6"/>
+    <path d="M-30,-11 L-48,-20 L-52,-4 Z" fill="#c9d3db" stroke="#5b6670" stroke-width="1.6"/>
+    <path d="M-30,11 L-48,20 L-52,4 Z" fill="#c9d3db" stroke="#5b6670" stroke-width="1.6"/>
+    <circle cx="6" cy="0" r="4.5" fill="#2f6fb5" stroke="#22303c" stroke-width="1.2"/>
+    <ellipse cx="-74" cy="0" rx="34" ry="11" fill="url(#flame)"/>
+  </g>
+
+  <!-- 雷达站与目标 -->
+  <path d="M700,286 Q782,246 900,286 Z" fill="#cfe0c3" stroke="#a9c096" stroke-width="2"/>
+  <line x1="790" y1="262" x2="790" y2="212" stroke="#5b6670" stroke-width="4"/>
+  <path d="M766,212 Q790,186 814,212" fill="none" stroke="#5b6670" stroke-width="4" stroke-linecap="round"/>
+  <line x1="790" y1="212" x2="790" y2="200" stroke="#5b6670" stroke-width="3"/>
+  <circle cx="790" cy="197" r="4" fill="#e07b39"/>
+  <circle cx="790" cy="197" r="15" fill="none" stroke="#e07b39" stroke-width="2" stroke-dasharray="4 5"/>
+  <text x="744" y="316" font-size="17" fill="#5b6670">目标</text>
+
+  <!-- 距离标注 -->
+  <line x1="112" y1="332" x2="790" y2="332" stroke="#9aa4ad" stroke-width="1.6"/>
+  <line x1="112" y1="326" x2="112" y2="338" stroke="#9aa4ad" stroke-width="1.6"/>
+  <line x1="790" y1="326" x2="790" y2="338" stroke="#9aa4ad" stroke-width="1.6"/>
+  <text x="412" y="326" font-size="17" fill="#5b6670">45 km</text>
+</svg>

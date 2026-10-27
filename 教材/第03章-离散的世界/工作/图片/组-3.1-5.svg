@@ -1,0 +1,94 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="50 45 800 385" font-family="KaiTi, STKaiti, serif">
+  <defs>
+    <marker id="bx" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5b6670"/>
+    </marker>
+    <marker id="ba" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2f6fb5"/>
+    </marker>
+    <marker id="bb" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3d8b5f"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="900" height="440" fill="#fdfcf8"/>
+
+  <!-- ================= 左：显式 Euler，取左端点 ================= -->
+  <g>
+    <line x1="80" y1="330" x2="432" y2="330" stroke="#5b6670" stroke-width="2" marker-end="url(#bx)"/>
+    <line x1="80" y1="330" x2="80" y2="66" stroke="#5b6670" stroke-width="2" marker-end="url(#bx)"/>
+    <text x="414" y="356" font-size="18" fill="#5b6670">t</text>
+
+    <!-- 两个矩形：高度取左端点 -->
+    <rect x="150" y="297" width="100" height="33" fill="#2f6fb5" fill-opacity="0.16" stroke="#2f6fb5" stroke-width="1.6"/>
+    <rect x="250" y="247" width="100" height="83" fill="#2f6fb5" fill-opacity="0.16" stroke="#2f6fb5" stroke-width="1.6"/>
+
+    <!-- 阶梯线 -->
+    <path d="M150,330 L150,297 L250,297 L250,247 L350,247 L350,330"
+          fill="none" stroke="#2f6fb5" stroke-width="2.4" stroke-linejoin="round"/>
+
+    <!-- 曲线 -->
+    <path d="M100,310 C170,300 240,255 310,185 C350,145 380,120 410,105"
+          stroke="#22303c" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+
+    <!-- 水平箭头 -->
+    <line x1="156" y1="297" x2="242" y2="297" stroke="#2f6fb5" stroke-width="2" marker-end="url(#ba)"/>
+    <line x1="256" y1="247" x2="342" y2="247" stroke="#2f6fb5" stroke-width="2" marker-end="url(#ba)"/>
+
+    <!-- 红点：t_i 处 -->
+    <circle cx="250" cy="247" r="6" fill="#c0392b" stroke="#ffffff" stroke-width="1.5"/>
+
+    <!-- 刻度 -->
+    <line x1="150" y1="330" x2="150" y2="338" stroke="#5b6670" stroke-width="1.6"/>
+    <line x1="250" y1="330" x2="250" y2="338" stroke="#5b6670" stroke-width="1.6"/>
+    <line x1="350" y1="330" x2="350" y2="338" stroke="#5b6670" stroke-width="1.6"/>
+    <text x="132" y="358" font-size="17" fill="#5b6670">tᵢ₋₁</text>
+    <text x="238" y="358" font-size="17" fill="#5b6670">tᵢ</text>
+    <text x="338" y="358" font-size="17" fill="#5b6670">tᵢ₊₁</text>
+
+    <!-- 标注 -->
+    <text x="128" y="240" font-size="16" fill="#22303c">f(tᵢ, x(tᵢ))</text>
+    <text x="256" y="318" font-size="16" fill="#22303c">x(tᵢ₊₁)</text>
+    <line x1="200" y1="330" x2="200" y2="308" stroke="#8a949c" stroke-width="1.2"/>
+    <text x="206" y="304" font-size="16" fill="#5b6670">h</text>
+
+    <text x="150" y="404" font-size="19" fill="#22303c">显式 Euler：取左端点</text>
+  </g>
+
+  <!-- ================= 右：隐式 Euler，取右端点 ================= -->
+  <g>
+    <line x1="480" y1="330" x2="832" y2="330" stroke="#5b6670" stroke-width="2" marker-end="url(#bx)"/>
+    <line x1="480" y1="330" x2="480" y2="66" stroke="#5b6670" stroke-width="2" marker-end="url(#bx)"/>
+    <text x="814" y="356" font-size="18" fill="#5b6670">t</text>
+
+    <!-- 两个矩形：高度取右端点 -->
+    <rect x="550" y="228" width="100" height="102" fill="#3d8b5f" fill-opacity="0.16" stroke="#3d8b5f" stroke-width="1.6"/>
+    <rect x="650" y="138" width="100" height="192" fill="#3d8b5f" fill-opacity="0.16" stroke="#3d8b5f" stroke-width="1.6"/>
+
+    <path d="M550,330 L550,228 L650,228 L650,138 L750,138 L750,330"
+          fill="none" stroke="#3d8b5f" stroke-width="2.4" stroke-linejoin="round"/>
+
+    <path d="M500,310 C570,300 640,255 710,185 C750,145 780,120 810,105"
+          stroke="#22303c" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+
+    <!-- 水平箭头：取右端点的高度，反向铺满整段 -->
+    <line x1="646" y1="228" x2="558" y2="228" stroke="#3d8b5f" stroke-width="2" marker-end="url(#bb)"/>
+    <line x1="746" y1="138" x2="658" y2="138" stroke="#3d8b5f" stroke-width="2" marker-end="url(#bb)"/>
+
+    <circle cx="650" cy="228" r="6" fill="#c0392b" stroke="#ffffff" stroke-width="1.5"/>
+    <line x1="640" y1="132" x2="648" y2="218" stroke="#8a949c" stroke-width="1.1"/>
+
+    <line x1="550" y1="330" x2="550" y2="338" stroke="#5b6670" stroke-width="1.6"/>
+    <line x1="650" y1="330" x2="650" y2="338" stroke="#5b6670" stroke-width="1.6"/>
+    <line x1="750" y1="330" x2="750" y2="338" stroke="#5b6670" stroke-width="1.6"/>
+    <text x="532" y="358" font-size="17" fill="#5b6670">tᵢ₋₁</text>
+    <text x="638" y="358" font-size="17" fill="#5b6670">tᵢ</text>
+    <text x="738" y="358" font-size="17" fill="#5b6670">tᵢ₊₁</text>
+
+    <text x="556" y="120" font-size="16" fill="#22303c">f(tᵢ₊₁, x(tᵢ₊₁))</text>
+    <text x="656" y="318" font-size="16" fill="#22303c">x(tᵢ₊₁)</text>
+    <line x1="600" y1="330" x2="600" y2="308" stroke="#8a949c" stroke-width="1.2"/>
+    <text x="606" y="304" font-size="16" fill="#5b6670">h</text>
+
+    <text x="550" y="404" font-size="19" fill="#22303c">隐式 Euler：取右端点</text>
+  </g>
+</svg>
