@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="310" viewBox="0 0 1050 310">
+<rect width="1050" height="310" fill="#f5f7fb"/>
+<g font-family="sans-serif" fill="#172b4d"><text x="30" y="35" font-size="21">方向、步长与局部模型</text>
+<g stroke="#cbd5e1" fill="white"><rect x="20" y="55" width="325" height="225" rx="12"/><rect x="362" y="55" width="325" height="225" rx="12"/><rect x="704" y="55" width="325" height="225" rx="12"/></g>
+<g font-size="17"><text x="38" y="84">① 只看方向</text><text x="380" y="84">② 跨过山谷</text><text x="722" y="84">③ 拿出局部地图</text></g>
+<g fill="none" stroke="#377eb8" stroke-width="3"><path d="M65 122 Q180 305 290 122"/><path d="M400 110 Q515 330 650 105"/><path d="M746 122 Q862 305 973 122"/></g>
+<g stroke="#e76f51" stroke-width="4"><path d="M275 153 L220 191 l13 -2 m-13 2 l3 -13"/><path d="M603 157 L445 128 l13 -4 m-13 4 l10 10"/></g>
+<g fill="#172b4d"><circle cx="275" cy="147" r="8"/><circle cx="603" cy="151" r="8"/><circle cx="445" cy="122" r="8"/></g>
+<g fill="none" stroke="#2a9d8f" stroke-width="3"><path d="M957 150 L921 177 l12 -1 m-12 1 l3 -12"/><ellipse cx="935" cy="164" rx="47" ry="39" stroke-dasharray="5 4"/></g>
+<g font-size="14"><text x="38" y="251">负梯度给出局部下降方向</text><text x="380" y="251">φ(x)=x²：1 → −1.4，目标升高</text><text x="722" y="251">试算下降量，再接受或调整</text></g></g>
+</svg>
