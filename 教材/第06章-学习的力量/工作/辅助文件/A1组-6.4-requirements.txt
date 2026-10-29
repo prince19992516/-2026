@@ -1,0 +1,16 @@
+# A1 group, section 6.4: tested dependencies for Windows/Linux CPU execution.
+# Required interpreter: Python 3.12.x; verified with Python 3.12.14.
+# Python itself is not a pip package. Select a Python 3.12 Jupyter kernel first.
+# This dependency manifest is not an executable script.
+# A notebook frontend (for example an existing Jupyter or VS Code installation)
+# is separate from the kernel and numerical dependencies listed below.
+# The additional official PyTorch index provides the verified CPU wheel.
+--extra-index-url https://download.pytorch.org/whl/cpu
+numpy==2.2.6
+scipy==1.15.3
+matplotlib==3.10.3
+torch==2.6.0+cpu
+threadpoolctl==3.6.0
+ipykernel==6.29.5
+nbformat==5.10.4
+nbclient==0.10.2

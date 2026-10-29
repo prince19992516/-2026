@@ -1,0 +1,167 @@
+{
+  "static": {
+    "status": "passed",
+    "notebooks": [
+      "A1组-习题参考解答代码-6.4.ipynb",
+      "A1组-实验-6.4.ipynb"
+    ],
+    "executed_code_cells": 14,
+    "markdown_documents": 8,
+    "display_formulas": 73,
+    "local_links": 40,
+    "tables": 18,
+    "equation_tags": 27,
+    "source_files_unchanged": 67,
+    "absolute_local_paths": 0,
+    "new_folder_creation_statements": 0,
+    "standalone_scripts": 0,
+    "data_records": {
+      "forward_grid": 10,
+      "forward_pinn": 6,
+      "inverse": 75,
+      "operator_summary": 10,
+      "operator_cost": 12,
+      "amortization": 8
+    }
+  },
+  "render": {
+    "formulas": 755,
+    "rendered": 755,
+    "errors": [],
+    "mathErrors": [],
+    "overflow": [],
+    "missingImages": []
+  },
+  "relocation": {
+    "A1组-实验-6.4.ipynb": {
+      "code_cells": 10,
+      "passed": true
+    },
+    "A1组-习题参考解答代码-6.4.ipynb": {
+      "code_cells": 4,
+      "passed": true
+    }
+  },
+  "relocation_new_directories": false,
+  "relocation_note": "整包复制到不同目录，在Python3.12.14从新内核完整执行；提交包保留原最终运行的输出和对应计时，未混用迁移运行数字。",
+  "render_note": "本地MathJax实际渲染；另目视检查关键矩阵、框线误差界、反演损失、结果表及六张图。不是对所有Markdown阅读器的兼容性保证。",
+  "v3_review": {
+    "date": "2026-10-28",
+    "source_archive": "第6.4节-v2.zip",
+    "source_sha256": "868dab66d9a9d7cd4b7de3fd3739fa5d7a1ea1781a339e63d2ce4e2280da16b1",
+    "requirements": [
+      {
+        "name": "numpy",
+        "constraint": "==2.2.6",
+        "installed": "2.2.6",
+        "python_3_12_compatible": true
+      },
+      {
+        "name": "scipy",
+        "constraint": "==1.15.3",
+        "installed": "1.15.3",
+        "python_3_12_compatible": true
+      },
+      {
+        "name": "matplotlib",
+        "constraint": "==3.10.3",
+        "installed": "3.10.3",
+        "python_3_12_compatible": true
+      },
+      {
+        "name": "torch",
+        "constraint": "==2.6.0+cpu",
+        "installed": "2.6.0+cpu",
+        "python_3_12_compatible": true
+      },
+      {
+        "name": "threadpoolctl",
+        "constraint": "==3.6.0",
+        "installed": "3.6.0",
+        "python_3_12_compatible": true
+      },
+      {
+        "name": "ipykernel",
+        "constraint": "==6.29.5",
+        "installed": "6.29.5",
+        "python_3_12_compatible": true
+      },
+      {
+        "name": "nbformat",
+        "constraint": "==5.10.4",
+        "installed": "5.10.4",
+        "python_3_12_compatible": true
+      },
+      {
+        "name": "nbclient",
+        "constraint": "==0.10.2",
+        "installed": "0.10.2",
+        "python_3_12_compatible": true
+      }
+    ],
+    "notebooks": [
+      {
+        "file": "A1组-习题参考解答代码-6.4.ipynb",
+        "executed_cells": 4,
+        "error_outputs": 0,
+        "execution_evidence": "preserved from verified v2"
+      },
+      {
+        "file": "A1组-实验-6.4.ipynb",
+        "executed_cells": 10,
+        "error_outputs": 0,
+        "execution_evidence": "preserved from verified v2"
+      }
+    ],
+    "unchanged_v2_files": [
+      "A1-G12-正文-6.4.md",
+      "A1组-习题-6.4.md",
+      "A1组-习题参考解答-6.4.md",
+      "A1组-习题参考解答代码-6.4.ipynb",
+      "A1组-实验-6.4.ipynb",
+      "A1组-来源导读与文献-6.4.md",
+      "图片/A1组-6.4-PINN训练曲线.png",
+      "图片/A1组-6.4-反问题对照.png",
+      "图片/A1组-6.4-正问题成本.png",
+      "图片/A1组-6.4-正问题解与误差.png",
+      "图片/A1组-6.4-算子学习对照.png",
+      "图片/A1组-6.4-网格收敛.png",
+      "数据/A1组-6.4-PINN汇总.csv",
+      "数据/A1组-6.4-PINN结果.csv",
+      "数据/A1组-6.4-反问题共同观测.csv",
+      "数据/A1组-6.4-反问题汇总.csv",
+      "数据/A1组-6.4-反问题逐次结果.csv",
+      "数据/A1组-6.4-来源62-结果.csv",
+      "数据/A1组-6.4-来源63-deeponet_cost.csv",
+      "数据/A1组-6.4-来源63-deeponet_dataset_coefficients.csv",
+      "数据/A1组-6.4-来源63-deeponet_metrics.csv",
+      "数据/A1组-6.4-来源63-deeponet_training_summary.csv",
+      "数据/A1组-6.4-正问题结果.json",
+      "数据/A1组-6.4-正问题阈值.csv",
+      "数据/A1组-6.4-积分检查.csv",
+      "数据/A1组-6.4-算子成本.csv",
+      "数据/A1组-6.4-算子摊销.csv",
+      "数据/A1组-6.4-算子训练历史.csv",
+      "数据/A1组-6.4-算子误差汇总.csv",
+      "数据/A1组-6.4-算子逐函数误差.csv",
+      "数据/A1组-6.4-组员来源清单.json",
+      "数据/A1组-6.4-综合结果.json",
+      "数据/A1组-6.4-网格结果.csv"
+    ],
+    "unchanged_mathematical_expressions": 755,
+    "requirements_location": "辅助文件/A1组-6.4-requirements.txt",
+    "txt_count": 1,
+    "main_input": "数据/A1组-6.4-来源63-deeponet_dataset_coefficients.csv",
+    "exercise_input": "数据/A1组-6.4-综合结果.json",
+    "highlighted_files_not_referenced_by_old_experiment": [
+      "6.1导读与核对说明.md",
+      "README-先读我.md",
+      "requirements-核心实验.txt",
+      "格式检查与修改说明.md",
+      "交付自动检查记录.md"
+    ],
+    "chapter_6_1_requirements_in_supplied_archive": false,
+    "execution_note": "未改代码或结果，逐字节比对v2；沿用既有完整运行及迁移证据，不宣称本轮重新训练。"
+  },
+  "historical_note": "本记录对应全章合并前的 6.4 子包检查；合并后部分文件已并入统一命名，个别计数与路径不再对应当前包。"
+}

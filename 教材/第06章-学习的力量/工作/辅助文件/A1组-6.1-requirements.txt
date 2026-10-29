@@ -1,0 +1,10 @@
+# Python 3.12.10
+# 安装示例：
+#   python -m pip install -r A1组-6.1-requirements.txt
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.6.0+cu124
+numpy==1.26.4
+matplotlib==3.8.3
+ipython==9.17.1
+ipykernel==6.29.4
+nbconvert==7.16.4

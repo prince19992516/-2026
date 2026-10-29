@@ -1,0 +1,25 @@
+{
+  "python_required": "3.12.x",
+  "python_used": "3.12.14",
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "torch": "2.6.0+cpu",
+    "matplotlib": "3.10.3",
+    "threadpoolctl": "3.6.0",
+    "nbformat": "5.10.4",
+    "nbclient": "0.10.2",
+    "ipykernel": "6.29.5"
+  },
+  "working_directory": "提交包根目录",
+  "device": "CPU",
+  "dtype": "float64",
+  "threads": 1,
+  "network_needed_for_experiments": false,
+  "external_code_files": false,
+  "note": "安装Jupyter及上述库后，选择真实Python3.12内核；代码和输出均在Notebook。不同机器计时及非凸优化末位可能不同。",
+  "requirements_file": "辅助文件/A1组-6.4-requirements.txt",
+  "requirements_note": "用户要求的环境安装清单，唯一允许的txt辅助文件；Python解释器需单独准备，首次安装库需要联网。",
+  "package_version": "v3-规范核查版",
+  "package_check_date": "2026-10-28"
+}
