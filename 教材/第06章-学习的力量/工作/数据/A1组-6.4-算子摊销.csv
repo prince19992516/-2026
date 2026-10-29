@@ -1,0 +1,9 @@
+﻿network,solver,batch_functions,denominator_s,quality_p95_1pct,break_even_functions,reason
+DeepONet,Spectral-32,1,-0.00010907499996392291,True,,no_positive_cost_denominator
+DeepONet,FD-32-to-64,1,-0.00010529499995755033,True,,no_positive_cost_denominator
+DeepONet-cached-trunk,Spectral-reused,1,-4.78589999693213e-05,True,,no_positive_cost_denominator
+DeepONet-cached-trunk,FD-reused,1,-4.907999998977174e-05,True,,no_positive_cost_denominator
+DeepONet,Spectral-32,200,-2.260000001115257e-07,True,,no_positive_cost_denominator
+DeepONet,FD-32-to-64,200,-1.744000019243684e-07,True,,no_positive_cost_denominator
+DeepONet-cached-trunk,Spectral-reused,200,-2.985499995702413e-07,True,,no_positive_cost_denominator
+DeepONet-cached-trunk,FD-reused,200,-2.827499993145466e-07,True,,no_positive_cost_denominator

@@ -1,0 +1,1782 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "torch": "2.6.0+cpu",
+    "matplotlib": "3.10.3",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "processor": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+    "device": "CPU",
+    "torch_threads": 1,
+    "dtype": "float64",
+    "source_commit": "55ae9bcd10fbabb3dd4a5a8de393bd05899abda2",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "date": "2026-10-26",
+    "run_time": "2026-10-26 16:20:39 +0800",
+    "threadpools": [
+      {
+        "internal_api": "openblas",
+        "prefix": "libscipy_openblas",
+        "num_threads": 1,
+        "version": "0.3.29"
+      },
+      {
+        "internal_api": "openblas",
+        "prefix": "libscipy_openblas",
+        "num_threads": 1,
+        "version": "0.3.28"
+      },
+      {
+        "internal_api": "openmp",
+        "prefix": "libiomp",
+        "num_threads": 1,
+        "version": null
+      },
+      {
+        "internal_api": "openmp",
+        "prefix": "libiomp",
+        "num_threads": 1,
+        "version": null
+      }
+    ]
+  },
+  "grid": [
+    {
+      "method": "FD",
+      "n": 50,
+      "dof": 49,
+      "rel_l2": 0.0001471965304132077,
+      "rel_h1_semi": 0.018139783982685755,
+      "max_sample": 0.0003290517629355172,
+      "boundary_max": 0.0,
+      "solve_s": 2.6063333401301254e-05,
+      "time_q25_s": 2.5904999953733444e-05,
+      "time_q75_s": 2.6498333318158986e-05,
+      "nodal_max": 0.0003290517629355172
+    },
+    {
+      "method": "FD",
+      "n": 100,
+      "dof": 99,
+      "rel_l2": 3.678616573255065e-05,
+      "rel_h1_semi": 0.009069220595701859,
+      "max_sample": 8.225076221179961e-05,
+      "boundary_max": 0.0,
+      "solve_s": 2.8516666619301154e-05,
+      "time_q25_s": 2.805666663334705e-05,
+      "time_q75_s": 3.071500001775955e-05,
+      "nodal_max": 8.225076221179961e-05,
+      "order_l2": 2.0005084504852304,
+      "order_h1": 1.00010679895806
+    },
+    {
+      "method": "FD",
+      "n": 200,
+      "dof": 199,
+      "rel_l2": 9.195731087649862e-06,
+      "rel_h1_semi": 0.004534526381839146,
+      "max_sample": 2.0561929529927525e-05,
+      "boundary_max": 0.0,
+      "solve_s": 3.3666666665036854e-05,
+      "time_q25_s": 3.363000008296998e-05,
+      "time_q75_s": 3.4474999968855016e-05,
+      "nodal_max": 2.0561929529927525e-05,
+      "order_l2": 2.000127127457044,
+      "order_h1": 1.0000266982885648
+    },
+    {
+      "method": "FD",
+      "n": 400,
+      "dof": 399,
+      "rel_l2": 2.298882126629547e-06,
+      "rel_h1_semi": 0.002267252701681815,
+      "max_sample": 5.140434780726011e-06,
+      "boundary_max": 0.0,
+      "solve_s": 3.958333327318542e-05,
+      "time_q25_s": 3.883500006243897e-05,
+      "time_q75_s": 3.9766666668583644e-05,
+      "nodal_max": 5.140434780726011e-06,
+      "order_l2": 2.000031782792534,
+      "order_h1": 1.0000066744815344
+    },
+    {
+      "method": "FD",
+      "n": 800,
+      "dof": 799,
+      "rel_l2": 5.747173663481941e-07,
+      "rel_h1_semi": 0.001133625039694373,
+      "max_sample": 1.2851056656604243e-06,
+      "boundary_max": 0.0,
+      "solve_s": 5.046333329422244e-05,
+      "time_q25_s": 5.033166665574148e-05,
+      "time_q75_s": 5.135333334086075e-05,
+      "nodal_max": 1.2851056656604243e-06,
+      "order_l2": 2.0000079457548474,
+      "order_h1": 1.0000016686147915
+    },
+    {
+      "method": "FEM",
+      "n": 50,
+      "dof": 49,
+      "rel_l2": 0.0003603559465807609,
+      "rel_h1_semi": 0.018136800255066823,
+      "max_sample": 0.0004931961515920458,
+      "boundary_max": 0.0,
+      "solve_s": 0.000187750000016725,
+      "time_q25_s": 0.00018306833329309786,
+      "time_q75_s": 0.00019195499996082314,
+      "nodal_max": 3.885780586188048e-15
+    },
+    {
+      "method": "FEM",
+      "n": 100,
+      "dof": 99,
+      "rel_l2": 9.009480866521917e-05,
+      "rel_h1_semi": 0.009068847643555073,
+      "max_sample": 0.00012335229879911758,
+      "boundary_max": 0.0,
+      "solve_s": 0.00018843999993502317,
+      "time_q25_s": 0.00018721333332602323,
+      "time_q75_s": 0.00018994666661455997,
+      "nodal_max": 4.440892098500626e-15,
+      "order_l2": 1.9999067685369578,
+      "order_h1": 0.9999288062716627
+    },
+    {
+      "method": "FEM",
+      "n": 200,
+      "dof": 199,
+      "rel_l2": 2.2524066064497975e-05,
+      "rel_h1_semi": 0.0045344797632520814,
+      "max_sample": 3.084140397147106e-05,
+      "boundary_max": 0.0,
+      "solve_s": 0.00020022999997308942,
+      "time_q25_s": 0.00019827666662119252,
+      "time_q75_s": 0.00020699166670965494,
+      "nodal_max": 1.2656542480726785e-14,
+      "order_l2": 1.9999766916702284,
+      "order_h1": 0.9999822014894855
+    },
+    {
+      "method": "FEM",
+      "n": 400,
+      "dof": 399,
+      "rel_l2": 5.631039323828383e-06,
+      "rel_h1_semi": 0.0022672468743719734,
+      "max_sample": 7.698223830288065e-06,
+      "boundary_max": 0.0,
+      "solve_s": 0.000216786666715052,
+      "time_q25_s": 0.0002163283333478224,
+      "time_q75_s": 0.0002189383333340326,
+      "nodal_max": 8.215650382226158e-14,
+      "order_l2": 1.9999941565622186,
+      "order_h1": 0.9999955503674739
+    },
+    {
+      "method": "FEM",
+      "n": 800,
+      "dof": 799,
+      "rel_l2": 1.4077614934510203e-06,
+      "rel_h1_semi": 0.0011336243112811386,
+      "max_sample": 1.924568926670034e-06,
+      "boundary_max": 0.0,
+      "solve_s": 0.0002746866666711867,
+      "time_q25_s": 0.0002684466666930045,
+      "time_q75_s": 0.0002771599999808435,
+      "nodal_max": 3.005373727660299e-13,
+      "order_l2": 1.9999982962503464,
+      "order_h1": 0.9999988875915816
+    }
+  ],
+  "pinn": [
+    {
+      "method": "PINN-soft",
+      "seed": 0,
+      "dof": 1153,
+      "rel_l2": 0.00022445091438356795,
+      "rel_h1_semi": 6.167505012944067e-05,
+      "max_sample": 0.0001776003221214406,
+      "boundary_max": 0.00015644748645701756,
+      "solve_s": 4.936952000000019,
+      "adam_s": 4.660531000001356,
+      "train_residual_mse": 1.1976367719504462e-05,
+      "train_boundary_mse": 1.9680743598574093e-08,
+      "train_total": 1.1996048463103036e-05,
+      "test_residual_l2": 0.0034670064630192426,
+      "lbfgs_iterations": 100,
+      "lbfgs_closures": 119,
+      "estimated_abs_l2_bound": 0.0004908628974700748,
+      "bound_check": true
+    },
+    {
+      "method": "PINN-soft",
+      "seed": 1,
+      "dof": 1153,
+      "rel_l2": 0.00010761519976393324,
+      "rel_h1_semi": 1.8517446503922332e-05,
+      "max_sample": 8.100533493382578e-05,
+      "boundary_max": 7.609205633965499e-05,
+      "solve_s": 4.966344100001152,
+      "adam_s": 4.732996099999582,
+      "train_residual_mse": 1.5167538263124053e-06,
+      "train_boundary_mse": 5.700021368520323e-09,
+      "train_total": 1.5224538476809256e-06,
+      "test_residual_l2": 0.0012338912399952387,
+      "lbfgs_iterations": 100,
+      "lbfgs_closures": 113,
+      "estimated_abs_l2_bound": 0.00020051623886954204,
+      "bound_check": true
+    },
+    {
+      "method": "PINN-soft",
+      "seed": 2,
+      "dof": 1153,
+      "rel_l2": 1.0683778276008243e-05,
+      "rel_h1_semi": 6.95633728857976e-05,
+      "max_sample": 1.3191232259485153e-05,
+      "boundary_max": 4.218488243390439e-06,
+      "solve_s": 4.7646234999992885,
+      "adam_s": 4.685023199999705,
+      "train_residual_mse": 1.7304727455655415e-05,
+      "train_boundary_mse": 1.3945267195591272e-11,
+      "train_total": 1.730474140092261e-05,
+      "test_residual_l2": 0.004165341126623273,
+      "lbfgs_iterations": 39,
+      "lbfgs_closures": 41,
+      "estimated_abs_l2_bound": 0.0004242348191076518,
+      "bound_check": true
+    },
+    {
+      "method": "PINN-hard",
+      "seed": 0,
+      "dof": 1153,
+      "rel_l2": 2.948492045787438e-06,
+      "rel_h1_semi": 1.6626231484890287e-05,
+      "max_sample": 3.876320557871793e-06,
+      "boundary_max": 0.0,
+      "solve_s": 5.701085199998488,
+      "adam_s": 5.608554399997956,
+      "train_residual_mse": 7.914129392706393e-07,
+      "train_boundary_mse": 0.0,
+      "train_total": 7.914129392706393e-07,
+      "test_residual_l2": 0.0008909868130587896,
+      "lbfgs_iterations": 36,
+      "lbfgs_closures": 40,
+      "estimated_abs_l2_bound": 9.02758385088309e-05,
+      "bound_check": true
+    },
+    {
+      "method": "PINN-hard",
+      "seed": 1,
+      "dof": 1153,
+      "rel_l2": 2.5249412110193524e-06,
+      "rel_h1_semi": 8.237645558998245e-06,
+      "max_sample": 4.05709011042088e-06,
+      "boundary_max": 0.0,
+      "solve_s": 5.797943199999281,
+      "adam_s": 5.631265200001508,
+      "train_residual_mse": 1.4446771501656235e-07,
+      "train_boundary_mse": 0.0,
+      "train_total": 1.4446771501656235e-07,
+      "test_residual_l2": 0.00038027017081710725,
+      "lbfgs_iterations": 67,
+      "lbfgs_closures": 74,
+      "estimated_abs_l2_bound": 3.852942381106328e-05,
+      "bound_check": true
+    },
+    {
+      "method": "PINN-hard",
+      "seed": 2,
+      "dof": 1153,
+      "rel_l2": 5.4295319705945265e-06,
+      "rel_h1_semi": 3.547516058877532e-05,
+      "max_sample": 7.277273137873408e-06,
+      "boundary_max": 0.0,
+      "solve_s": 5.737410499998077,
+      "adam_s": 5.572400499997457,
+      "train_residual_mse": 3.9622213489138095e-06,
+      "train_boundary_mse": 0.0,
+      "train_total": 3.9622213489138095e-06,
+      "test_residual_l2": 0.001993032707043858,
+      "lbfgs_iterations": 59,
+      "lbfgs_closures": 67,
+      "estimated_abs_l2_bound": 0.00020193643291557632,
+      "bound_check": true
+    }
+  ],
+  "summary": [
+    {
+      "method": "PINN-soft",
+      "seeds": 3,
+      "l2_min": 1.0683778276008243e-05,
+      "l2_median": 0.00010761519976393324,
+      "l2_max": 0.00022445091438356795,
+      "time_median_s": 4.936952000000019
+    },
+    {
+      "method": "PINN-hard",
+      "seeds": 3,
+      "l2_min": 2.5249412110193524e-06,
+      "l2_median": 2.948492045787438e-06,
+      "l2_max": 5.4295319705945265e-06,
+      "time_median_s": 5.737410499998077
+    }
+  ],
+  "thresholds": [
+    {
+      "tolerance": 0.001,
+      "method": "FD",
+      "passed": 5,
+      "tested": 5,
+      "min_observed_s": 2.6063333401301254e-05
+    },
+    {
+      "tolerance": 0.001,
+      "method": "FEM",
+      "passed": 5,
+      "tested": 5,
+      "min_observed_s": 0.000187750000016725
+    },
+    {
+      "tolerance": 0.001,
+      "method": "PINN-soft",
+      "passed": 3,
+      "tested": 3,
+      "min_observed_s": 4.7646234999992885
+    },
+    {
+      "tolerance": 0.001,
+      "method": "PINN-hard",
+      "passed": 3,
+      "tested": 3,
+      "min_observed_s": 5.701085199998488
+    },
+    {
+      "tolerance": 0.0001,
+      "method": "FD",
+      "passed": 4,
+      "tested": 5,
+      "min_observed_s": 2.8516666619301154e-05
+    },
+    {
+      "tolerance": 0.0001,
+      "method": "FEM",
+      "passed": 4,
+      "tested": 5,
+      "min_observed_s": 0.00018843999993502317
+    },
+    {
+      "tolerance": 0.0001,
+      "method": "PINN-soft",
+      "passed": 1,
+      "tested": 3,
+      "min_observed_s": 4.7646234999992885
+    },
+    {
+      "tolerance": 0.0001,
+      "method": "PINN-hard",
+      "passed": 3,
+      "tested": 3,
+      "min_observed_s": 5.701085199998488
+    },
+    {
+      "tolerance": 1e-05,
+      "method": "FD",
+      "passed": 3,
+      "tested": 5,
+      "min_observed_s": 3.3666666665036854e-05
+    },
+    {
+      "tolerance": 1e-05,
+      "method": "FEM",
+      "passed": 2,
+      "tested": 5,
+      "min_observed_s": 0.000216786666715052
+    },
+    {
+      "tolerance": 1e-05,
+      "method": "PINN-soft",
+      "passed": 0,
+      "tested": 3,
+      "min_observed_s": null
+    },
+    {
+      "tolerance": 1e-05,
+      "method": "PINN-hard",
+      "passed": 3,
+      "tested": 3,
+      "min_observed_s": 5.701085199998488
+    }
+  ],
+  "checks": {
+    "fd_discrete_sine_maxdiff": 2.6645352591003757e-15,
+    "fem_nodal_maxdiff": 4.440892098500626e-15,
+    "fem_gauss4_vs8_maxdiff": 0.0,
+    "max_quadrature_delta_l2": 3.415236843329339e-18,
+    "max_quadrature_delta_h1": 2.949029909160572e-17,
+    "affine_counterexample_rel_l2": 5.0990195135927845
+  },
+  "histories": {
+    "PINN-soft-0": [
+      {
+        "phase": "Adam",
+        "step": 0,
+        "loss": 47.74234467910806,
+        "residual_loss": 47.73706411702696,
+        "boundary_loss": 0.005280562081095532
+      },
+      {
+        "phase": "Adam",
+        "step": 100,
+        "loss": 3.318552605787511,
+        "residual_loss": 2.841694142596455,
+        "boundary_loss": 0.4768584631910563
+      },
+      {
+        "phase": "Adam",
+        "step": 200,
+        "loss": 0.0028766484873984748,
+        "residual_loss": 0.0024121739507024986,
+        "boundary_loss": 0.00046447453669597633
+      },
+      {
+        "phase": "Adam",
+        "step": 300,
+        "loss": 0.0023371799968175126,
+        "residual_loss": 0.0023191186696187817,
+        "boundary_loss": 1.8061327198730968e-05
+      },
+      {
+        "phase": "Adam",
+        "step": 400,
+        "loss": 0.0022278535860740375,
+        "residual_loss": 0.002220872074465665,
+        "boundary_loss": 6.9815116083726544e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 500,
+        "loss": 0.0021230207884788757,
+        "residual_loss": 0.002117798328739658,
+        "boundary_loss": 5.222459739217821e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 600,
+        "loss": 0.0020211837888214615,
+        "residual_loss": 0.002016974799008575,
+        "boundary_loss": 4.208989812886588e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 700,
+        "loss": 0.001924121794275242,
+        "residual_loss": 0.0019206211192750733,
+        "boundary_loss": 3.5006750001685555e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 800,
+        "loss": 0.0018334937055172677,
+        "residual_loss": 0.001830532753132693,
+        "boundary_loss": 2.9609523845746815e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 900,
+        "loss": 0.0017499153165151959,
+        "residual_loss": 0.0017473970428816678,
+        "boundary_loss": 2.5182736335282293e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 1000,
+        "loss": 0.0016728784680238877,
+        "residual_loss": 0.0016707396001796886,
+        "boundary_loss": 2.1388678441991707e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 1100,
+        "loss": 0.0016013030619882393,
+        "residual_loss": 0.0015994931347465733,
+        "boundary_loss": 1.8099272416659062e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 1200,
+        "loss": 0.0015340918953545227,
+        "residual_loss": 0.0015325642615126353,
+        "boundary_loss": 1.5276338418875252e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 1300,
+        "loss": 0.0014703732687204605,
+        "residual_loss": 0.0014690838811336293,
+        "boundary_loss": 1.2893875868311817e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 1400,
+        "loss": 0.0014095300967730158,
+        "residual_loss": 0.0014084394557415452,
+        "boundary_loss": 1.0906410314706497e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 1500,
+        "loss": 0.0013511597579459532,
+        "residual_loss": 0.0013502346859969921,
+        "boundary_loss": 9.250719489611119e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 1600,
+        "loss": 0.001294996647298099,
+        "residual_loss": 0.0012942106273751536,
+        "boundary_loss": 7.860199229453662e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 1700,
+        "loss": 0.001240796354055389,
+        "residual_loss": 0.0012401285197184185,
+        "boundary_loss": 6.67834336970417e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 1800,
+        "loss": 0.0011882188050829378,
+        "residual_loss": 0.001187652214196303,
+        "boundary_loss": 5.665908866347284e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 1900,
+        "loss": 0.0011367696037740947,
+        "residual_loss": 0.0011362895556916294,
+        "boundary_loss": 4.800480824652026e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 2000,
+        "loss": 0.001085830560792671,
+        "residual_loss": 0.0010854235236474935,
+        "boundary_loss": 4.0703714517747065e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 2100,
+        "loss": 0.0010347627351897132,
+        "residual_loss": 0.0010344160271489435,
+        "boundary_loss": 3.467080407697165e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 2200,
+        "loss": 0.000983034865662195,
+        "residual_loss": 0.0009827368729663334,
+        "boundary_loss": 2.9799269586140214e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 2300,
+        "loss": 0.0009303206438476363,
+        "residual_loss": 0.0009300612553692193,
+        "boundary_loss": 2.5938847841698784e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 2400,
+        "loss": 0.0008765140719677444,
+        "residual_loss": 0.0008762850819582749,
+        "boundary_loss": 2.2899000946953778e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 2500,
+        "loss": 0.000821646866687538,
+        "residual_loss": 0.0008214421725450565,
+        "boundary_loss": 2.0469414248152754e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 2600,
+        "loss": 0.0007657547244275687,
+        "residual_loss": 0.0007655702037609288,
+        "boundary_loss": 1.8452066663983682e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 2700,
+        "loss": 0.0007087781450343631,
+        "residual_loss": 0.0007086112208654749,
+        "boundary_loss": 1.6692416888814482e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 2800,
+        "loss": 0.0006505610132112891,
+        "residual_loss": 0.0006504100747766072,
+        "boundary_loss": 1.509384346818595e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 2900,
+        "loss": 0.0005909644428758773,
+        "residual_loss": 0.0005908283467839922,
+        "boundary_loss": 1.3609609188507705e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 3000,
+        "loss": 0.000530083114281097,
+        "residual_loss": 0.0005299609140486083,
+        "boundary_loss": 1.2220023248875428e-07
+      },
+      {
+        "phase": "LBFGS-final",
+        "step": 3000,
+        "loss": 1.1996048463103036e-05,
+        "residual_loss": 1.1976367719504462e-05,
+        "boundary_loss": 1.9680743598574093e-08
+      }
+    ],
+    "PINN-soft-1": [
+      {
+        "phase": "Adam",
+        "step": 0,
+        "loss": 47.964410204316835,
+        "residual_loss": 47.96216928893886,
+        "boundary_loss": 0.0022409153779716167
+      },
+      {
+        "phase": "Adam",
+        "step": 100,
+        "loss": 0.984708497237846,
+        "residual_loss": 0.4678612478143409,
+        "boundary_loss": 0.5168472494235051
+      },
+      {
+        "phase": "Adam",
+        "step": 200,
+        "loss": 0.0071888383495926165,
+        "residual_loss": 0.00336316231963759,
+        "boundary_loss": 0.003825676029955027
+      },
+      {
+        "phase": "Adam",
+        "step": 300,
+        "loss": 0.0020424804953240107,
+        "residual_loss": 0.0018508588220643597,
+        "boundary_loss": 0.00019162167325965094
+      },
+      {
+        "phase": "Adam",
+        "step": 400,
+        "loss": 0.0017358902777817858,
+        "residual_loss": 0.0017208619041334612,
+        "boundary_loss": 1.5028373648324528e-05
+      },
+      {
+        "phase": "Adam",
+        "step": 500,
+        "loss": 0.0016192759093063172,
+        "residual_loss": 0.0016139126085960027,
+        "boundary_loss": 5.363300710314423e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 600,
+        "loss": 0.001529841783914289,
+        "residual_loss": 0.0015263693103765368,
+        "boundary_loss": 3.4724735377522134e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 700,
+        "loss": 0.0014563873733318658,
+        "residual_loss": 0.0014538855811313568,
+        "boundary_loss": 2.5017922005090837e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 800,
+        "loss": 0.001393600647262956,
+        "residual_loss": 0.0013917350833819104,
+        "boundary_loss": 1.8655638810455188e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 900,
+        "loss": 0.001338402787057452,
+        "residual_loss": 0.001336983165516956,
+        "boundary_loss": 1.419621540496107e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 1000,
+        "loss": 0.0012888563477480844,
+        "residual_loss": 0.0012877609290731892,
+        "boundary_loss": 1.0954186748950471e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 1100,
+        "loss": 0.0012435976762273956,
+        "residual_loss": 0.0012427428415965284,
+        "boundary_loss": 8.548346308671967e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 1200,
+        "loss": 0.0012016064663764084,
+        "residual_loss": 0.0012009324842462833,
+        "boundary_loss": 6.739821301251133e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 1300,
+        "loss": 0.0011621071242321512,
+        "residual_loss": 0.0011615706165076112,
+        "boundary_loss": 5.365077245398312e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 1400,
+        "loss": 0.0011245058598085545,
+        "residual_loss": 0.0011240750268133185,
+        "boundary_loss": 4.3083299523608175e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 1500,
+        "loss": 0.0010883424293981194,
+        "residual_loss": 0.001087993705084299,
+        "boundary_loss": 3.4872431382031016e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 1600,
+        "loss": 0.0010532548075031115,
+        "residual_loss": 0.0010529704930817719,
+        "boundary_loss": 2.843144213396762e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 1700,
+        "loss": 0.001018954614934708,
+        "residual_loss": 0.0010187212353200462,
+        "boundary_loss": 2.3337961466182363e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 1800,
+        "loss": 0.000985210057365525,
+        "residual_loss": 0.0009850172307970296,
+        "boundary_loss": 1.9282656849520673e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 1900,
+        "loss": 0.0009518336524396948,
+        "residual_loss": 0.0009516733071069706,
+        "boundary_loss": 1.6034533272419733e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 2000,
+        "loss": 0.0009186729122645266,
+        "residual_loss": 0.0009185387322257663,
+        "boundary_loss": 1.341800387601728e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 2100,
+        "loss": 0.0008856028810627495,
+        "residual_loss": 0.0008854899039986844,
+        "boundary_loss": 1.1297706406506216e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 2200,
+        "loss": 0.0008525199795321408,
+        "residual_loss": 0.0008524242966895237,
+        "boundary_loss": 9.568284261710646e-08
+      },
+      {
+        "phase": "Adam",
+        "step": 2300,
+        "loss": 0.0008193370150957387,
+        "residual_loss": 0.0008192555416039368,
+        "boundary_loss": 8.147349180198936e-08
+      },
+      {
+        "phase": "Adam",
+        "step": 2400,
+        "loss": 0.0007859794757284312,
+        "residual_loss": 0.0007859097708657758,
+        "boundary_loss": 6.970486265528691e-08
+      },
+      {
+        "phase": "Adam",
+        "step": 2500,
+        "loss": 0.0007523833143540315,
+        "residual_loss": 0.0007523234387681987,
+        "boundary_loss": 5.987558583289867e-08
+      },
+      {
+        "phase": "Adam",
+        "step": 2600,
+        "loss": 0.0007184943616783554,
+        "residual_loss": 0.0007184427633967667,
+        "boundary_loss": 5.159828158867403e-08
+      },
+      {
+        "phase": "Adam",
+        "step": 2700,
+        "loss": 0.0006842693387801183,
+        "residual_loss": 0.000684224762820478,
+        "boundary_loss": 4.45759596402502e-08
+      },
+      {
+        "phase": "Adam",
+        "step": 2800,
+        "loss": 0.0006496782670189751,
+        "residual_loss": 0.0006496396850102107,
+        "boundary_loss": 3.858200876441866e-08
+      },
+      {
+        "phase": "Adam",
+        "step": 2900,
+        "loss": 0.000614707966108865,
+        "residual_loss": 0.0006146745229834099,
+        "boundary_loss": 3.344312545518027e-08
+      },
+      {
+        "phase": "Adam",
+        "step": 3000,
+        "loss": 0.0005793663148307159,
+        "residual_loss": 0.0005793372897598583,
+        "boundary_loss": 2.902507085756719e-08
+      },
+      {
+        "phase": "LBFGS-final",
+        "step": 3000,
+        "loss": 1.5224538476809256e-06,
+        "residual_loss": 1.5167538263124053e-06,
+        "boundary_loss": 5.700021368520323e-09
+      }
+    ],
+    "PINN-soft-2": [
+      {
+        "phase": "Adam",
+        "step": 0,
+        "loss": 47.62545196655713,
+        "residual_loss": 47.62174447068584,
+        "boundary_loss": 0.003707495871289149
+      },
+      {
+        "phase": "Adam",
+        "step": 100,
+        "loss": 5.1642212500963405,
+        "residual_loss": 2.06599499998324,
+        "boundary_loss": 3.0982262501131004
+      },
+      {
+        "phase": "Adam",
+        "step": 200,
+        "loss": 1.2988613892157965,
+        "residual_loss": 0.2858874474898695,
+        "boundary_loss": 1.012973941725927
+      },
+      {
+        "phase": "Adam",
+        "step": 300,
+        "loss": 0.14503731101980405,
+        "residual_loss": 0.018039592487396904,
+        "boundary_loss": 0.12699771853240716
+      },
+      {
+        "phase": "Adam",
+        "step": 400,
+        "loss": 0.017272908330457814,
+        "residual_loss": 0.0037830497131153317,
+        "boundary_loss": 0.013489858617342481
+      },
+      {
+        "phase": "Adam",
+        "step": 500,
+        "loss": 0.002129835919120401,
+        "residual_loss": 0.0008723659711206489,
+        "boundary_loss": 0.001257469947999752
+      },
+      {
+        "phase": "Adam",
+        "step": 600,
+        "loss": 0.0005541460931595671,
+        "residual_loss": 0.0004078263699637613,
+        "boundary_loss": 0.00014631972319580582
+      },
+      {
+        "phase": "Adam",
+        "step": 700,
+        "loss": 0.000274434468507138,
+        "residual_loss": 0.0002459899264158787,
+        "boundary_loss": 2.8444542091259282e-05
+      },
+      {
+        "phase": "Adam",
+        "step": 800,
+        "loss": 0.00018817102329556697,
+        "residual_loss": 0.00018025529980377394,
+        "boundary_loss": 7.915723491793029e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 900,
+        "loss": 0.00014985498130632227,
+        "residual_loss": 0.0001472030682601976,
+        "boundary_loss": 2.6519130461246706e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 1000,
+        "loss": 0.0001251209451032374,
+        "residual_loss": 0.00012404343495603593,
+        "boundary_loss": 1.0775101472014563e-06
+      },
+      {
+        "phase": "Adam",
+        "step": 1100,
+        "loss": 0.00010569433042452643,
+        "residual_loss": 0.00010515331912422124,
+        "boundary_loss": 5.410113003051822e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 1200,
+        "loss": 8.966528671237482e-05,
+        "residual_loss": 8.934401673496566e-05,
+        "boundary_loss": 3.212699774091559e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 1300,
+        "loss": 7.647019221888231e-05,
+        "residual_loss": 7.626059504829604e-05,
+        "boundary_loss": 2.0959717058626065e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 1400,
+        "loss": 6.576484260693429e-05,
+        "residual_loss": 6.562356410506673e-05,
+        "boundary_loss": 1.4127850186756687e-07
+      },
+      {
+        "phase": "Adam",
+        "step": 1500,
+        "loss": 5.721978797311097e-05,
+        "residual_loss": 5.7125103417653956e-05,
+        "boundary_loss": 9.468455545701181e-08
+      },
+      {
+        "phase": "Adam",
+        "step": 1600,
+        "loss": 5.050422664802252e-05,
+        "residual_loss": 5.044250398343694e-05,
+        "boundary_loss": 6.172266458557425e-08
+      },
+      {
+        "phase": "Adam",
+        "step": 1700,
+        "loss": 4.5299405725630435e-05,
+        "residual_loss": 4.5260811456531896e-05,
+        "boundary_loss": 3.859426909854153e-08
+      },
+      {
+        "phase": "Adam",
+        "step": 1800,
+        "loss": 4.1311746073085965e-05,
+        "residual_loss": 4.1288853400462536e-05,
+        "boundary_loss": 2.2892672623428455e-08
+      },
+      {
+        "phase": "Adam",
+        "step": 1900,
+        "loss": 3.828135982500695e-05,
+        "residual_loss": 3.826860075255418e-05,
+        "boundary_loss": 1.2759072452770063e-08
+      },
+      {
+        "phase": "Adam",
+        "step": 2000,
+        "loss": 3.598612091764512e-05,
+        "residual_loss": 3.597944912606415e-05,
+        "boundary_loss": 6.671791580972326e-09
+      },
+      {
+        "phase": "Adam",
+        "step": 2100,
+        "loss": 3.42421925244608e-05,
+        "residual_loss": 3.423879269263683e-05,
+        "boundary_loss": 3.399831823969963e-09
+      },
+      {
+        "phase": "Adam",
+        "step": 2200,
+        "loss": 3.2901994052449894e-05,
+        "residual_loss": 3.2900012248040554e-05,
+        "boundary_loss": 1.981804409342602e-09
+      },
+      {
+        "phase": "Adam",
+        "step": 2300,
+        "loss": 3.185051133465201e-05,
+        "residual_loss": 3.184881304972838e-05,
+        "boundary_loss": 1.6982849236362591e-09
+      },
+      {
+        "phase": "Adam",
+        "step": 2400,
+        "loss": 3.100071569603091e-05,
+        "residual_loss": 3.099867976401835e-05,
+        "boundary_loss": 2.0359320125555076e-09
+      },
+      {
+        "phase": "Adam",
+        "step": 2500,
+        "loss": 3.0288696656611195e-05,
+        "residual_loss": 3.0286048613537015e-05,
+        "boundary_loss": 2.6480430741791176e-09
+      },
+      {
+        "phase": "Adam",
+        "step": 2600,
+        "loss": 2.966895042003477e-05,
+        "residual_loss": 2.966563435750188e-05,
+        "boundary_loss": 3.316062532890503e-09
+      },
+      {
+        "phase": "Adam",
+        "step": 2700,
+        "loss": 2.9110115904328724e-05,
+        "residual_loss": 2.9106200823480548e-05,
+        "boundary_loss": 3.915080848174552e-09
+      },
+      {
+        "phase": "Adam",
+        "step": 2800,
+        "loss": 2.8591320695963245e-05,
+        "residual_loss": 2.858693577791509e-05,
+        "boundary_loss": 4.384918048156384e-09
+      },
+      {
+        "phase": "Adam",
+        "step": 2900,
+        "loss": 2.809919577862582e-05,
+        "residual_loss": 2.8094488509057986e-05,
+        "boundary_loss": 4.707269567834816e-09
+      },
+      {
+        "phase": "Adam",
+        "step": 3000,
+        "loss": 2.76255418029432e-05,
+        "residual_loss": 2.76206531730887e-05,
+        "boundary_loss": 4.8886298544997255e-09
+      },
+      {
+        "phase": "LBFGS-final",
+        "step": 3000,
+        "loss": 1.730474140092261e-05,
+        "residual_loss": 1.7304727455655415e-05,
+        "boundary_loss": 1.3945267195591272e-11
+      }
+    ],
+    "PINN-hard-0": [
+      {
+        "phase": "Adam",
+        "step": 0,
+        "loss": 47.21733591547151,
+        "residual_loss": 47.21733591547151,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 100,
+        "loss": 7.531609642012288,
+        "residual_loss": 7.531609642012288,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 200,
+        "loss": 2.200715696919964,
+        "residual_loss": 2.200715696919964,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 300,
+        "loss": 0.02446401159190132,
+        "residual_loss": 0.02446401159190132,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 400,
+        "loss": 0.01033131741615348,
+        "residual_loss": 0.01033131741615348,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 500,
+        "loss": 0.00545078573897739,
+        "residual_loss": 0.00545078573897739,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 600,
+        "loss": 0.0032926209204064594,
+        "residual_loss": 0.0032926209204064594,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 700,
+        "loss": 0.002272816095233424,
+        "residual_loss": 0.002272816095233424,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 800,
+        "loss": 0.0017622407117710735,
+        "residual_loss": 0.0017622407117710735,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 900,
+        "loss": 0.001487069594691315,
+        "residual_loss": 0.001487069594691315,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1000,
+        "loss": 0.0013205732765600737,
+        "residual_loss": 0.0013205732765600737,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1100,
+        "loss": 0.0012040356481581352,
+        "residual_loss": 0.0012040356481581352,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1200,
+        "loss": 0.0011114795774156434,
+        "residual_loss": 0.0011114795774156434,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1300,
+        "loss": 0.001032157307154436,
+        "residual_loss": 0.001032157307154436,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1400,
+        "loss": 0.0009617553178348105,
+        "residual_loss": 0.0009617553178348105,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1500,
+        "loss": 0.000898320204152797,
+        "residual_loss": 0.000898320204152797,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1600,
+        "loss": 0.0008406669603504122,
+        "residual_loss": 0.0008406669603504122,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1700,
+        "loss": 0.0007878969182353425,
+        "residual_loss": 0.0007878969182353425,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1800,
+        "loss": 0.0007392868990489985,
+        "residual_loss": 0.0007392868990489985,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1900,
+        "loss": 0.0006942556313706123,
+        "residual_loss": 0.0006942556313706123,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2000,
+        "loss": 0.0006523352999863992,
+        "residual_loss": 0.0006523352999863992,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2100,
+        "loss": 0.0006131442802916729,
+        "residual_loss": 0.0006131442802916729,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2200,
+        "loss": 0.0005763650955841904,
+        "residual_loss": 0.0005763650955841904,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2300,
+        "loss": 0.0005417284875331976,
+        "residual_loss": 0.0005417284875331976,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2400,
+        "loss": 0.0005090026327963829,
+        "residual_loss": 0.0005090026327963829,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2500,
+        "loss": 0.000477986196121763,
+        "residual_loss": 0.000477986196121763,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2600,
+        "loss": 0.0004485040626407536,
+        "residual_loss": 0.0004485040626407536,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2700,
+        "loss": 0.0004204048200132042,
+        "residual_loss": 0.0004204048200132042,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2800,
+        "loss": 0.00039355927303474935,
+        "residual_loss": 0.00039355927303474935,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2900,
+        "loss": 0.00036785945961323566,
+        "residual_loss": 0.00036785945961323566,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 3000,
+        "loss": 0.0003432177960301015,
+        "residual_loss": 0.0003432177960301015,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "LBFGS-final",
+        "step": 3000,
+        "loss": 7.914129392706393e-07,
+        "residual_loss": 7.914129392706393e-07,
+        "boundary_loss": 0.0
+      }
+    ],
+    "PINN-hard-1": [
+      {
+        "phase": "Adam",
+        "step": 0,
+        "loss": 47.37920494909272,
+        "residual_loss": 47.37920494909272,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 100,
+        "loss": 5.953255597289464,
+        "residual_loss": 5.953255597289464,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 200,
+        "loss": 0.19099580742054825,
+        "residual_loss": 0.19099580742054825,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 300,
+        "loss": 0.015196685167133739,
+        "residual_loss": 0.015196685167133739,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 400,
+        "loss": 0.007829440699493585,
+        "residual_loss": 0.007829440699493585,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 500,
+        "loss": 0.004560040946931686,
+        "residual_loss": 0.004560040946931686,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 600,
+        "loss": 0.0029421317213039182,
+        "residual_loss": 0.0029421317213039182,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 700,
+        "loss": 0.0021067018998110858,
+        "residual_loss": 0.0021067018998110858,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 800,
+        "loss": 0.0016641412244635463,
+        "residual_loss": 0.0016641412244635463,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 900,
+        "loss": 0.0014230884364470346,
+        "residual_loss": 0.0014230884364470346,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1000,
+        "loss": 0.0012851601540169852,
+        "residual_loss": 0.0012851601540169852,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1100,
+        "loss": 0.0011989462052208804,
+        "residual_loss": 0.0011989462052208804,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1200,
+        "loss": 0.001137802073711191,
+        "residual_loss": 0.001137802073711191,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1300,
+        "loss": 0.0010883198438354068,
+        "residual_loss": 0.0010883198438354068,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1400,
+        "loss": 0.0010440925678245742,
+        "residual_loss": 0.0010440925678245742,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1500,
+        "loss": 0.001002306348993464,
+        "residual_loss": 0.001002306348993464,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1600,
+        "loss": 0.0009619006824158217,
+        "residual_loss": 0.0009619006824158217,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1700,
+        "loss": 0.0009226029793681366,
+        "residual_loss": 0.0009226029793681366,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1800,
+        "loss": 0.0008844435570467238,
+        "residual_loss": 0.0008844435570467238,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1900,
+        "loss": 0.0008475286421664051,
+        "residual_loss": 0.0008475286421664051,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2000,
+        "loss": 0.0008119474192134875,
+        "residual_loss": 0.0008119474192134875,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2100,
+        "loss": 0.0007777447488651105,
+        "residual_loss": 0.0007777447488651105,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2200,
+        "loss": 0.0007449224468592181,
+        "residual_loss": 0.0007449224468592181,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2300,
+        "loss": 0.0007134499855919001,
+        "residual_loss": 0.0007134499855919001,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2400,
+        "loss": 0.0006832758997153531,
+        "residual_loss": 0.0006832758997153531,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2500,
+        "loss": 0.0006543368734743159,
+        "residual_loss": 0.0006543368734743159,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2600,
+        "loss": 0.0006265641525928021,
+        "residual_loss": 0.0006265641525928021,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2700,
+        "loss": 0.0005998878327027865,
+        "residual_loss": 0.0005998878327027865,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2800,
+        "loss": 0.0005742396655639092,
+        "residual_loss": 0.0005742396655639092,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2900,
+        "loss": 0.0005495548542842133,
+        "residual_loss": 0.0005495548542842133,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 3000,
+        "loss": 0.0005257731307383921,
+        "residual_loss": 0.0005257731307383921,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "LBFGS-final",
+        "step": 3000,
+        "loss": 1.4446771501656235e-07,
+        "residual_loss": 1.4446771501656235e-07,
+        "boundary_loss": 0.0
+      }
+    ],
+    "PINN-hard-2": [
+      {
+        "phase": "Adam",
+        "step": 0,
+        "loss": 49.337132463177056,
+        "residual_loss": 49.337132463177056,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 100,
+        "loss": 6.018524259950265,
+        "residual_loss": 6.018524259950265,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 200,
+        "loss": 0.6723007402139018,
+        "residual_loss": 0.6723007402139018,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 300,
+        "loss": 0.07363576828906251,
+        "residual_loss": 0.07363576828906251,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 400,
+        "loss": 0.026902197150968178,
+        "residual_loss": 0.026902197150968178,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 500,
+        "loss": 0.015840862112060553,
+        "residual_loss": 0.015840862112060553,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 600,
+        "loss": 0.009393656212022417,
+        "residual_loss": 0.009393656212022417,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 700,
+        "loss": 0.005573271169220188,
+        "residual_loss": 0.005573271169220188,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 800,
+        "loss": 0.003355560950028178,
+        "residual_loss": 0.003355560950028178,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 900,
+        "loss": 0.002096685574305199,
+        "residual_loss": 0.002096685574305199,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1000,
+        "loss": 0.0014009230426620888,
+        "residual_loss": 0.0014009230426620888,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1100,
+        "loss": 0.0010277907872217606,
+        "residual_loss": 0.0010277907872217606,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1200,
+        "loss": 0.0008331361288986352,
+        "residual_loss": 0.0008331361288986352,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1300,
+        "loss": 0.0007328459952022972,
+        "residual_loss": 0.0007328459952022972,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1400,
+        "loss": 0.0006798318680950324,
+        "residual_loss": 0.0006798318680950324,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1500,
+        "loss": 0.0006490993233733964,
+        "residual_loss": 0.0006490993233733964,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1600,
+        "loss": 0.0006281818470079769,
+        "residual_loss": 0.0006281818470079769,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1700,
+        "loss": 0.0006112794509935108,
+        "residual_loss": 0.0006112794509935108,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1800,
+        "loss": 0.0005958922978006021,
+        "residual_loss": 0.0005958922978006021,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 1900,
+        "loss": 0.0005810285729402428,
+        "residual_loss": 0.0005810285729402428,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2000,
+        "loss": 0.0005663269450139595,
+        "residual_loss": 0.0005663269450139595,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2100,
+        "loss": 0.0005516644623220278,
+        "residual_loss": 0.0005516644623220278,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2200,
+        "loss": 0.0005369983176018356,
+        "residual_loss": 0.0005369983176018356,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2300,
+        "loss": 0.000522308985770766,
+        "residual_loss": 0.000522308985770766,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2400,
+        "loss": 0.0005075824039236557,
+        "residual_loss": 0.0005075824039236557,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2500,
+        "loss": 0.0004928052854082115,
+        "residual_loss": 0.0004928052854082115,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2600,
+        "loss": 0.0004779642222260467,
+        "residual_loss": 0.0004779642222260467,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2700,
+        "loss": 0.000463045740655674,
+        "residual_loss": 0.000463045740655674,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2800,
+        "loss": 0.0004480366329288236,
+        "residual_loss": 0.0004480366329288236,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 2900,
+        "loss": 0.0004329244585607858,
+        "residual_loss": 0.0004329244585607858,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "Adam",
+        "step": 3000,
+        "loss": 0.0004176982099942105,
+        "residual_loss": 0.0004176982099942105,
+        "boundary_loss": 0.0
+      },
+      {
+        "phase": "LBFGS-final",
+        "step": 3000,
+        "loss": 3.9622213489138095e-06,
+        "residual_loss": 3.9622213489138095e-06,
+        "boundary_loss": 0.0
+      }
+    ]
+  }
+}

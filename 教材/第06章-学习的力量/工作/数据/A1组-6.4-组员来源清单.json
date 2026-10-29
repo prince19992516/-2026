@@ -1,0 +1,337 @@
+[
+  {
+    "path": "6.2/A1-G12-6.2-实验.ipynb",
+    "sha256": "a80a3c03d6b8928578653f2d4bbc3188811a6de24787f4c3df4c7b570cd78ae1",
+    "bytes": 407176
+  },
+  {
+    "path": "6.2/A1-G12-6.2-正文.md",
+    "sha256": "590fe9ccb79cbd7e01a6dbbf6352f906045d4363f3953105c4e8d741abf0c672",
+    "bytes": 45057
+  },
+  {
+    "path": "6.2/代码/build_body.py",
+    "sha256": "f79f5aa5a79f3cfa67e084fc4ad146c8a69e621298de7e138f2e0381a88c9c30",
+    "bytes": 4465
+  },
+  {
+    "path": "6.2/代码/fill_notebook.py",
+    "sha256": "95977d8fdcb06afc02455ae47efb27b98c3640d5582f2ec50dc2dec4e93d92b8",
+    "bytes": 1445
+  },
+  {
+    "path": "6.2/代码/make_figures.py",
+    "sha256": "4ab515a58dc0d375a5d114a4a7201cbb76b02b2f99ffd2aa8af728ef6830284c",
+    "bytes": 6044
+  },
+  {
+    "path": "6.2/代码/make_tables.py",
+    "sha256": "ffd5cfb45c4da7b13d79c5514b01249e5ad3505a417bfb2c624e4bf233e2876b",
+    "bytes": 3477
+  },
+  {
+    "path": "6.2/代码/run_6_2.py",
+    "sha256": "5c706da9773bf84bc8d1c0dd2553ccf4fd74d8613528aaede3b03e5a4c08965f",
+    "bytes": 14179
+  },
+  {
+    "path": "6.2/图片/python_6.2_E5.png",
+    "sha256": "a9a302ecd2531497b01f74532c8e9f18b88cd62b089342edeac5be859ed4109e",
+    "bytes": 67810
+  },
+  {
+    "path": "6.2/图片/python_6.2_main.png",
+    "sha256": "0d038aef327e63e0e65431aa3bb83747e69b88785649f02cdf9eacc8638d3167",
+    "bytes": 230463
+  },
+  {
+    "path": "6.2/图片/python_6.2_solution.png",
+    "sha256": "d1ff611bff4a897dcee54e960df92c61ee65a9135c1b481f698542eddfc2c481",
+    "bytes": 182638
+  },
+  {
+    "path": "6.2/数据/results.csv",
+    "sha256": "f35432bd86225116586a30f304de62c5df9ab43a1b59bc0041f2574f188404cd",
+    "bytes": 7575
+  },
+  {
+    "path": "6.2/数据/results.json",
+    "sha256": "4b8f6276d0c3fe8ba2154236c25252da05f633a88b23e90b25cc0461a207a9b7",
+    "bytes": 15892
+  },
+  {
+    "path": "6.2/数据/tables.md",
+    "sha256": "ef31529b7cbd4bc895e65fd03eb0d4d20e7148be9d70ca5eaa214096574e5516",
+    "bytes": 3446
+  },
+  {
+    "path": "6.2-6.3习题/A1组-习题-6.2-6.3-解答.md",
+    "sha256": "1ebedd2fd72366ec350d74fd24737fa6ec06e0530fc3601ce18b5f4abab2bc7d",
+    "bytes": 24818
+  },
+  {
+    "path": "6.2-6.3习题/A1组-习题-6.2-6.3-题目版.md",
+    "sha256": "9fc829234e4c50e88d216ec0f62eefcae31e6e1b6e1b9f13927f0d4c28f56f58",
+    "bytes": 3072
+  },
+  {
+    "path": "6.2-6.3习题/习题代码/check_6_3_1_residual.py",
+    "sha256": "43ef6c28ad3c70209e51b29d13a477d2ebd48e59e9f82b4a82d6662cfb8263b4",
+    "bytes": 1080
+  },
+  {
+    "path": "6.2-6.3习题/习题代码/plot_6_2_1_landscape.py",
+    "sha256": "4d7598ac7c6ee2c811f7ca81dce987e5c26947dc0f2fbc18349cb5be81e24058",
+    "bytes": 1189
+  },
+  {
+    "path": "6.2-6.3习题/习题代码/results_6_2_1.json",
+    "sha256": "9bf0d48abb5c9d9adb1b710c1e1c70a89c9bd6ce7a70d6f7046b13cac502bdee",
+    "bytes": 1130
+  },
+  {
+    "path": "6.2-6.3习题/习题代码/results_6_2_2.json",
+    "sha256": "527b3552b7726b77cfd525577757c132260c24918dcff924965cf9eaf69f42ae",
+    "bytes": 683
+  },
+  {
+    "path": "6.2-6.3习题/习题代码/results_6_3_1.json",
+    "sha256": "eab0f1b9dd5998b67ae7ff16f037e7b77e01b1495f7f9d1e9c0e969cf558c99b",
+    "bytes": 603
+  },
+  {
+    "path": "6.2-6.3习题/习题代码/results_6_3_2.json",
+    "sha256": "7440ec6b6ddc93bb65f0408668124f42a56caa3ee345407563833e3c5d174426",
+    "bytes": 652
+  },
+  {
+    "path": "6.2-6.3习题/习题代码/run_6_2_1.py",
+    "sha256": "473e5e287dda9e5b2d0933f470959f8246023ccf8519710eacbbf2467480abcd",
+    "bytes": 7863
+  },
+  {
+    "path": "6.2-6.3习题/习题代码/run_6_2_2.py",
+    "sha256": "6db9599f8aa102ff103cf4c8ad536cc75e004b9d13c7509284ff05b2c426f379",
+    "bytes": 6548
+  },
+  {
+    "path": "6.2-6.3习题/习题代码/run_6_3_1.py",
+    "sha256": "10380b1c3c5da36f69dcfcb367f1514abc2e106138c4d9abbd6362b47c7a25a9",
+    "bytes": 8064
+  },
+  {
+    "path": "6.2-6.3习题/习题代码/run_6_3_2.py",
+    "sha256": "d70c7aaeea93fbf49620509708a3f844526afd419e73981ac28f6a54ae14aed3",
+    "bytes": 6512
+  },
+  {
+    "path": "6.2-6.3习题/习题代码/sweep_6_3_1.py",
+    "sha256": "5ae7dedf015239bc4aee6ff46315ea2d6e0cf0401e6f6bfb2613246ff6b8d5e8",
+    "bytes": 3089
+  },
+  {
+    "path": "6.2-6.3习题/图片/习题解答/fig_6_2_1_fields.png",
+    "sha256": "cdbf3f78c46767504a5eec093a0fff4230217d3ad53823746fb70ec61248c72e",
+    "bytes": 49935
+  },
+  {
+    "path": "6.2-6.3习题/图片/习题解答/fig_6_2_1_flux.png",
+    "sha256": "7a15f70d476a4e922a8a78252f8fd82157916a42971770026b9a5c941ac13ebf",
+    "bytes": 24389
+  },
+  {
+    "path": "6.2-6.3习题/图片/习题解答/fig_6_2_1_landscape.png",
+    "sha256": "4731953fbb0df93a367915383c4a9c3d92516a1fa2783b5104f523dd274542d5",
+    "bytes": 75626
+  },
+  {
+    "path": "6.2-6.3习题/图片/习题解答/fig_6_2_1_training.png",
+    "sha256": "d08f93f01f19fb14d6c4776ceae6d054855bfbea5f9e7a17d0c6c5ed66c67383",
+    "bytes": 104924
+  },
+  {
+    "path": "6.2-6.3习题/图片/习题解答/fig_6_2_2_chi2.png",
+    "sha256": "af554f2598ab22557db482ace2ab975cde2bcc9d5d87c0c8e70972a1c26101cf",
+    "bytes": 68357
+  },
+  {
+    "path": "6.2-6.3习题/图片/习题解答/fig_6_2_2_forward.png",
+    "sha256": "27b116e5ef1f9f3cf64427cae67ce9efc360f14602fe12b00b82b7ce35bff5d3",
+    "bytes": 57397
+  },
+  {
+    "path": "6.2-6.3习题/图片/习题解答/fig_6_2_2_training.png",
+    "sha256": "f0a8853248ba25db9b00fdedf7e0d1b6cddd44d38f2e5f72a49c38d4dba1f6ba",
+    "bytes": 44681
+  },
+  {
+    "path": "6.2-6.3习题/图片/习题解答/fig_6_2_2_ua.png",
+    "sha256": "5c289bd2bad3709ff65727976ce96a7e9484de651346e82d2b82b70634923cf1",
+    "bytes": 83411
+  },
+  {
+    "path": "6.2-6.3习题/图片/习题解答/fig_6_3_1_distance.png",
+    "sha256": "5c17e27dffec5357eb4a9c6119af35f57b2d04b9b94c677255455749c71ef4dc",
+    "bytes": 26055
+  },
+  {
+    "path": "6.2-6.3习题/图片/习题解答/fig_6_3_1_learning.png",
+    "sha256": "dd432aad94f107cadfb3c5fe208113d829b1c7d0524442fd8dd00f1d1d0ecc0f",
+    "bytes": 55379
+  },
+  {
+    "path": "6.2-6.3习题/图片/习题解答/fig_6_3_1_mse.png",
+    "sha256": "70b10bb72b287f77d3f547fa388b581e11814b34cec9597934aac226dcb800c0",
+    "bytes": 31346
+  },
+  {
+    "path": "6.2-6.3习题/图片/习题解答/fig_6_3_1_sample.png",
+    "sha256": "56068870abbaf4ab933e08f9c66b1a8134f9c9fb28aa40147f2a33e2210e0259",
+    "bytes": 54082
+  },
+  {
+    "path": "6.2-6.3习题/图片/习题解答/fig_6_3_2_errors.png",
+    "sha256": "5c001a6e416600b221c46b6d20671b91245856b8925d4539cfc944875bd4d68e",
+    "bytes": 25991
+  },
+  {
+    "path": "6.2-6.3习题/图片/习题解答/fig_6_3_2_O.png",
+    "sha256": "56f6dc8843a92efc15058b1e8d4c917f03495a52e4a62557fabc7a50c914bef9",
+    "bytes": 62885
+  },
+  {
+    "path": "6.2-6.3习题/图片/习题解答/fig_6_3_2_S.png",
+    "sha256": "e34cc54e3d9e1d09ba8c8d0fbb0333677c586e1d36ae963999965e83711b3f16",
+    "bytes": 93343
+  },
+  {
+    "path": "6.3/A1-G12-6.3-正文.md",
+    "sha256": "4741c0a4c9f9de613a55387d02d91edfb622c4c6365bb5a4cbd3b66e16569f59",
+    "bytes": 67359
+  },
+  {
+    "path": "6.3/deeponet_helmholtz.m",
+    "sha256": "cc422394cdebc1922629402682ee90c6d1eb7d7dc3e7825f7223dc63b1e12a0e",
+    "bytes": 31118
+  },
+  {
+    "path": "6.3/figures/fig1_training.fig",
+    "sha256": "d65f58b9ffddaa0e9eb7d1dd41e56a6107b7df5c6dcee6985e3c4630e2fb8419",
+    "bytes": 82995
+  },
+  {
+    "path": "6.3/figures/fig1_training.png",
+    "sha256": "9ac7f41bfbccaa9837ae619a778ce70bd2dc2f9ebb7be25e88bac900196fb708",
+    "bytes": 112465
+  },
+  {
+    "path": "6.3/figures/fig2_error_dist.fig",
+    "sha256": "8797ab5fab8c9ed6d700071802f3ccac4b54d47cc8b20eafd7167099cc1f0c10",
+    "bytes": 61675
+  },
+  {
+    "path": "6.3/figures/fig2_error_dist.png",
+    "sha256": "7900096a7a17aa121a730406bd185bb7056eb6ab0b06f2fea4ab071d8886227d",
+    "bytes": 88188
+  },
+  {
+    "path": "6.3/figures/fig3_examples.fig",
+    "sha256": "4cb7d2557663b52a2404f7f780d3d9343d4b8eb0b13af6aacdb524e609dd274b",
+    "bytes": 61083
+  },
+  {
+    "path": "6.3/figures/fig3_examples.png",
+    "sha256": "53a770d42aff5dfb3306627fa4dd3ead70a695e05d14352bebb317d2c6b81685",
+    "bytes": 98406
+  },
+  {
+    "path": "6.3/figures/fig4_comparison.fig",
+    "sha256": "00103be501523e7e16a6e9f3cfe820436e16dd2eb20c23bfcf50d66af10843aa",
+    "bytes": 34429
+  },
+  {
+    "path": "6.3/figures/fig4_comparison.png",
+    "sha256": "abacbc6c33e26126f72c40d51286d4aedb1fa0a12b8c2535529f8089a434ef1f",
+    "bytes": 71040
+  },
+  {
+    "path": "6.3/数据/deeponet_ablation.csv",
+    "sha256": "c49b7a86a1577fa8b983650f0700254824f95cef3e449bdbb0e5a039faea33a2",
+    "bytes": 1296
+  },
+  {
+    "path": "6.3/数据/deeponet_amortization.csv",
+    "sha256": "c392b6d196caa582388cd6ba889145a4cfaa52c3b9c63323159d354b97c3ed67",
+    "bytes": 295
+  },
+  {
+    "path": "6.3/数据/deeponet_cost.csv",
+    "sha256": "febc159ec56aeec9aea6e0ac4c71050f85d667b57dd41b50ca9d047ede4f5dcb",
+    "bytes": 815
+  },
+  {
+    "path": "6.3/数据/deeponet_dataset_coefficients.csv",
+    "sha256": "7925a5ba026752a0fa136d4508808e4391ba58b8ef68384cfb43719f3de89c5c",
+    "bytes": 395847
+  },
+  {
+    "path": "6.3/数据/deeponet_dataset_labels.csv",
+    "sha256": "efd84606c07e39f1aef468ee1e0fbaacb6b7e23da73d7a89a25b1fcc9d1d5a6a",
+    "bytes": 2255513
+  },
+  {
+    "path": "6.3/数据/deeponet_dataset_sensors.csv",
+    "sha256": "4dec69b4f3898296db276ca91e3dc1c235513559089858ce2ea682645a3a0626",
+    "bytes": 1150796
+  },
+  {
+    "path": "6.3/数据/deeponet_dataset_summary.csv",
+    "sha256": "74474fc59b4e4206ce7e83697b26530e1ecafbf8d89309a3363f4016a692ec1c",
+    "bytes": 372
+  },
+  {
+    "path": "6.3/数据/deeponet_metrics.csv",
+    "sha256": "e02a944503abd309d89d535969b5c29278b68ad38f61d8aafd1b9d6174960fde",
+    "bytes": 1336
+  },
+  {
+    "path": "6.3/数据/deeponet_per_function_errors.csv",
+    "sha256": "1d1a5a371c259276fdec17f071830ad5da7e621861a255b96ad0822a29c83239",
+    "bytes": 81077
+  },
+  {
+    "path": "6.3/数据/deeponet_predictions_grid.csv",
+    "sha256": "c024ec64e6f60ead26fe797e8b59d04adf13a0ae8e012e9a52690d35b654cdcb",
+    "bytes": 4349323
+  },
+  {
+    "path": "6.3/数据/deeponet_predictions_random_coords.csv",
+    "sha256": "a0acfe3d573dcc5f2fe8c7437cd77d493ea6a6e76c173ae450842e3f43d0bc97",
+    "bytes": 277505
+  },
+  {
+    "path": "6.3/数据/deeponet_solver_checks.csv",
+    "sha256": "ec8e1b95fd2ca1eb1a1ac91f3796971b69ddcdadb2a1e3d8e83f2051891d81fa",
+    "bytes": 236
+  },
+  {
+    "path": "6.3/数据/deeponet_training_history.csv",
+    "sha256": "8303341d93611956546954f5f507b7191f2d1ab2eb627baf876012fffb3210bc",
+    "bytes": 54073
+  },
+  {
+    "path": "6.3/数据/deeponet_training_summary.csv",
+    "sha256": "6db3c49d741820d12c835ef7b71d9b06df50cc3c36f320a4c54382356a1abffa",
+    "bytes": 289
+  },
+  {
+    "path": "6.3/数据/README-数据字典.md",
+    "sha256": "b7941d31dd872df5468e7ab6dcf997fd8797cda61746f5f4b0218b1698d9d079",
+    "bytes": 9039
+  },
+  {
+    "path": "6.3/数据/results.json",
+    "sha256": "ac0694669537b1bd7c1d9296c2f8a6bb9cd3a4514ebf8a889f9e41c7b2035b89",
+    "bytes": 16228
+  }
+]
