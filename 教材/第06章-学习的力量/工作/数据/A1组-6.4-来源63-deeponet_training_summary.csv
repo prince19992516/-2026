@@ -1,0 +1,2 @@
+seed,epochs_run,best_epoch,best_val,stopped_early,train_mse_final,wall_total_saved_run_s,wall_clean_run_s,note
+2024,1000,911,0.0041430210694670677,0,6.7203070718659864e-05,1284.964653,678.10000000000002,saved .mat run contains an OS stall; clean run 678.1 s has identical per-epoch values

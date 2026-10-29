@@ -1,0 +1,8 @@
+item,milliseconds,rel_error,note
+network_inference_M64,5.8570000000000002,,primary measurement in deeponet_results.txt; used in the report
+network_inference_M64_repeat,2.058,,second independent measurement recorded in deeponet_results.txt
+spectral_solver,0.0060000000000000001,9.1e-17,"FFT solver, primary measurement; self-error against analytic solution"
+fd_solver,0.055,3.3e-05,"second-order finite-difference solver, primary measurement"
+network_inference_M64_saved_mat_run,2.0560295499999999,,timing stored in the saved .mat run; close to the 2.058 ms repeat measurement
+spectral_solver_saved_mat_run,0.0047193618279569895,,timing stored in the saved .mat run; not the value used in the report
+fd_solver_saved_mat_run,0.081129549999999995,,timing stored in the saved .mat run; not the value used in the report
