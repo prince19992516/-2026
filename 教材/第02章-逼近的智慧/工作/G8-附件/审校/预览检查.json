@@ -1,0 +1,435 @@
+{
+  "date": "2026-10-24",
+  "reviewer": "AI 总编；脚本化 Chromium（Edge headless=new + CDP）执行三视口量测。第五轮为 DOM 级量测（表格溢出、数学对象、mlabeledtr 编号、编号越列），未截图目视；逐表截图与目视复核属于 2026-10-24 下午四节版那一轮，见 focus_tables_previous_round。",
+  "scope": "第五轮浏览器复核（教材体改写与命名对齐之后）。对象是 A1-G8-正文.md 合并改写、附件统一 A1组- 前缀、并重建后的 12 个 HTML 页面；四个主页面（正文、Notebook、习题、题解）按 1280/1024/900 三视口逐项量测，其余 8 页同轮同样三视口过一遍。reviewed_file_sha256 与 browser_reviewed_file_sha256 完全一致，表示浏览器所见版本即当前交付文件。",
+  "counting_method": "mjx-container 节点总数为 document.querySelectorAll('mjx-container').length（含行内与显示公式）；显示公式另按 mjx-container[display=\"true\"] 计数；公式编号按 g[data-mml-node=\"mlabeledtr\"] 计数并读取其 mtd 文本。旧脚本读 annotation 里的 \\tag 源文本，该处反斜杠被 HTML 转义，匹配恒为 0（第五轮实测 tags=0），该口径已废弃，不得再用作“编号丢失”的证据。",
+  "pages": {
+    "index.html": {
+      "math_containers": 1173,
+      "display_formulas": 73,
+      "numbered_formulas": 32,
+      "tables": 27,
+      "images": 4,
+      "broken_images": 0,
+      "math_error_nodes": 0,
+      "horizontal_page_overflow": false
+    },
+    "notebook.html": {
+      "math_containers": 99,
+      "display_formulas": 3,
+      "numbered_formulas": 0,
+      "tables": 0,
+      "images": 8,
+      "saved_code_cells": 12,
+      "broken_images": 0,
+      "math_error_nodes": 0,
+      "horizontal_page_overflow": false
+    },
+    "exercises.html": {
+      "math_containers": 105,
+      "display_formulas": 0,
+      "numbered_formulas": 0,
+      "tables": 0,
+      "images": 0,
+      "broken_images": 0,
+      "math_error_nodes": 0,
+      "horizontal_page_overflow": false
+    },
+    "answers.html": {
+      "math_containers": 230,
+      "display_formulas": 27,
+      "numbered_formulas": 0,
+      "tables": 5,
+      "images": 0,
+      "broken_images": 0,
+      "math_error_nodes": 0,
+      "horizontal_page_overflow": false
+    }
+  },
+  "browser_review": {
+    "engine": "Microsoft Edge 无头模式，CDP Runtime.evaluate 取值。第五轮只调用量测表达式，未调用 Page.captureScreenshot；现存截图是四节版那一轮的证据，不作为五节版的视觉证据。",
+    "viewports": [
+      1280,
+      1024,
+      900
+    ],
+    "viewport_note": "1024 与 900 是投影与笔记本的常见宽度；900 以下侧边栏转为顶部静态块，正文列反而变宽，故三档已覆盖最窄情形。",
+    "results": {
+      "1280": {
+        "index.html": {
+          "main_width": 949,
+          "page_overflow_px": 0,
+          "tables": 27,
+          "overflowing_tables": 0,
+          "table_scroll_overflow_px": 0,
+          "math_containers": 1173,
+          "display_formulas": 73,
+          "math_errors": 0,
+          "numbered_formulas": 32,
+          "tags_outside_column": 0
+        },
+        "notebook.html": {
+          "main_width": 949,
+          "page_overflow_px": 0,
+          "tables": 0,
+          "overflowing_tables": 0,
+          "table_scroll_overflow_px": 0,
+          "math_containers": 99,
+          "display_formulas": 3,
+          "math_errors": 0,
+          "numbered_formulas": 0,
+          "tags_outside_column": 0
+        },
+        "exercises.html": {
+          "main_width": 949,
+          "page_overflow_px": 0,
+          "tables": 0,
+          "overflowing_tables": 0,
+          "table_scroll_overflow_px": 0,
+          "math_containers": 105,
+          "display_formulas": 0,
+          "math_errors": 0,
+          "numbered_formulas": 0,
+          "tags_outside_column": 0
+        },
+        "answers.html": {
+          "main_width": 949,
+          "page_overflow_px": 0,
+          "tables": 5,
+          "overflowing_tables": 0,
+          "table_scroll_overflow_px": 0,
+          "math_containers": 230,
+          "display_formulas": 27,
+          "math_errors": 0,
+          "numbered_formulas": 0,
+          "tags_outside_column": 0
+        }
+      },
+      "1024": {
+        "index.html": {
+          "main_width": 721,
+          "page_overflow_px": 0,
+          "tables": 27,
+          "overflowing_tables": 0,
+          "table_scroll_overflow_px": 0,
+          "math_containers": 1173,
+          "display_formulas": 73,
+          "math_errors": 0,
+          "numbered_formulas": 32,
+          "tags_outside_column": 0
+        },
+        "notebook.html": {
+          "main_width": 721,
+          "page_overflow_px": 0,
+          "tables": 0,
+          "overflowing_tables": 0,
+          "table_scroll_overflow_px": 0,
+          "math_containers": 99,
+          "display_formulas": 3,
+          "math_errors": 0,
+          "numbered_formulas": 0,
+          "tags_outside_column": 0
+        },
+        "exercises.html": {
+          "main_width": 721,
+          "page_overflow_px": 0,
+          "tables": 0,
+          "overflowing_tables": 0,
+          "table_scroll_overflow_px": 0,
+          "math_containers": 105,
+          "display_formulas": 0,
+          "math_errors": 0,
+          "numbered_formulas": 0,
+          "tags_outside_column": 0
+        },
+        "answers.html": {
+          "main_width": 721,
+          "page_overflow_px": 0,
+          "tables": 5,
+          "overflowing_tables": 0,
+          "table_scroll_overflow_px": 0,
+          "math_containers": 230,
+          "display_formulas": 27,
+          "math_errors": 0,
+          "numbered_formulas": 0,
+          "tags_outside_column": 0
+        }
+      },
+      "900": {
+        "index.html": {
+          "main_width": 849,
+          "page_overflow_px": 0,
+          "tables": 27,
+          "overflowing_tables": 0,
+          "table_scroll_overflow_px": 0,
+          "math_containers": 1173,
+          "display_formulas": 73,
+          "math_errors": 0,
+          "numbered_formulas": 32,
+          "tags_outside_column": 0
+        },
+        "notebook.html": {
+          "main_width": 849,
+          "page_overflow_px": 0,
+          "tables": 0,
+          "overflowing_tables": 0,
+          "table_scroll_overflow_px": 0,
+          "math_containers": 99,
+          "display_formulas": 3,
+          "math_errors": 0,
+          "numbered_formulas": 0,
+          "tags_outside_column": 0
+        },
+        "exercises.html": {
+          "main_width": 849,
+          "page_overflow_px": 0,
+          "tables": 0,
+          "overflowing_tables": 0,
+          "table_scroll_overflow_px": 0,
+          "math_containers": 105,
+          "display_formulas": 0,
+          "math_errors": 0,
+          "numbered_formulas": 0,
+          "tags_outside_column": 0
+        },
+        "answers.html": {
+          "main_width": 849,
+          "page_overflow_px": 0,
+          "tables": 5,
+          "overflowing_tables": 0,
+          "table_scroll_overflow_px": 0,
+          "math_containers": 230,
+          "display_formulas": 27,
+          "math_errors": 0,
+          "numbered_formulas": 0,
+          "tags_outside_column": 0
+        }
+      }
+    },
+    "display_formula_tags": {
+      "count": 32,
+      "labels": [
+        "(0.1)",
+        "(2.1.1)",
+        "(2.1.2)",
+        "(2.1.3)",
+        "(2.1.4)",
+        "(2.1.5)",
+        "(2.1.6)",
+        "(2.1.7)",
+        "(2.1.8)",
+        "(2.2.1)",
+        "(2.2.2)",
+        "(2.2.3)",
+        "(2.2.4)",
+        "(2.2.5)",
+        "(2.3.1)",
+        "(2.3.2)",
+        "(2.3.3)",
+        "(2.3.4)",
+        "(2.3.5)",
+        "(2.3.6)",
+        "(2.4.1)",
+        "(2.4.2)",
+        "(2.4.3)",
+        "(2.4.4)",
+        "(2.4.5)",
+        "(2.5.1)",
+        "(2.5.2)",
+        "(2.5.3)",
+        "(2.5.4)",
+        "(2.5.5)",
+        "(2.5.6)",
+        "(2.5.7)"
+      ],
+      "auto_numbered_without_tag": 0,
+      "mathjax_tex_tags": "ams",
+      "merror": 0,
+      "citation_cross_check": {
+        "defined": 32,
+        "cited_distinct": 27,
+        "citation_occurrences": 113,
+        "cited_but_undefined": [],
+        "defined_but_uncited": [
+          "2.1.7",
+          "2.2.5",
+          "2.3.3",
+          "2.5.5",
+          "2.5.6"
+        ],
+        "section_mismatch": [],
+        "method": "定义取正文中的 \\tag{x}（32 个）；引用按「去掉所有 \\tag 之后、5 个不算引用」的方式逐号做边界匹配计数；括号内形如 (2.1)、(2.5) 的是节号，(3.1)、(3.3)、(4.1)、(4.7) 是「文献定位」句中引用的外部教材式号，两者均不计入本章编号闭环。本项为源码级统计，与浏览器 mlabeledtr 计数（32）互为校验。",
+        "uncited_note": "5 个未被引用的编号（2.1.7、2.2.5、2.3.3、2.5.5、2.5.6）都是推导中间结果，展示出来是为了让读者跟得上，后文不需要回指；这不算缺陷，但也不能说成「编号全部被引用」。"
+      }
+    },
+    "cross_table_consistency": "五节重构与教材体改写均未改动实验数值，2.2 两张条件数表、2.5 两张训练指标表的互洽结论沿用上一轮：16674.7 ↔ 1.6675×10^4、2.45887 ↔ 2.4589、0.0693263 ↔ 6.9326×10^-2、0.01892133 ↔ 1.8921×10^-2；约 1.1×10^-6、2.86–3.01×10^-3、1.171×10^-1、1.647。本轮以表格数量和溢出量测佐证，未重做逐格比对。",
+    "anchor_offset_px": 24,
+    "defects_found_and_fixed": [
+      {
+        "id": "D1",
+        "symptom": "正文 14 处、Notebook 3 处公式显示成行内大公式，并在句末留下多余美元符号（DOM 形如 <span class=\"math\">\\($…\\)</span>$）。",
+        "root_cause": "mistune 3.0.2 的 math 插件只把「$$ 独占一行」的写法识别为显示公式；单行 $$…$$ 一律按行内公式解析。此前补空行的修法只解决了段落归属，未解决定界符形态，故无效。",
+        "fix": "build_preview.py 新增 blockify_display_math()，把整行 $$…$$ 规范化为三行块级写法；代码围栏内文本跳过不改。重建后 index/notebook/exercises/answers 的残留计数均为 0。",
+        "verification": "grep 计数 inline-$$=0、stray-$=0；显示公式块由 79 增至 93（正文）/0 增至 3（Notebook）。"
+      },
+      {
+        "id": "D2",
+        "symptom": "1024px 下 8 条显示公式宽于正文列（最大 940px vs 651px），出现横向滚动条；其中 7 条带编号的公式，编号被推到可视区外看不见。",
+        "root_cause": "公式源文本用 \\qquad 把两条相关等式排在同一行（如 (2.2.1) 同时给出 J(c*) 与 J(c)），渲染宽度超过投影宽度。",
+        "fix": "改为 \\begin{aligned} 双行对齐，每个编号仍只出现一次；无编号的概念公式（2.4 开头）同样拆行。",
+        "verification": "1024/1280 下「宽于正文列的显示公式」由 8 条降为 0 条；mlabeledtr 仍为 20（当时为四节版，编号体系与现在不同），merror 为 0；截图 eq-221/232/234/241/247/248/2410 逐张确认编号在右侧可见。"
+      },
+      {
+        "id": "D3",
+        "symptom": "1024px 下式 (2.5.1) 渲染宽 865px，超出正文列 721px，编号被推出可视区；1280 与 900 下不显。",
+        "root_cause": "该式把网络展开式与参数向量定义用 \\qquad 排在同一行，写法本身没错，但宽度超出投影宽度。",
+        "fix": "拆成“主体公式 + 紧随其后一句写参数向量”，编号仍只出现一次，参数按 a,w,b,c 分块排列并与 Notebook 打包顺序对齐。",
+        "verification": "终态三视口 outside=0、编号仍为 mlabeledtr 32 个；数学对象由拆分前的 1169 增至 1173（拆分新增的行内参数式，加上 MATH-01 补记 $n\\ge1$ 限定带来的行内公式），显示公式 73。"
+      }
+    ],
+    "note_this_round": "本轮只做 DOM 级量测（表格溢出、数学对象数、mlabeledtr 编号、编号是否越出正文列），未逐表截图目视；逐表截图属于四节版那一次，见 focus_tables_previous_round。",
+    "focus_tables_previous_round": [
+      {
+        "name": "2.1 Runge 误差表",
+        "dom_index": 1,
+        "signature": "3 列 × 3 行（n=8/16/32）",
+        "overflowing": false,
+        "checked_widths": [
+          1024,
+          900
+        ],
+        "evidence": "browser-shots/crop-table-1-1024.png"
+      },
+      {
+        "name": "2.2 条件数对比表",
+        "dom_index": 5,
+        "signature": "4 列 × 2 行（幂基 / Chebyshev 基）",
+        "overflowing": false,
+        "checked_widths": [
+          1024,
+          900
+        ],
+        "evidence": "browser-shots/crop-table-5-1024.png"
+      },
+      {
+        "name": "2.2 条件数最终结果表",
+        "dom_index": 7,
+        "signature": "5 列 × 2 行（含与 lstsq 解的差）",
+        "overflowing": false,
+        "checked_widths": [
+          1024,
+          900
+        ],
+        "evidence": "browser-shots/crop-table-7-1024.png、crop-table-7-900.png"
+      },
+      {
+        "name": "2.4 训练量指标表（关键推导）",
+        "dom_index": 18,
+        "signature": "2 列 × 4 行",
+        "overflowing": false,
+        "checked_widths": [
+          1024,
+          900
+        ],
+        "evidence": "browser-shots/crop-table-18-1024.png"
+      },
+      {
+        "name": "2.4 训练量指标表（结果解释）",
+        "dom_index": 20,
+        "signature": "2 列 × 5 行",
+        "overflowing": false,
+        "checked_widths": [
+          1024,
+          900
+        ],
+        "evidence": "browser-shots/crop-table-20-1024.png"
+      }
+    ],
+    "focus_tables_previous_round_note": "以下索引与节号对应四节 22 表版本（当时训练内容编号为 2.4），五节重构后已不适用，仅留作历史。"
+  },
+  "browser_review_summary": "2026-10-24 第五轮，用 Edge 无头 Chromium 在 1280/1024/900 三个视口实测正文、Notebook、习题、题解四页：正文 27 张表、题解 5 张表，全部无横向溢出、无内部滚动溢出，12 个「视口×页面」组合的整页横向溢出均为 0px；MathJax 渲染 1173/99/105/230 个数学对象，0 个错误节点，0 张图片加载失败。公式编号 32 个全部排版为 mlabeledtr 标签，无一越出正文列；正文引用 113 处、覆盖 27 个编号，余下 5 个是推导中间结果，未回指属正常。反向核对无悬引：正文出现的括号编号要么是节号 (2.1)–(2.5)，要么是「文献定位」里的外部教材式号 (3.1)/(3.3)/(4.1)/(4.7)，没有指向本章不存在的编号。本轮发现并修复一处排版缺陷：式 (2.5.1) 在 1024px 下宽 865px、编号出列。另有一处方法论问题：编号统计曾用 annotation 中的 TeX 源文本，因反斜杠被转义恒得 0，已改用 mlabeledtr 口径。",
+  "summary": "本次为 2026-10-24 第五轮浏览器复核（编写记录按改稿环节计数）。触发原因是正文由四段草稿合并为 A1-G8-正文.md、整体改写为教材体叙述、附件统一 A1组- 前缀，并重建 12 个 HTML 页面（184 项本地引用、0 损坏）。结论：五节结构（2.1–2.5）、25 个栏目小标题、5 处扩展框、22 个结果编号、32 个公式标签全部到位；三视口下表格与公式无横向溢出，整页无横向滚动；32 个编号全部显示，正文 113 处引用覆盖其中 27 个，无悬引；图片全部加载。本轮只改叙述与文件命名，未改算法、未重训网络、未改任何实验数值；参数打包顺序与 MATH-01 的 n≥1 限定属纠错性编辑，与 ch2_numerics.py、习题参考解答对齐后重建复测。",
+  "reviewed_file_sha256": {
+    "教材/第02章-逼近的智慧/A1-G8-正文.md": "75e9aa62b47b81327fee4b339c475d8a1f20e596d86311d79319c4fff83811f7",
+    "教材/第02章-逼近的智慧/A1组-实验.ipynb": "9e1ab2d49990fae740a88b0d008773fbe6366d1f1e527c39d86cb6436c7600e8",
+    "教材/第02章-逼近的智慧/A1组-习题.md": "37ee49fbcaaa857e9277bd124601572f5595672a979f03f4506f33ad12659364",
+    "教材/第02章-逼近的智慧/A1组-习题参考解答.md": "6ae261fb9a655f8d70cd0f0a268b6079858770e0900e740126b9b1867f91e350",
+    "教材/第02章-逼近的智慧/A1组-编写报告.md": "b34baae9580d713436ed784321fbd71a34bb4c7c7cead45cb4bd0da329533d89",
+    "教材/第02章-逼近的智慧/A1组-AI对话记录.md": "11b0470c457a1644c9417dfb754f08990108184ae36129a4b64460ccf48b11e2",
+    "教材/第02章-逼近的智慧/预览/assets/mathjax-3.2.2.js": "a4354ff94fd868aea0cc6eaaa79a57fda0588646fc46ee3700a349ee0a11cbe6",
+    "tools/build_preview.py": "2d1445f8c84a5240aaa49b8a08e77c673bcfb5ba6df181aaf7b653b6063b60c8"
+  },
+  "reviewed_file_sha256_note": "指纹按换行符归一化（CRLF→LF）计算，避免 core.autocrlf 检出后产生假过期；二进制资产保持逐字节。两组指纹相同，表示量测时的文件与当前交付文件一致。量测之后只重写了本记录与由 check_delivery.py 生成的交付检查.md，这两个文件不在指纹清单内。",
+  "browser_reviewed_file_sha256": {
+    "教材/第02章-逼近的智慧/A1-G8-正文.md": "75e9aa62b47b81327fee4b339c475d8a1f20e596d86311d79319c4fff83811f7",
+    "教材/第02章-逼近的智慧/A1组-实验.ipynb": "9e1ab2d49990fae740a88b0d008773fbe6366d1f1e527c39d86cb6436c7600e8",
+    "教材/第02章-逼近的智慧/A1组-习题.md": "37ee49fbcaaa857e9277bd124601572f5595672a979f03f4506f33ad12659364",
+    "教材/第02章-逼近的智慧/A1组-习题参考解答.md": "6ae261fb9a655f8d70cd0f0a268b6079858770e0900e740126b9b1867f91e350",
+    "教材/第02章-逼近的智慧/A1组-编写报告.md": "b34baae9580d713436ed784321fbd71a34bb4c7c7cead45cb4bd0da329533d89",
+    "教材/第02章-逼近的智慧/A1组-AI对话记录.md": "11b0470c457a1644c9417dfb754f08990108184ae36129a4b64460ccf48b11e2",
+    "教材/第02章-逼近的智慧/预览/assets/mathjax-3.2.2.js": "a4354ff94fd868aea0cc6eaaa79a57fda0588646fc46ee3700a349ee0a11cbe6",
+    "tools/build_preview.py": "2d1445f8c84a5240aaa49b8a08e77c673bcfb5ba6df181aaf7b653b6063b60c8"
+  },
+  "post_review_text_sync": {
+    "when": "2026-10-24 晚，浏览器量测与截图完成之后",
+    "files": [
+      "教材/第02章-逼近的智慧/A1组-编写报告.md",
+      "教材/第02章-逼近的智慧/A1组-AI对话记录.md"
+    ],
+    "reason": "正文结论落盘后，编写报告仍有两句与实测矛盾（“没有重新在浏览器里逐页查看…不能声称已通过浏览器检查”“28 处正文引用”），需改为 31 处并补记贴图与编号修复；AI 对话记录需补记本轮过程。两份都是记录性文字，未新增或改动公式内容、实验数值与正文论断。",
+    "regression": "重建 12 页后按同一口径重测四张主页：1280/1024/900 三档下 tables=22/0/0/5、math=1287/99/85/162、display=93/3/0/16、errors=0、pageOverflow=0，与量测时完全一致，说明重建未改变被复核页面的渲染结果。",
+    "remeasured_pages": {
+      "report.html": "三视口均为 5 张表、22 个数学对象、0 错误、0 溢出",
+      "ai-log.html": "三视口均为 7 张表、13 个数学对象、0 错误、0 溢出",
+      "audit-delivery.html": "本命令重新生成后三视口均为 0 表、0 数学对象、0 错误、0 溢出；该页此前有一处 $$…$$ 被排成行内公式并留下多余美元符号，改写成反引号代码后消失"
+    },
+    "scope_note": "补测只覆盖这两页的排版完整性（表格溢出、数学对象数、错误节点数），不重复截图目视；两页无带编号公式，故不涉及编号闭环。"
+  },
+  "check_note": "这些指纹由第五轮浏览器量测后立即计算，本命令核对它们未改变即视为浏览器结论仍对当前文件成立；文件一旦改动，本检查会报 Preview review is stale。本轮量测对象包含正文、Notebook、习题、题解、编写报告、AI 对话记录、MathJax 资产与建站脚本。",
+  "stale_for_current_version": false,
+  "stale_reason": "",
+  "history": [
+    {
+      "date": "2026-10-24 夜（第五轮）",
+      "kind": "教材体改写 + 命名对齐后重建，三视口重测",
+      "outcome": "正文合并为 A1-G8-正文.md 并改写为教材体（破折号 55→2、加粗整句 58→30），附件统一 A1组- 前缀并同步引用；修复式 (2.5.1) 在 1024px 下 865px 出列；编号统计改用 mlabeledtr 口径（旧 annotation 口径恒为 0，已废弃）。实测：表格 27/0/0/5、数学对象 1173/99/105/230、编号 32 且 outside 0、错误 0、整页溢出 0。"
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "五节重构（结构变更，浏览器复核未重跑）",
+      "outcome": "正文改为 2.1-2.5 五节并重写叙述，习题改为五题、Notebook 小节标题同步；构建通过（12 页、184 项引用、0 损坏），静态扫描 issues 0。浏览器量测与截图未重跑，故本记录整体标记为对当前版本不适用。"
+    },
+    {
+      "date": "2026-10-16",
+      "kind": "浏览器逐页检查（重整前版本）",
+      "outcome": "12 页面中 4 个主页面渲染正常、无 MathJax 错误、无整页横向溢出；当时计数口径与本次不同，不与 2026-10-24 的数值直接比较。"
+    },
+    {
+      "date": "2026-10-24 上午",
+      "kind": "仅静态链接与结构检查（未打开浏览器）",
+      "outcome": "正文重整为六栏目后重建 12 页、174 项本地引用 0 损坏；当时明确声明未复核公式排版与分页。"
+    },
+    {
+      "date": "2026-10-24 下午",
+      "kind": "第二轮浏览器复核（本轮）",
+      "outcome": "三视口 × 四页实测；修复单行 $$ 判定与超宽显示公式两类缺陷；表格、编号、图片全部通过。"
+    },
+    {
+      "date": "2026-10-24 晚",
+      "kind": "叙述性文字同步与回归复测",
+      "outcome": "编写报告改掉与实测矛盾的两句（浏览器边界、引用计数 28→31）并补记本轮修复；AI 对话记录补记过程。重建后四张主页量值与量测时一致，报告页与 AI 记录页单独重测无溢出、无数学错误。"
+    }
+  ],
+  "other_pages_measured": {
+    "note": "其余 8 页没有编号公式，量测目标是表格是否溢出、数学对象是否渲染、整页是否横向滚动。下表数值在 1280/1024/900 三档下完全相同，故合并成一行。",
+    "report.html": "14 表 / 42 数学对象 / 2 显示公式 / 0 表溢出 / 0 整页溢出 / 0 错误",
+    "ai-log.html": "10 表 / 16 数学对象 / 0 显示公式 / 0 表溢出 / 0 整页溢出 / 0 错误",
+    "audit-delivery.html": "0 表 / 0 数学对象 / 0 错误（纯文本页，由 check_delivery.py 生成）",
+    "audit-math.html": "4 表 / 89 数学对象 / 0 表溢出 / 0 整页溢出 / 0 错误",
+    "audit-teaching.html": "3 表 / 8 数学对象 / 0 表溢出 / 0 整页溢出 / 0 错误",
+    "audit-sources.html": "3 表 / 0 数学对象 / 0 表溢出 / 0 整页溢出 / 0 错误",
+    "sources.html": "1 表 / 0 数学对象 / 0 表溢出 / 0 整页溢出 / 0 错误",
+    "symbols.html": "1 表 / 50 数学对象 / 0 表溢出 / 0 整页溢出 / 0 错误",
+    "boundary": "这 8 页只做排版量测，不涉及内容审查；审查结论以各审校文档为准。"
+  }
+}
