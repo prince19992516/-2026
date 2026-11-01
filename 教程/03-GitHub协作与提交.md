@@ -1,6 +1,8 @@
 # 03 网页版提交：登录 GitHub → Add file → 提交 PR
 
-本课程日常提交使用 **GitHub 网页**。先按[01](01-环境安装与运行.md)安装并在本机写好文件，再按本页上传；上传不需要在终端运行 `git add`、`git commit` 或 `git push`，也不用停止 JupyterLab。用 Download ZIP 下载的文件也可以按本页上传。
+本课程日常提交使用 **GitHub 网页**。本页从“电脑里已经保存好要交的文件”开始；上传文件不要求先安装 Git、Python 或 JupyterLab。需要写作和运行实验时再看[01](01-环境安装与运行.md)。上传不需要在终端运行 `git add`、`git commit` 或 `git push`，也不用停止 JupyterLab。用 Download ZIP 下载的文件也可以按本页上传。
+
+**打不开 PR 时先不要删分支或重新复制模板。** 先确认新版文件在网页的哪个“仓库＋分支”，再对照本页第9节。“没有差异”和“没有权限”是两类问题，处理方法不同。
 
 ## 1. 先认清四件事
 
@@ -63,7 +65,7 @@
 4. 点 **choose your files**，在电脑上找到第3节保存的文件，选中自己要交的正文、实验、报告等。也可以把这些文件直接拖到上传区域。
 5. 等待上传完成，看清列表中的文件名。**在网页工作目录内上传文件本身，不要把整个“工作”文件夹再拖进去**，否则可能出现 `工作/工作/正文.md`。
 6. 页面下方提交说明写清楚，例如“第01章 G20 A1：补全1.2推导和实验解释”。选择 **Commit directly to the … branch** 时，末尾必须是自己的任务分支，不能是 `main`。这里“directly”只表示保存到所选任务分支。
-7. 点击 **Commit changes**；部分界面会弹出对话框，在对话框中再次确认分支和提交说明后提交。等页面回到文件列表，打开刚交的文件，核对内容确实是新版。
+7. 点击 **Commit changes**；部分界面按钮叫 **Propose changes**，或先弹出提交对话框。确认目标为自己的任务分支后完成保存。等页面回到文件列表，打开刚交的文件，核对内容确实是新版。只选择文件、看到上传进度结束，尚未完成保存。
 
 ### 图片怎么交
 
@@ -120,12 +122,35 @@ B/C需要固定版本时：打开PR的 **Commits** 标签，点最新提交的�
 
 ## 9. 卡住时按现象处理
 
+### 9.1 显示 “There isn't anything to compare” 或没有差异
+
+按顺序检查，不要反复点击创建 PR：
+
+1. 打开你上传文件的网页，记下地址中的账号和分支。课程仓库是 `prince19992516/-2026`；个人 Fork 的地址以你自己的账号开头。
+2. 在这个仓库选择上传时的分支，打开正文，看一段**你本次新增的内容**是否已经在网页中。没有就回到第5节上传并完成最后的保存；本机 Ctrl+S 不会上传。
+3. 在课程仓库点 **Pull requests → New pull request**。同仓库提交选 `base: main`、`compare: 实际存放新版的分支`，不要两边都选 main。个人 Fork 提交必须先点 **compare across forks**，左侧选课程仓库/main，右侧选**你有写权限的个人 Fork／实际上传分支**。
+4. 如果新版内容已经出现在课程 main，说明这部分已经合并或被直接上传，**不需要重复建 PR**。提交时提供该文件链接和最新提交链接即可。
+5. 如果刚从 main 建了新分支，但还没有把本次修改上传到新分支，两边自然相同。先上传真实改动，再创建 PR；只创建分支不会产生作业内容。
+6. 如果同一来源分支已经有 Open PR，打开那张 PR 即可，新上传会自动进入其中。旧 PR 已经 Merged 时，下次从最新 main 建修订分支，再上传本次改动。
+
+个人 Fork 的 `main` 也可以作为来源分支：如果误把作业传到了**个人 Fork 的 main**，右侧 compare 就选这个 main。不要选择一个没有文件的新分支。以后按第4节使用任务分支更容易区分各次作业。
+
+### 9.2 显示没有权限，或不能选来源分支
+
+1. 核对右上角登录头像是不是接受邀请的账号。邀请发出不等于已经接受；收到课程协作者邀请后，需要按通知完成接受。
+2. 没有课程仓库写权限也可以交作业：按第8节在**自己的 Fork**上传，再从该 Fork 向课程 main 发 PR。公开不等于可以在课程仓库直接新建分支。
+3. 如果文件在**同学的 Fork**中，你通常没有该来源分支的写权限，应由上传该 Fork 的同学创建 PR；或者经组内确认，将汇总稿上传到你自己的 Fork 再创建 PR。不要仅把右侧账号换成另一个没有你作业的仓库。
+4. 若提示无法自动合并（**Can't automatically merge**），它表示内容冲突，**不等于没有提交权限**。界面允许时仍可创建 PR，在说明里列出冲突，由负责同学与助教处理；不要删掉另一组文件来消除冲突。
+5. 仍失败时，将**报错原文、当前页面地址、文件所在仓库和分支、已上传文件的网页链接**发给助教。只说“交不了”无法确定是哪一步，也不要发送密码或令牌。
+
+### 9.3 其他常见现象
+
 | 现象 | 原因与操作 |
 | --- | --- |
 | 没有 Add file 或无法保存 | 确认登录、仓库、分支和协作者邀请；无写权限走Fork；受保护分支不要强行上传，改用任务分支 |
 | Upload files上传失败 | 网页单文件上限25 MiB，一次最多100个文件；不要拖环境或整个仓库。大Notebook先检查是否嵌入过多输出/图片，保留需要的证据，不要只改扩展名 |
 | 文件传了，main没有 | 先看自己的分支；创建PR并等待Merged |
-| PR显示没有差异 | 核对是否点了Commit changes、是否选对compare；已合并的旧任务需要新分支；没有实质修改的模板也可能无差异 |
+| PR显示没有差异 | 按9.1检查文件所在仓库/分支、是否完成保存、是否已经合并；不要通过随意改名制造差异 |
 | PR差异出现很多别组文件 | 常见是方向反了或用了旧分支；检查base=main、compare=自己的分支，别点合并 |
 | PR已经建反了 | 在错误PR页面用Edit检查base；无法改成正确来源时，关闭这张错误PR，再按第6节重新创建。关闭PR不删除分支和文件 |
 | 新建了错误分支但文件在里面 | 不要重新抄模板。保留这条分支，从该分支向main创建正确方向的PR，在说明中写正式组别 |
@@ -135,4 +160,4 @@ B/C需要固定版本时：打开PR的 **Commits** 标签，点最新提交的�
 
 **完成标准：** 自己的PR可以打开，Files changed显示正确文件，尚未完成部分已说明；进入课程main则以PR显示Merged为准。
 
-官方说明：[网页添加文件](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository)、[创建PR](https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request)。
+官方说明：[网页添加文件](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository)、[创建PR](https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request)、[从个人Fork创建PR](https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request-from-a-fork)。
