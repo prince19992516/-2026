@@ -1,0 +1,4 @@
+﻿epsilon,condition_2,upstream_absolute_perturbation,adjoint_absolute_change,analytic_change
+1.0,1.0,1e-10,1.000000082740371e-10,1e-10
+0.0001,10000.0,1e-10,1.0000003385357559e-06,1e-06
+1e-08,100000000.0,1e-10,0.01000000536441803,0.01

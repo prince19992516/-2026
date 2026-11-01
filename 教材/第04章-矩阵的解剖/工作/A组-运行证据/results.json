@@ -1,0 +1,283 @@
+{
+  "direct": [
+    {
+      "method": "partial-pivot LU",
+      "factor_error": 0.0,
+      "relative_residual": 0.0,
+      "solution_error": 0.0,
+      "condition_2": 2.663451295752642
+    },
+    {
+      "method": "Cholesky / 3 RHS",
+      "factor_error": 5.3853727041438086e-17,
+      "relative_residual": 0.0,
+      "solution_error": 1.0846972441562678e-16,
+      "condition_2": 5.5182307715567305
+    },
+    {
+      "method": "LU / independent 128x128",
+      "factor_error": 3.060961031958846e-16,
+      "relative_residual": 5.412468627224368e-16,
+      "solution_error": 3.881597023769269e-16,
+      "condition_2": 2.4461204435426636
+    }
+  ],
+  "cg": {
+    "rows": [
+      {
+        "method": "CG",
+        "iterations": 517,
+        "relative_residual": 8.891198676414179e-11,
+        "solution_error": 1.1763221982277092e-08,
+        "median_s": 0.02248729999701027
+      },
+      {
+        "method": "Jacobi-PCG",
+        "iterations": 24,
+        "relative_residual": 5.84311264156839e-11,
+        "solution_error": 5.2499254713977846e-11,
+        "median_s": 0.001309600003878586
+      }
+    ],
+    "condition": 30888.662085499334,
+    "preconditioned_condition": 4.996443747214051,
+    "jacobi_setup_median_s": 2.5000044843181968e-06,
+    "n": 128,
+    "rtol": 1e-10,
+    "repeats": 9
+  },
+  "cg_control": {
+    "CG_iterations": 23,
+    "PCG_iterations": 23,
+    "CG_error": 4.460273255517841e-11,
+    "PCG_error": 4.460272381566636e-11
+  },
+  "sensitivity": {
+    "x_original": [
+      1.0,
+      1.0
+    ],
+    "x_perturbed": [
+      1.0,
+      2.0
+    ],
+    "original_relative_residual": 1e-10,
+    "perturbed_relative_residual": 0.0,
+    "relative_solution_error": 0.7071067811865475,
+    "condition": 10000000000.0
+  },
+  "eigen": {
+    "shear_eigenvalues": [
+      1.0,
+      1.0
+    ],
+    "shear_singular_values": [
+      10.099019513592786,
+      0.09901951359278482
+    ],
+    "power_lambda": 5.0,
+    "power_residual": 3.458764513820542e-12
+  },
+  "svd": [
+    {
+      "rank": 0,
+      "spectral_error": 8.0,
+      "spectral_reference": 8.0,
+      "Frobenius_error": 9.233634170791044,
+      "Frobenius_reference": 9.233634170791044,
+      "retained_energy": 0.0
+    },
+    {
+      "rank": 1,
+      "spectral_error": 4.0,
+      "spectral_reference": 4.0,
+      "Frobenius_error": 4.610856753359402,
+      "Frobenius_reference": 4.610856753359402,
+      "retained_energy": 0.7506450856204551
+    },
+    {
+      "rank": 2,
+      "spectral_error": 1.9999999999999991,
+      "spectral_reference": 2.0,
+      "Frobenius_error": 2.2934689882359427,
+      "Frobenius_reference": 2.293468988235943,
+      "retained_energy": 0.9383063570255687
+    },
+    {
+      "rank": 3,
+      "spectral_error": 1.0000000000000007,
+      "spectral_reference": 1.0,
+      "Frobenius_error": 1.1224972160321827,
+      "Frobenius_reference": 1.1224972160321824,
+      "retained_energy": 0.9852216748768472
+    },
+    {
+      "rank": 4,
+      "spectral_error": 0.5,
+      "spectral_reference": 0.5,
+      "Frobenius_error": 0.5099019513592785,
+      "Frobenius_reference": 0.5099019513592785,
+      "retained_energy": 0.9969505043396668
+    },
+    {
+      "rank": 5,
+      "spectral_error": 0.10000000000000014,
+      "spectral_reference": 0.1,
+      "Frobenius_error": 0.10000000000000014,
+      "Frobenius_reference": 0.1,
+      "retained_energy": 0.9998827117053718
+    },
+    {
+      "rank": 6,
+      "spectral_error": 6.840564525664314e-15,
+      "spectral_reference": 0.0,
+      "Frobenius_error": 7.172811550394542e-15,
+      "Frobenius_reference": 0.0,
+      "retained_energy": 1.0
+    }
+  ],
+  "gradient": {
+    "A_lin": [
+      [
+        2.0,
+        1.0
+      ],
+      [
+        1.0,
+        3.0
+      ]
+    ],
+    "b_lin": [
+      1.0,
+      2.0
+    ],
+    "x": [
+      0.2,
+      0.6
+    ],
+    "adjoint_b": [
+      0.0,
+      0.2
+    ],
+    "adjoint_A": [
+      [
+        -0.0,
+        -0.0
+      ],
+      [
+        -0.04000000000000001,
+        -0.12
+      ]
+    ],
+    "pytorch_b2": null,
+    "autodiff_backend": "not-included (optional)",
+    "A_gradient_error": null,
+    "b_gradient_error": null,
+    "finite_differences": [
+      {
+        "h": 0.1,
+        "finite_difference_b2": 0.20000000000000018,
+        "absolute_error": 1.6653345369377348e-16
+      },
+      {
+        "h": 0.01,
+        "finite_difference_b2": 0.1999999999999974,
+        "absolute_error": 2.609024107869118e-15
+      },
+      {
+        "h": 0.001,
+        "finite_difference_b2": 0.19999999999997797,
+        "absolute_error": 2.2037927038809357e-14
+      },
+      {
+        "h": 0.0001,
+        "finite_difference_b2": 0.20000000000020002,
+        "absolute_error": 2.0000667788622195e-13
+      },
+      {
+        "h": 1e-05,
+        "finite_difference_b2": 0.1999999999988122,
+        "absolute_error": 1.1877998584708394e-12
+      },
+      {
+        "h": 1e-06,
+        "finite_difference_b2": 0.20000000000575113,
+        "absolute_error": 5.751121801012005e-12
+      },
+      {
+        "h": 1e-07,
+        "finite_difference_b2": 0.19999999989472883,
+        "absolute_error": 1.0527118066150365e-10
+      },
+      {
+        "h": 1e-08,
+        "finite_difference_b2": 0.2000000012825076,
+        "absolute_error": 1.282507600119942e-09
+      }
+    ]
+  },
+  "pca": {
+    "shape": [
+      5,
+      240
+    ],
+    "mean": [
+      -5.181040781584064e-17,
+      20.0,
+      3.7007434154171884e-18,
+      -2.168404344971009e-18,
+      -1.9244588561617703e-19
+    ],
+    "singular_values": [
+      32.863353450309965,
+      10.954451150103324,
+      2.1908902300206647,
+      0.5477225575051663,
+      0.1095445115010332
+    ],
+    "rows": [
+      {
+        "rank": 0,
+        "MSE_per_entry": 1.00426,
+        "analytic_MSE": 1.00426,
+        "explained_variance_ratio": 0.0
+      },
+      {
+        "rank": 1,
+        "MSE_per_entry": 0.10426,
+        "analytic_MSE": 0.10425999999999999,
+        "explained_variance_ratio": 0.8961822635572463
+      },
+      {
+        "rank": 2,
+        "MSE_per_entry": 0.00426,
+        "analytic_MSE": 0.004260000000000001,
+        "explained_variance_ratio": 0.9957580706191624
+      },
+      {
+        "rank": 3,
+        "MSE_per_entry": 0.00026000000000000003,
+        "analytic_MSE": 0.0002600000000000001,
+        "explained_variance_ratio": 0.9997411029016391
+      },
+      {
+        "rank": 4,
+        "MSE_per_entry": 1e-05,
+        "analytic_MSE": 1e-05,
+        "explained_variance_ratio": 0.9999900424192939
+      },
+      {
+        "rank": 5,
+        "MSE_per_entry": 3.892613291247697e-32,
+        "analytic_MSE": 0.0,
+        "explained_variance_ratio": 1.0
+      }
+    ]
+  },
+  "validation": {
+    "checks": 198,
+    "passed": 196,
+    "elapsed_s": 5592.383919,
+    "scope": "本轮交付脚本已执行并完成数值审校；课程组签署与B/C独立复现另行记录"
+  }
+}
