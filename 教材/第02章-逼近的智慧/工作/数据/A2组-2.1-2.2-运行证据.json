@@ -1,0 +1,125 @@
+{
+  "environment": {
+    "python": "3.12.10",
+    "numpy": "1.26.4",
+    "scipy": "1.14.1",
+    "matplotlib": "3.9.2",
+    "seed": 2026,
+    "dtype": "float64",
+    "device": "CPU",
+    "blas_threads": [
+      {
+        "internal_api": "openblas",
+        "num_threads": 1
+      },
+      {
+        "internal_api": "openblas",
+        "num_threads": 1
+      }
+    ]
+  },
+  "interpolation": [
+    {
+      "n": 5,
+      "equidistant_max_error": 0.4383566395255679,
+      "chebyshev_max_error": 0.40201674193790876,
+      "ratio": 1.0903939905897546
+    },
+    {
+      "n": 9,
+      "equidistant_max_error": 1.045173911783697,
+      "chebyshev_max_error": 0.1708355947318404,
+      "ratio": 6.118010204046177
+    },
+    {
+      "n": 11,
+      "equidistant_max_error": 1.9156430502192483,
+      "chebyshev_max_error": 0.10915326641231005,
+      "ratio": 17.550029542709193
+    },
+    {
+      "n": 15,
+      "equidistant_max_error": 7.194881107233082,
+      "chebyshev_max_error": 0.04660207211184919,
+      "ratio": 154.38972520287757
+    },
+    {
+      "n": 21,
+      "equidistant_max_error": 59.82230871072832,
+      "chebyshev_max_error": 0.015333731976079512,
+      "ratio": 3901.353486812643
+    },
+    {
+      "n": 31,
+      "equidistant_max_error": 2387.9977363713283,
+      "chebyshev_max_error": 0.0020615444251730897,
+      "ratio": 1158353.7600315497
+    }
+  ],
+  "probe": {
+    "x": 0.95,
+    "equidistant": 1.923631149719199,
+    "chebyshev": 0.08553493133811099,
+    "reference": 0.042440318302387266,
+    "peak_abs_x": 0.94
+  },
+  "conditioning": {
+    "3": [
+      105.46868405577759,
+      1.820983707895764
+    ],
+    "6": [
+      18193.27737329992,
+      1.845046643402207
+    ],
+    "9": [
+      4628254.574922183,
+      2.987621626634902
+    ],
+    "12": [
+      2412655790.4494257,
+      16.510798978662073
+    ]
+  },
+  "normal_equation": {
+    "condition": 21416260368422.176,
+    "coefficient_max_difference": 4.151686517878261
+  },
+  "degree_errors": {
+    "1": {
+      "train_max_residual": 0.13858364873496898,
+      "test_max_error": 0.13375615905499982
+    },
+    "2": {
+      "train_max_residual": 0.05238331868605273,
+      "test_max_error": 0.013655183092952328
+    },
+    "3": {
+      "train_max_residual": 0.051681963814118825,
+      "test_max_error": 0.02044731544908318
+    },
+    "6": {
+      "train_max_residual": 0.05202704877816133,
+      "test_max_error": 0.02530162985066431
+    },
+    "9": {
+      "train_max_residual": 0.03418950428214185,
+      "test_max_error": 0.03150493512929553
+    },
+    "12": {
+      "train_max_residual": 0.005638855085398742,
+      "test_max_error": 0.17640854612895418
+    },
+    "14": {
+      "train_max_residual": 1.0280090778636009e-07,
+      "test_max_error": 0.9688474294287979
+    }
+  },
+  "evaluation_overlap": {
+    "training_points": 15,
+    "evaluation_points": 400,
+    "shared_endpoints": 2,
+    "shared_points": 8,
+    "remaining_points": 392
+  }
+}
