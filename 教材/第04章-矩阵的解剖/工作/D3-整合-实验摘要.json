@@ -1,0 +1,24 @@
+{
+  "lu_residual": 0.0,
+  "cholesky_error": 0.0,
+  "cg_iterations": 2,
+  "singular_values": [
+    3.6180339887498953,
+    1.3819660112501049
+  ],
+  "condition_number": 2.618033988749896,
+  "rank_one_error": 1.3819660112501053,
+  "adjoint_gradient": [
+    0.0,
+    0.2
+  ],
+  "finite_difference": [
+    0.0,
+    0.20000000000575113
+  ],
+  "lora_parameters": {
+    "4": 1536,
+    "8": 3072,
+    "16": 6144
+  }
+}
