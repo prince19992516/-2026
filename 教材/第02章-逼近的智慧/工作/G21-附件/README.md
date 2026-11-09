@@ -25,3 +25,8 @@ py -3.12 -m venv .venv
 ## 合并后的路径与校验
 
 正文现名为 `A2-G21-正文.md`，以上链接已同步。`SHA256SUMS-G21.txt` 已按合并后的文件和 Git 的 LF 文本行尾重新计算；原提交的校验清单可在 [8a0c344](https://github.com/prince19992516/-2026/tree/8a0c344999550ebdfb1c00936a2e7b5a6256bee2) 中查阅。Word和HTML保留学生原交付阅读版本，后续正文修订请以Markdown正文为准。合并保存提交材料，不表示通过课程验收；A1、A2仍各自承担完整一章。
+
+
+## 2026-11-05 全章更新提示
+
+本目录原Word/HTML是历史2.3—2.4阅读版，未包含后续栏目修订与新增2.1、2.2。全章最新稿见[正文](../A2-G21-正文.md)；新增实验见[2.1—2.2 Notebook](../A2组-实验-2.1-2.2.ipynb)。新增实验依赖为[requirements](requirements-G21-2.1-2.2.txt)，完整环境锁定见[lock](requirements-G21-2.1-2.2-lock.txt)。2.3—2.4原始实验依赖仍使用原requirements文件，不应把两个环境混写为同一次运行。

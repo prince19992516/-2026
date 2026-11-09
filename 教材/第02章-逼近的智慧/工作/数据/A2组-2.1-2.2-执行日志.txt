@@ -1,0 +1,173 @@
+=== cell 1, execution 1 ===
+
+{'python': '3.12.10', 'numpy': '1.26.4', 'scipy': '1.14.1', 'matplotlib': '3.9.2'}
+
+=== cell 3, execution 2 ===
+
+   n     equidistant     chebyshev       ratio
+   5    4.383566e-01  4.020167e-01        1.09
+   9    1.045174e+00  1.708356e-01       6.118
+  11    1.915643e+00  1.091533e-01       17.55
+  15    7.194881e+00  4.660207e-02       154.4
+  21    5.982231e+01  1.533373e-02        3901
+  31    2.387998e+03  2.061544e-03   1.158e+06
+节点加密不降反升：n=11 -> n=31 的等距误差 1.92 -> 2.39e+03
+
+=== cell 5, execution 3 ===
+
+节点处最大误差（等距）  = 0.0e+00
+区间最大误差位置        = 0.9400（及其对称点）
+x=0.95 等距             = 1.9236
+x=0.95 Chebyshev        = 0.0855
+x=0.95 真值             = 0.0424
+
+=== cell 7, execution 4 ===
+
+  d    cond_mono  train_mono   test_mono   cond_cheb  train_cheb   test_cheb
+  3     1.05e+02   5.168e-02   2.045e-02    1.82e+00   5.168e-02   2.045e-02
+  6     1.82e+04   5.203e-02   2.530e-02    1.85e+00   5.203e-02   2.530e-02
+  9     4.63e+06   3.419e-02   3.150e-02    2.99e+00   3.419e-02   3.150e-02
+ 12     2.41e+09   5.639e-03   1.764e-01    1.65e+01   5.639e-03   1.764e-01
+cond(A^T A) = 2.14e+13
+cond(A)     = 4.63e+06
+两种解法系数最大差 = 4.152
+
+=== cell 9, execution 5 ===
+
+  d   train_max_residual   test_max_error
+  1            1.386e-01        1.338e-01
+  2            5.238e-02        1.366e-02
+  3            5.168e-02        2.045e-02
+  6            5.203e-02        2.530e-02
+  9            3.419e-02        3.150e-02
+ 12            5.639e-03        1.764e-01
+ 14            1.028e-07        9.688e-01
+d=14：训练残差 1.028e-07，测试误差 0.969
+
+=== cell 12, execution 6 ===
+
+{
+  "environment": {
+    "python": "3.12.10",
+    "numpy": "1.26.4",
+    "scipy": "1.14.1",
+    "matplotlib": "3.9.2",
+    "seed": 2026,
+    "dtype": "float64",
+    "device": "CPU",
+    "blas_threads": [
+      {
+        "internal_api": "openblas",
+        "num_threads": 1
+      },
+      {
+        "internal_api": "openblas",
+        "num_threads": 1
+      }
+    ]
+  },
+  "interpolation": [
+    {
+      "n": 5,
+      "equidistant_max_error": 0.4383566395255679,
+      "chebyshev_max_error": 0.40201674193790876,
+      "ratio": 1.0903939905897546
+    },
+    {
+      "n": 9,
+      "equidistant_max_error": 1.045173911783697,
+      "chebyshev_max_error": 0.1708355947318404,
+      "ratio": 6.118010204046177
+    },
+    {
+      "n": 11,
+      "equidistant_max_error": 1.9156430502192483,
+      "chebyshev_max_error": 0.10915326641231005,
+      "ratio": 17.550029542709193
+    },
+    {
+      "n": 15,
+      "equidistant_max_error": 7.194881107233082,
+      "chebyshev_max_error": 0.04660207211184919,
+      "ratio": 154.38972520287757
+    },
+    {
+      "n": 21,
+      "equidistant_max_error": 59.82230871072832,
+      "chebyshev_max_error": 0.015333731976079512,
+      "ratio": 3901.353486812643
+    },
+    {
+      "n": 31,
+      "equidistant_max_error": 2387.9977363713283,
+      "chebyshev_max_error": 0.0020615444251730897,
+      "ratio": 1158353.7600315497
+    }
+  ],
+  "probe": {
+    "x": 0.95,
+    "equidistant": 1.923631149719199,
+    "chebyshev": 0.08553493133811099,
+    "reference": 0.042440318302387266,
+    "peak_abs_x": 0.94
+  },
+  "conditioning": {
+    "3": [
+      105.46868405577759,
+      1.820983707895764
+    ],
+    "6": [
+      18193.27737329992,
+      1.845046643402207
+    ],
+    "9": [
+      4628254.574922183,
+      2.987621626634902
+    ],
+    "12": [
+      2412655790.4494257,
+      16.510798978662073
+    ]
+  },
+  "normal_equation": {
+    "condition": 21416260368422.176,
+    "coefficient_max_difference": 4.151686517878261
+  },
+  "degree_errors": {
+    "1": {
+      "train_max_residual": 0.13858364873496898,
+      "test_max_error": 0.13375615905499982
+    },
+    "2": {
+      "train_max_residual": 0.05238331868605273,
+      "test_max_error": 0.013655183092952328
+    },
+    "3": {
+      "train_max_residual": 0.051681963814118825,
+      "test_max_error": 0.02044731544908318
+    },
+    "6": {
+      "train_max_residual": 0.05202704877816133,
+      "test_max_error": 0.02530162985066431
+    },
+    "9": {
+      "train_max_residual": 0.03418950428214185,
+      "test_max_error": 0.03150493512929553
+    },
+    "12": {
+      "train_max_residual": 0.005638855085398742,
+      "test_max_error": 0.17640854612895418
+    },
+    "14": {
+      "train_max_residual": 1.0280090778636009e-07,
+      "test_max_error": 0.9688474294287979
+    }
+  },
+  "evaluation_overlap": {
+    "training_points": 15,
+    "evaluation_points": 400,
+    "shared_endpoints": 2,
+    "shared_points": 8,
+    "remaining_points": 392
+  }
+}
