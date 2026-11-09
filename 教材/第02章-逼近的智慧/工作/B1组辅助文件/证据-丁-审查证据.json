@@ -1,0 +1,977 @@
+{
+  "commit": "230873df074cc91ee949c8fa91043d39a8d77066",
+  "date": "2026-11-04",
+  "source_files": [
+    {
+      "path": "A1-G8-正文.md",
+      "sha256": "06aa6b3c0d6259ebec39fcc19e40dcf77d317c5f9efa1bf2a511ccf4867403bd"
+    },
+    {
+      "path": "A1组-AI对话记录.md",
+      "sha256": "02c1e55fbd1e0293fe1bf30af2743783981fd1fa8e30140de57fb2319bd658f7"
+    },
+    {
+      "path": "A1组-习题.md",
+      "sha256": "9eb55ac69facf023d923b202df34cbc30c2f829ae1acd7577a0e6b9ce813d5b4"
+    },
+    {
+      "path": "A1组-习题参考解答.md",
+      "sha256": "13fc3597a019bd7740bb0fdce884afb0f86f2614c2951cf6547dbc2bcc4fd0b7"
+    },
+    {
+      "path": "A1组-实验.ipynb",
+      "sha256": "d87f511fb7296d9e2c71039d5c2ab976f8e5a48f022a459a715c44eb74c9053c"
+    },
+    {
+      "path": "A1组-编写报告.md",
+      "sha256": "ea1fcb7cb87226396c7eca4e12fcfb72494cdd0bfaea6781a5ad409764fb1567"
+    },
+    {
+      "path": "A2-G21-正文.md",
+      "sha256": "2dab2b207bc006af0c0f6c8ff7b10cff8487356bac1a115b47c29f46d8d020be"
+    },
+    {
+      "path": "A2组-AI对话记录.md",
+      "sha256": "7d6befc1e2ab0f59f782118a31b4b52b0d751dcf8143e1e2595a9ce5b151f9a8"
+    },
+    {
+      "path": "A2组-习题.md",
+      "sha256": "eae260e5723a16e7b902fcb2947e73b2a5c237e884e77a4a43725b22128164c4"
+    },
+    {
+      "path": "A2组-习题参考解答.md",
+      "sha256": "ad007c98d35350885fe3e0b0aeaf1338624dec42668bab085e9197d1404bca98"
+    },
+    {
+      "path": "A2组-实验.ipynb",
+      "sha256": "c6b4db08bd1a9fcbe786e6cb508e85691aa81740f5342fa3bc6a716118eec593"
+    },
+    {
+      "path": "A2组-编写报告.md",
+      "sha256": "309657461a40a9c75af59bb61e14600adca40b308618f928d47dcbce62d87c22"
+    },
+    {
+      "path": "G8-提交说明.md",
+      "sha256": "0d0de2b29f7df971042616adffb02509d80369c7441de46626fb6c5bc50ef6db"
+    },
+    {
+      "path": "G21-附件/README.md",
+      "sha256": "68bea44af8f61973367c25d3e12a5104dd89efe17a24faa99094bf8bd2019e18"
+    },
+    {
+      "path": "G21-附件/requirements-G21-lock.txt",
+      "sha256": "540e62e13363de04e82c9c4f6fed6c60a780e8774f50cee2d9dd9b29ef497342"
+    },
+    {
+      "path": "G21-附件/requirements-G21.txt",
+      "sha256": "2a9640ff03d2537a6de0214ad0edc34d9d71571a744559d8b3e29749ab4b70fd"
+    },
+    {
+      "path": "G21-附件/SHA256SUMS-G21.txt",
+      "sha256": "d02088f9fda53b00b996096c38ec414ad583cbab9f182abfaef38d96a1c81028"
+    },
+    {
+      "path": "G21-附件/复现实验.py",
+      "sha256": "c967d3ba97b50d2f045cda11df9d6fb3b0db296cefb4bc3a7337672a3afca406"
+    },
+    {
+      "path": "G8-附件/ch2_numerics.py",
+      "sha256": "9b167046bdf5fb2dabe2e37b4a337e1a164fe97edd4e235bff671a4c2dbc717c"
+    },
+    {
+      "path": "G8-附件/G8-本次检查记录.md",
+      "sha256": "cb63b6a65a4650d1c7c993a618a43aa31c2e0759027f96989feb4aa6b8f783d7"
+    },
+    {
+      "path": "G8-附件/G8-运行Notebook.py",
+      "sha256": "18df70c233b2f03cba1b6439f623108a792a1f12d3c4ca8a28d37ed74d26e60d"
+    },
+    {
+      "path": "G8-附件/README.md",
+      "sha256": "b1046484e7291333354f9cee77a18988758e5590653db28cbead861b50a40611"
+    },
+    {
+      "path": "G8-附件/requirements.txt",
+      "sha256": "75bfedba7c171075cc3e51b91bcb2861d2f10438a34a194328d96f7936d38c68"
+    },
+    {
+      "path": "G8-附件/参考文献与定位.md",
+      "sha256": "14bd068387c8fb8e6b9d8bfbfd4735e4e610118d71e8ace8880f3551145ee1f2"
+    },
+    {
+      "path": "G8-附件/实验结果.json",
+      "sha256": "ceff623b7039d3b1ca45d6a8da9e24e33d5bb1829671537956da66c5d957d3f3"
+    },
+    {
+      "path": "G8-附件/环境版本.json",
+      "sha256": "7826b68ebcb5bfb4652846044dce6a39759277d71fc0ad83f59971b9d8efa30e"
+    },
+    {
+      "path": "G8-附件/符号表.md",
+      "sha256": "87098e93a72a4a178d9f3a820b5dcda00af57cfe1a2b6d45dc6e3a27a6068653"
+    },
+    {
+      "path": "数据/A2组-实测摘要.json",
+      "sha256": "65ab74a420286c0b3f68d8674ebb5a9eb2a48d04757d59793022afa5c2a18a2d"
+    },
+    {
+      "path": "数据/A2组-差分步长.csv",
+      "sha256": "16f14dc0dae8af507e33f915e2379046f67ea6f37d41dabe7511f8da6ccd2cec"
+    },
+    {
+      "path": "数据/A2组-执行日志.txt",
+      "sha256": "5a3fc1fbabba5b84f4265121df10b03e8975435e4e9751c3ed324c09347c9190"
+    },
+    {
+      "path": "数据/A2组-材料来源清单.json",
+      "sha256": "fb9062b403ba41216b752843a6f01bb8206e23c5de497a0361b90c384ce92070"
+    },
+    {
+      "path": "数据/A2组-测试点与导数.csv",
+      "sha256": "fcd7ced4e7bb5c1e2073b0c037735dabb2b2953891a26ac1834f431adc26c25b"
+    },
+    {
+      "path": "数据/A2组-积分收敛.csv",
+      "sha256": "e1add74b83abf39bc2035323a541fb4edefaa283b0dca3bde22d9e30f2cb8aee"
+    },
+    {
+      "path": "数据/A2组-网络权重.pt",
+      "sha256": "dedb3e83949ca3f55d6189e5bb346346e17a13a96ec49a3c3f80ad5cab7bd7b1"
+    },
+    {
+      "path": "数据/A2组-网络误差.csv",
+      "sha256": "b2804e07c900e47b5310dca6b69d05497b6457ef03f34a7eb177517d0d6d50a2"
+    },
+    {
+      "path": "数据/A2组-训练过程.csv",
+      "sha256": "f856bae4937dd15d68ebf8be3675e74bd96a86abbdcf93700823e5f7b66459d2"
+    },
+    {
+      "path": "数据/A2组-高频反例.csv",
+      "sha256": "34fa3625c11efe85228b3edb25e296340fe96d89cc5a05d311c5e3d3975839e9"
+    },
+    {
+      "path": "G8-附件/审校/HTML链接检查.json",
+      "sha256": "b924426389c587135ae86b35ddf3a0e703b55e46b963224d61858ebe6355783e"
+    },
+    {
+      "path": "G8-附件/审校/交付检查.md",
+      "sha256": "0e83181ffc90e04d2c86cca1638e99ff2b587ffe904fa168c354f33f28b5c915"
+    },
+    {
+      "path": "G8-附件/审校/教学审查.md",
+      "sha256": "30843e49ef179fea0408ee4a7e83e95e5d2d4141ba35061a33283f69b76a0bac"
+    },
+    {
+      "path": "G8-附件/审校/数学严谨性审查.md",
+      "sha256": "344263de3b5c2f5f261d46163d4b18f6766f01c0955a9d6a4e8817314051ffe7"
+    },
+    {
+      "path": "G8-附件/审校/来源核查.md",
+      "sha256": "b2fba00493ead08c55da18a7d3a1238b03cdbe46ecf1fb4f67201932057165e1"
+    },
+    {
+      "path": "G8-附件/审校/独立数值补核.json",
+      "sha256": "9c27e976222280ed0c7abcfafb18170098e6ee35bbf25e0379da2640fa8aca8d"
+    },
+    {
+      "path": "G8-附件/审校/预览检查.json",
+      "sha256": "5f8ff3cd8f99a4fc2155dd00ec84ccd92308e52f6c72b8ee2a91486a188d5cf7"
+    }
+  ],
+  "original_execution": {
+    "A1": {
+      "status": "passed",
+      "seconds": 9.55721469999935,
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "executable": "C:\\Users\\yzx\\Documents\\Codex\\2026-10-22\\new-chat\\work\\B1-review\\env\\Scripts\\python.exe",
+      "source_sha256": "d87f511fb7296d9e2c71039d5c2ab976f8e5a48f022a459a715c44eb74c9053c",
+      "code_cells": 12,
+      "executed_cells": 12
+    },
+    "A2": {
+      "status": "passed",
+      "seconds": 12.953871200000322,
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "executable": "C:\\Users\\yzx\\Documents\\Codex\\2026-10-22\\new-chat\\work\\B1-review\\env-a2\\Scripts\\python.exe",
+      "source_sha256": "c6b4db08bd1a9fcbe786e6cb508e85691aa81740f5342fa3bc6a716118eec593",
+      "code_cells": 6,
+      "executed_cells": 6
+    }
+  },
+  "packaged_execution": {
+    "A1": {
+      "status": "passed",
+      "seconds": 7.312575499999184,
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "code_cells": 15,
+      "executed_cells": 15
+    },
+    "A2": {
+      "status": "passed",
+      "seconds": 9.665379400000347,
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "code_cells": 8,
+      "executed_cells": 8
+    }
+  },
+  "packaging_changes": {
+    "A1": [
+      "完整嵌入原ch2_numerics.py，删除外部py依赖；不改数值函数和训练预算",
+      "仅调整绘图导出及环境指纹读取；其他小节图片留在内存、显示于完整Notebook，不另交文件",
+      "仅导出network字段；保留所有原始单元及原静态解释，新增独立验算单元",
+      "原稿导入SVG作为Notebook附件内嵌；内嵌类的源码显示用原源码文本，避免inspect不能定位Notebook内类的问题",
+      "environment.module_sha256记录原辅助模块指纹；不是声称内嵌适配后字节完全相同"
+    ],
+    "A2": [
+      "保留全部原始单元；仅改文件存在性检查与相对输出位置",
+      "仅导出网络、高频反例、训练历史和权重；积分/差分仍执行并内嵌显示，不单独提交数据",
+      "新增B1独立验算单元，不改变模型、种子、训练与评价配置",
+      "文件存在性断言已改为交付Notebook名称，并完整重跑"
+    ]
+  },
+  "original_local_network": {
+    "A1": {
+      "seed": 2026,
+      "device": "CPU",
+      "dtype": "float64",
+      "width": 12,
+      "parameter_count": 37,
+      "training_points": 81,
+      "test_points": 2001,
+      "test_grid": "shifted uniform interior grid, offset=.371, disjoint from training points",
+      "steps": 14000,
+      "optimizer": "Adam beta1=.9 beta2=.999 eps=1e-8; learning rate .01 for 8000 steps then .002",
+      "training_scope": "all a,w,b,c jointly; value-only loss",
+      "final_loss": 1.0566416815609858e-06,
+      "train_grid_max_error": 0.0029083189444616296,
+      "independent_grid_max_errors": {
+        "value": 0.0028647578849091684,
+        "first_derivative": 0.1171684955937482,
+        "second_derivative": 1.6469419116608754
+      },
+      "jet_vs_analytic_max_differences": [
+        9.992007221626409e-16,
+        1.7763568394002505e-15,
+        3.9968028886505635e-15
+      ],
+      "reverse_vs_analytic_parameter_gradient_max_differences": [
+        5.421010862427522e-20,
+        2.710505431213761e-20,
+        4.0657581468206416e-20,
+        0.0
+      ],
+      "directional_gradient": {
+        "reverse": -7.439810802329849e-05,
+        "central_difference": -7.439811408383193e-05,
+        "h": 1e-05,
+        "absolute_difference": 6.060533436322464e-12
+      },
+      "history": [
+        [
+          1,
+          0.9606927078419844
+        ],
+        [
+          200,
+          0.09946782400445935
+        ],
+        [
+          400,
+          0.015535846946487134
+        ],
+        [
+          600,
+          0.0037693081848405095
+        ],
+        [
+          800,
+          0.0008958002528540783
+        ],
+        [
+          1000,
+          0.00029611830804485747
+        ],
+        [
+          1200,
+          0.00011928632986118585
+        ],
+        [
+          1400,
+          6.972509908601065e-05
+        ],
+        [
+          1600,
+          5.33401654022703e-05
+        ],
+        [
+          1800,
+          4.46877899805618e-05
+        ],
+        [
+          2000,
+          3.8132960036894146e-05
+        ],
+        [
+          2200,
+          3.248946905991366e-05
+        ],
+        [
+          2400,
+          2.7474473332856964e-05
+        ],
+        [
+          2600,
+          2.3164640449638317e-05
+        ],
+        [
+          2800,
+          1.944622550329458e-05
+        ],
+        [
+          3000,
+          3.378743113320806e-05
+        ],
+        [
+          3200,
+          1.3538530770739639e-05
+        ],
+        [
+          3400,
+          1.1260223190341243e-05
+        ],
+        [
+          3600,
+          9.344290006709206e-06
+        ],
+        [
+          3800,
+          7.738904005584402e-06
+        ],
+        [
+          4000,
+          6.480571701556849e-06
+        ],
+        [
+          4200,
+          5.412795208068377e-06
+        ],
+        [
+          4400,
+          4.595191310670646e-06
+        ],
+        [
+          4600,
+          3.908166650337334e-06
+        ],
+        [
+          4800,
+          3.393329074042669e-06
+        ],
+        [
+          5000,
+          2.9620283817452896e-06
+        ],
+        [
+          5200,
+          2.6451717966729358e-06
+        ],
+        [
+          5400,
+          2.375831725837998e-06
+        ],
+        [
+          5600,
+          2.1824705174480313e-06
+        ],
+        [
+          5800,
+          2.013837477466201e-06
+        ],
+        [
+          6000,
+          3.1748656738377255e-06
+        ],
+        [
+          6200,
+          1.7883179090399858e-06
+        ],
+        [
+          6400,
+          1.6988465260876005e-06
+        ],
+        [
+          6600,
+          1.6417506928600992e-06
+        ],
+        [
+          6800,
+          1.5808957330364142e-06
+        ],
+        [
+          7000,
+          1.5571577539239898e-06
+        ],
+        [
+          7200,
+          1.5009159141726681e-06
+        ],
+        [
+          7400,
+          1.4617439220806553e-06
+        ],
+        [
+          7600,
+          1.440239542264037e-06
+        ],
+        [
+          7800,
+          1.4086103265244349e-06
+        ],
+        [
+          8000,
+          1.3818543111774674e-06
+        ],
+        [
+          8200,
+          1.3760417874795692e-06
+        ],
+        [
+          8400,
+          1.3699174454961058e-06
+        ],
+        [
+          8600,
+          1.3633354605635412e-06
+        ],
+        [
+          8800,
+          1.3562646057297471e-06
+        ],
+        [
+          9000,
+          1.348674302440631e-06
+        ],
+        [
+          9200,
+          1.340533884592088e-06
+        ],
+        [
+          9400,
+          1.3318118225983123e-06
+        ],
+        [
+          9600,
+          1.3224749921929943e-06
+        ],
+        [
+          9800,
+          1.3124880425082017e-06
+        ],
+        [
+          10000,
+          1.3018128982616565e-06
+        ],
+        [
+          10200,
+          1.2904084281585676e-06
+        ],
+        [
+          10400,
+          1.2782303211413695e-06
+        ],
+        [
+          10600,
+          1.265231222259114e-06
+        ],
+        [
+          10800,
+          1.2513611786989623e-06
+        ],
+        [
+          11000,
+          1.2365684259218402e-06
+        ],
+        [
+          11200,
+          1.2208005014897536e-06
+        ],
+        [
+          11400,
+          1.2065811160346736e-06
+        ],
+        [
+          11600,
+          1.192310506970583e-06
+        ],
+        [
+          11800,
+          1.1824231660054463e-06
+        ],
+        [
+          12000,
+          1.1644118958484584e-06
+        ],
+        [
+          12200,
+          1.1508465174579847e-06
+        ],
+        [
+          12400,
+          1.145154239718617e-06
+        ],
+        [
+          12600,
+          1.1246850538157015e-06
+        ],
+        [
+          12800,
+          1.1126826484651502e-06
+        ],
+        [
+          13000,
+          1.3819174225073767e-06
+        ],
+        [
+          13200,
+          1.7380028781785825e-06
+        ],
+        [
+          13400,
+          1.201318868257744e-06
+        ],
+        [
+          13600,
+          1.4600593862729598e-06
+        ],
+        [
+          13800,
+          1.0764166786539437e-06
+        ],
+        [
+          14000,
+          1.0518691557061922e-06
+        ]
+      ],
+      "training_seconds": 3.440736900000047,
+      "params": {
+        "a": [
+          -0.20325742820395268,
+          -1.0877754156120847,
+          -0.4862351882743994,
+          0.598899778038808,
+          0.3093591192413919,
+          -0.1686287784694143,
+          0.5040899895913984,
+          -1.1659604846350464,
+          -1.16228631158289,
+          0.0690777514260294,
+          -0.6984322636757218,
+          -1.2314753515316594
+        ],
+        "w": [
+          -0.04820703311754782,
+          2.5447749344019206,
+          0.2693175333998367,
+          -0.950494803790416,
+          -0.18534450598223598,
+          0.37483654391650356,
+          -0.3947133332148003,
+          -2.284220232989256,
+          -2.3892122440053196,
+          1.0681315948709047,
+          0.7346360999709722,
+          1.7788099404837865
+        ],
+        "b": [
+          0.513694850431136,
+          2.3738861175183867,
+          0.03934776795387678,
+          0.9179269125411091,
+          -0.7551759541524486,
+          0.14247211746032795,
+          0.004783403494990235,
+          0.5668570669499501,
+          -0.32852613779057327,
+          0.042926551777351836,
+          -0.5928201427437104,
+          -1.7507711429479325
+        ],
+        "c": -0.3341248786383958
+      },
+      "counterexamples": {
+        "high_frequency": {
+          "k": 100,
+          "epsilon": 0.0001,
+          "continuous_sup_errors": [
+            0.0001,
+            0.01,
+            1.0
+          ]
+        },
+        "relu": {
+          "formula": "max(0,x): derivative 0 for x<0 and 1 for x>0; not differentiable at 0",
+          "second_difference_away": [
+            0.0,
+            0.0
+          ],
+          "kink_second_difference": [
+            9.999999999999998,
+            100.0,
+            1000.0000000000001
+          ],
+          "kink_steps": [
+            0.1,
+            0.01,
+            0.001
+          ]
+        }
+      }
+    },
+    "A2": {
+      "architecture": "1-32-32-1, tanh",
+      "parameters": 1153,
+      "train_points": 41,
+      "test_points": 400,
+      "train_mse": 4.531031312819505e-08,
+      "adam_steps": 2000,
+      "lbfgs_max_iter": 400,
+      "lbfgs_closures": 471,
+      "seconds": 1.9815318999999363,
+      "errors": [
+        {
+          "quantity": "u",
+          "max_abs_error": 0.0004135725170441029,
+          "rmse": 0.0002140624898579817,
+          "relative_l2": 0.0003027300763525108
+        },
+        {
+          "quantity": "du_dx",
+          "max_abs_error": 0.015232965663035003,
+          "rmse": 0.004264256302622995,
+          "relative_l2": 0.0019195897627636283
+        },
+        {
+          "quantity": "d2u_dx2",
+          "max_abs_error": 0.35636978773776057,
+          "rmse": 0.0923991851475426,
+          "relative_l2": 0.013239860026553286
+        }
+      ],
+      "ad_manual_errors": [
+        4.440892098500626e-16,
+        1.3322676295501878e-15,
+        5.329070518200751e-15
+      ],
+      "poisson_residual_rmse": 0.0923991851475426,
+      "boundary_values": [
+        -0.00014892352135579406,
+        4.5217454985389816e-05
+      ],
+      "residual_parameter_gradient_norm": 0.5225463795582987
+    }
+  },
+  "independent_derivation_before_reading_answers": true,
+  "different_ai_tool_check": "not performed",
+  "human_hand_calculation_signoff": "pending",
+  "commit_api_confirmed": "230873df074cc91ee949c8fa91043d39a8d77066",
+  "cell_mapping": {
+    "A1": [
+      {
+        "source_index_zero_based": 0,
+        "delivery_index_zero_based": 1,
+        "cell_type": "markdown",
+        "source_identical": false
+      },
+      {
+        "source_index_zero_based": 1,
+        "delivery_index_zero_based": 3,
+        "cell_type": "code",
+        "source_identical": false
+      },
+      {
+        "source_index_zero_based": 2,
+        "delivery_index_zero_based": 4,
+        "cell_type": "markdown",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 3,
+        "delivery_index_zero_based": 5,
+        "cell_type": "code",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 4,
+        "delivery_index_zero_based": 6,
+        "cell_type": "code",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 5,
+        "delivery_index_zero_based": 7,
+        "cell_type": "markdown",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 6,
+        "delivery_index_zero_based": 8,
+        "cell_type": "markdown",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 7,
+        "delivery_index_zero_based": 9,
+        "cell_type": "code",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 8,
+        "delivery_index_zero_based": 10,
+        "cell_type": "code",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 9,
+        "delivery_index_zero_based": 11,
+        "cell_type": "markdown",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 10,
+        "delivery_index_zero_based": 12,
+        "cell_type": "markdown",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 11,
+        "delivery_index_zero_based": 13,
+        "cell_type": "code",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 12,
+        "delivery_index_zero_based": 14,
+        "cell_type": "markdown",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 13,
+        "delivery_index_zero_based": 15,
+        "cell_type": "code",
+        "source_identical": false
+      },
+      {
+        "source_index_zero_based": 14,
+        "delivery_index_zero_based": 16,
+        "cell_type": "code",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 15,
+        "delivery_index_zero_based": 17,
+        "cell_type": "markdown",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 16,
+        "delivery_index_zero_based": 18,
+        "cell_type": "markdown",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 17,
+        "delivery_index_zero_based": 19,
+        "cell_type": "code",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 18,
+        "delivery_index_zero_based": 20,
+        "cell_type": "markdown",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 19,
+        "delivery_index_zero_based": 21,
+        "cell_type": "code",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 20,
+        "delivery_index_zero_based": 22,
+        "cell_type": "markdown",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 21,
+        "delivery_index_zero_based": 23,
+        "cell_type": "code",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 22,
+        "delivery_index_zero_based": 24,
+        "cell_type": "markdown",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 23,
+        "delivery_index_zero_based": 25,
+        "cell_type": "code",
+        "source_identical": false
+      }
+    ],
+    "A2": [
+      {
+        "source_index_zero_based": 0,
+        "delivery_index_zero_based": 1,
+        "cell_type": "markdown",
+        "source_identical": false
+      },
+      {
+        "source_index_zero_based": 1,
+        "delivery_index_zero_based": 2,
+        "cell_type": "code",
+        "source_identical": false
+      },
+      {
+        "source_index_zero_based": 2,
+        "delivery_index_zero_based": 3,
+        "cell_type": "markdown",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 3,
+        "delivery_index_zero_based": 4,
+        "cell_type": "code",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 4,
+        "delivery_index_zero_based": 5,
+        "cell_type": "markdown",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 5,
+        "delivery_index_zero_based": 6,
+        "cell_type": "code",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 6,
+        "delivery_index_zero_based": 7,
+        "cell_type": "markdown",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 7,
+        "delivery_index_zero_based": 8,
+        "cell_type": "code",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 8,
+        "delivery_index_zero_based": 9,
+        "cell_type": "code",
+        "source_identical": false
+      },
+      {
+        "source_index_zero_based": 9,
+        "delivery_index_zero_based": 10,
+        "cell_type": "markdown",
+        "source_identical": true
+      },
+      {
+        "source_index_zero_based": 10,
+        "delivery_index_zero_based": 11,
+        "cell_type": "code",
+        "source_identical": false
+      },
+      {
+        "source_index_zero_based": 11,
+        "delivery_index_zero_based": 12,
+        "cell_type": "markdown",
+        "source_identical": true
+      }
+    ]
+  },
+  "fixed_source_weights_check": {
+    "A1": "passed, atol=rtol=1e-12",
+    "A2": "passed, atol=rtol=1e-12"
+  },
+  "final_checks": {
+    "local_links": 23,
+    "notebooks": {
+      "B1组-A1网络逼近&A2网络逼近-补充验证.ipynb": {
+        "code_cells": 2,
+        "outputs": 6,
+        "python": "3.12.14"
+      },
+      "B1组-A1网络逼近-验证.ipynb": {
+        "code_cells": 15,
+        "outputs": 23,
+        "python": "3.12.14"
+      },
+      "B1组-A2网络逼近-验证.ipynb": {
+        "code_cells": 8,
+        "outputs": 14,
+        "python": "3.12.14"
+      }
+    },
+    "formulas": 344,
+    "file_count": 30,
+    "math_render": {
+      "errors": [],
+      "formulas": 344,
+      "rendered": 344,
+      "mathErrors": [],
+      "tableOverflow": [],
+      "overflow": []
+    },
+    "naming": "passed",
+    "relative_paths": "passed",
+    "out_of_scope_external_data": "none",
+    "standalone_py": "none"
+  },
+  "second_review": {
+    "date": "2026-11-04",
+    "version": "v2",
+    "original_notebooks_unchanged": {
+      "B1组-A1网络逼近-验证.ipynb": "9949ab82e715dd59ccb3d729fab9f7735efc51d2275f2147492b24ef74e0bf83",
+      "B1组-A2网络逼近-验证.ipynb": "da75b1f9ec32fc95a8e8d442398faad93d68cb341865b9d64e4e0cc3ddb67685"
+    },
+    "template_grid": "[0,1], 10001 common points, k=10,100,1000",
+    "symbolic_checks": "executed in supplementary Notebook",
+    "human_signoff": "pending",
+    "different_ai_tool_check": "not performed",
+    "symbolic_checks_passed": 22,
+    "supplement_code_cells_executed": 2,
+    "supplement_warning": "Matplotlib字体缓存写入权限警告已保留在原始输出；图片生成及断言均通过。",
+    "all_process_requirements_fulfilled": false,
+    "unchanged_files": [
+      "B1组辅助文件/B1组-丁-A1-requirements.txt",
+      "B1组辅助文件/B1组-丁-A1-安装日志.log",
+      "B1组辅助文件/B1组-丁-A1-环境锁定.txt",
+      "B1组辅助文件/B1组-丁-A2-安装日志.log",
+      "B1组辅助文件/B1组-丁-A2-环境锁定.txt",
+      "B1组验证结果/B1组-A1网络逼近&A2网络逼近-原稿与本地对照.csv",
+      "B1组验证结果/B1组-A1网络逼近-本地结果.json",
+      "B1组验证结果/B1组-A1网络逼近-独立误差核对.csv",
+      "B1组验证结果/B1组-A1网络逼近-网络与导数.png",
+      "B1组验证结果/B1组-A1网络逼近-训练损失.png",
+      "B1组验证结果/B1组-A1网络逼近-验证.ipynb",
+      "B1组验证结果/B1组-A1网络逼近-高频反例.png",
+      "B1组验证结果/B1组-A2网络逼近-本地结果.json",
+      "B1组验证结果/B1组-A2网络逼近-测试点与导数.csv",
+      "B1组验证结果/B1组-A2网络逼近-网络与导数.png",
+      "B1组验证结果/B1组-A2网络逼近-网络权重.pt",
+      "B1组验证结果/B1组-A2网络逼近-网络误差.csv",
+      "B1组验证结果/B1组-A2网络逼近-训练过程.csv",
+      "B1组验证结果/B1组-A2网络逼近-验证.ipynb",
+      "B1组验证结果/B1组-A2网络逼近-高频反例.csv",
+      "B1组验证结果/B1组-A2网络逼近-高频反例.png"
+    ]
+  }
+}
