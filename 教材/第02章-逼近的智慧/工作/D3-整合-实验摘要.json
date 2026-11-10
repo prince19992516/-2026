@@ -1,0 +1,8 @@
+{
+  "runge_error_even": 3.6629967886183157,
+  "runge_error_chebyshev": 0.06921570780776609,
+  "condition_monomial": 540.8653137058101,
+  "condition_chebyshev": 3.0429247629172216,
+  "integration_error_n64": 3.495839104861176e-05,
+  "parameter_gradient_relative_error": 3.8756676699710876e-11
+}
