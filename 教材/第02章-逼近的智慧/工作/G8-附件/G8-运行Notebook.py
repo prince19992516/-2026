@@ -1,6 +1,6 @@
 """Execute a notebook with this script's Python, starting a clean kernel.
 
-Usage: /path/to/course/python tools/execute_notebook.py path/to/notebook.ipynb
+Usage: /path/to/course/python G8-附件/G8-运行Notebook.py path/to/notebook.ipynb
 The kernelspec is temporary: it does not modify the user's Jupyter configuration.
 """
 from pathlib import Path

@@ -1,15 +1,14 @@
 {
-  "python": "3.12.5",
-  "interpreter": "C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
-  "module_sha256": "9b167046bdf5fb2dabe2e37b4a337e1a164fe97edd4e235bff671a4c2dbc717c",
+  "python": "3.12.14",
+  "module_sha256": "661b3d0ab61f54321a1f3f27338239b657aa95ede6bcf3f198fd3b279ce43e41",
   "platform": "Windows-11-10.0.22631-SP0",
   "packages": {
-    "numpy": "2.0.1",
-    "matplotlib": "3.9.1.post1",
+    "numpy": "1.26.4",
+    "matplotlib": "3.9.2",
     "nbformat": "5.10.4",
-    "nbclient": "0.10.0",
+    "nbclient": "0.10.2",
     "ipykernel": "6.29.5",
-    "jupyter_client": "8.6.2"
+    "jupyter_client": "8.10.0"
   },
   "seed": 2026,
   "dtype": "float64",

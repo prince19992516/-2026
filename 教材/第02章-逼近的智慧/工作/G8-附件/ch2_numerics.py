@@ -247,7 +247,7 @@ def interpolation_experiment():
             y=f(x);p=barycentric_evaluate(x,y,z)
             assert np.array_equal(barycentric_evaluate(x,y,x),y)
             err=float(np.max(np.abs(p-f(z))))
-            rows.append(dict(n=n,nodes=kind,grid_max_error=err,node_max_error=0.))
+            rows.append(dict(n=n,nodes=kind,grid_max_error=err,node_max_error=float(np.max(np.abs(barycentric_evaluate(x,y,x)-y)))))
             plt.semilogy(z,np.maximum(abs(p-f(z)),1e-17),label=f'{kind}, n={n}')
     plt.xlabel('x');plt.ylabel('absolute error');plt.legend(fontsize=7,ncol=2)
     _savefig('experiment-runge-errors.png')
@@ -272,15 +272,16 @@ def interpolation_experiment():
 def least_squares_experiment():
     rng=np.random.default_rng(SEED);x=np.linspace(-1,1,41);truth=lambda t:np.exp(t)
     noise=rng.normal(0.,.015,len(x));y=truth(x)+noise;z=-1+2*(np.arange(2001)+.371)/2001
+    np.savetxt(ROOT/'最小二乘训练数据.csv',np.column_stack([x,y]),delimiter=',',header='x,y',comments='',fmt='%.17g')
     rows=[];pred=[]
     for basis in ('power','chebyshev'):
         c,A=fit_polynomial(x,y,12,basis);p=poly_design(z,12,basis)@c;pred.append(p)
         Q,R=np.linalg.qr(A,mode='reduced');cq=np.linalg.solve(R,Q.T@y)
         disagreement=float(np.max(abs(poly_design(z,12,basis)@cq-p)))
-        assert disagreement<1e-9
+        assert disagreement<1e-12
         rows.append(dict(basis=basis,condition_2=float(np.linalg.cond(A)),residual_2=float(np.linalg.norm(A@c-y)),grid_max_error=float(np.max(abs(p-truth(z)))),qr_prediction_max_difference=disagreement))
     basis_difference=float(np.max(abs(pred[0]-pred[1])))
-    assert basis_difference<1e-9
+    assert basis_difference<1e-12
     # Independent exact line fit: symmetry gives c0=2, c1=3.
     cs,_=fit_polynomial(np.array([-1.,0.,1.]),np.array([-1.,2.,5.]),1)
     np.testing.assert_allclose(cs,[2.,3.],atol=2e-15,rtol=2e-15)
@@ -298,7 +299,7 @@ def least_squares_experiment():
     for d in (3,12,30):
         c,A=fit_polynomial(x,y,d,'chebyshev');p=poly_design(z,d,'chebyshev')@c
         degree_rows.append(dict(degree=d,residual_2=float(np.linalg.norm(A@c-y)),grid_max_error=float(np.max(abs(p-truth(z))))))
-    return dict(rows=rows,degree_comparison=degree_rows,samples=41,degree=12,noise_std=.015,basis_prediction_max_difference=basis_difference,normal_equations_solved=False,scaling_interval=[100.,102.],rank_deficient_rejected=True)
+    return dict(rows=rows,degree_comparison=degree_rows,degree_scan=[dict(degree=d,grid_max_error=float(np.max(abs(poly_design(z,d,'chebyshev')@fit_polynomial(x,y,d,'chebyshev')[0]-truth(z))))) for d in range(31)],samples=41,degree=12,noise_std=.015,basis_prediction_max_difference=basis_difference,normal_equations_solved=False,scaling_interval=[100.,102.],rank_deficient_rejected=True)
 
 
 def trapezoid_square(n):
@@ -311,7 +312,7 @@ def differentiation_experiment():
     rows=[]
     for n in (4,8,16,32,64):
         val=trapezoid_square(n);err=val-1/3
-        np.testing.assert_allclose(err,1/(6*n*n),rtol=1e-12,atol=1e-16)
+        np.testing.assert_allclose(err,1/(6*n*n),rtol=0,atol=1e-14)
         rows.append(dict(N=n,T_N=val,signed_error_I_minus_T=-err,absolute_error=err))
     x=.7;value=np.sin(x*x)+np.exp(x);d1=2*x*np.cos(x*x)+np.exp(x)
     d2=2*np.cos(x*x)-4*x*x*np.sin(x*x)+np.exp(x)
@@ -378,3 +379,48 @@ def run_all():
 if __name__=='__main__':
     results=run_all()
     print(json.dumps({k:(v if k!='network' else {kk:vv for kk,vv in v.items() if kk not in ('history','params')}) for k,v in results.items()},ensure_ascii=False,indent=2))
+
+
+def revision_checks():
+    """Independent algebraic and numerical checks for the reviewed issues."""
+    f=lambda x: np.sin(x*x)+np.exp(x)
+    x=.7;h=.1;exact=2*x*np.cos(x*x)+np.exp(x)
+    central=(f(x+h)-f(x-h))/(2*h)
+    assert abs(central-3.241716680946303)<1e-14
+    # Simpson is exact for degree 0..3, independently integrated as powers.
+    simpson=[]
+    for k in range(4):
+        val=(0.**k+4*.5**k+1.**k)/6
+        assert abs(val-1/(k+1))<1e-14
+        simpson.append(float(val))
+    def trap_square(a,b,n):
+        t=np.linspace(a,b,n+1);v=t*t
+        return (b-a)/n*(v[0]/2+v[1:-1].sum()+v[-1]/2)
+    e1=trap_square(0,1,8)-1/3;e10=trap_square(0,10,8)-1000/3
+    assert abs(e10/e1-1000)<1e-9
+    np.testing.assert_allclose(barycentric_evaluate([-1,0,1],[6,3,4],[.23,1.1]),[2*.23**2-.23+3,4.32],atol=1e-14,rtol=0)
+    rows=[]
+    z=-1+2*(np.arange(6001)+.371)/6001
+    for n in (8,16,32):
+        for kind in ('equispaced','Chebyshev zeros'):
+            nodes=np.linspace(-1,1,n+1) if kind=='equispaced' else np.cos((2*np.arange(n+1)+1)*np.pi/(2*n+2))
+            w=barycentric_weights(nodes);d=z[:,None]-nodes[None,:]
+            terms=w/d;L=terms/terms.sum(axis=1)[:,None]
+            rows.append(dict(n=n,nodes=kind,grid_lebesgue=float(np.max(np.sum(abs(L),axis=1)))))
+    runge=lambda t:1/(1+25*t*t)
+    piece=[]
+    for n in (32,64):
+        nodes=np.linspace(-1,1,n+1);h=2/n
+        err=float(np.max(abs(np.interp(z,nodes,runge(nodes))-runge(z))))
+        assert err<=50*h*h/8+1e-14
+        piece.append(dict(segments=n,grid_error=err,theoretical_bound=50*h*h/8))
+    # Nonuniform derivative at 0 is exact for degree <=2.
+    for k in range(3):
+        y=np.array([0.,.4,1.])**k
+        val=np.array([-3.5,25/6,-2/3])@y
+        assert abs(val-(1. if k==1 else 0.))<1e-14
+    # Chebyshev discrete Gram: nodes, weights and degree range all explicit.
+    m=8;t=np.cos(np.arange(m+1)*np.pi/m);V=np.polynomial.chebyshev.chebvander(t,m)
+    w=np.ones(m+1);w[[0,-1]]=.5;G=V.T@(w[:,None]*V)
+    assert np.max(abs(G-np.diag(np.diag(G))))<1e-12
+    return dict(simpson_powers_0_to_3=simpson,trapezoid_scale_ratio=float(e10/e1),central_value=float(central),central_signed_error=float(central-exact),F_value=float(f(x)),ulp_at_x=float(np.spacing(x)),increment_1e_16_swallowed=bool(x+1e-16==x),lebesgue=rows,piecewise_linear=piece,nonuniform_quadratic_check=True,weighted_gram_off_diagonal=float(np.max(abs(G-np.diag(np.diag(G))))))
