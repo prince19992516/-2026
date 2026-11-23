@@ -1,0 +1,88 @@
+{
+  "source_commit": "03bcde0d1b14aebb28cef924f487136c5470026a",
+  "download_date": "2026-11-22",
+  "run_batch": "A1-6.4-revision-20261122T133810+0800",
+  "sources": [
+    {
+      "file": "A1-G12-正文.md",
+      "url": "https://github.com/prince19992516/-2026/blob/03bcde0d1b14aebb28cef924f487136c5470026a/%E6%95%99%E6%9D%90/%E7%AC%AC06%E7%AB%A0-%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8A%9B%E9%87%8F/%E5%B7%A5%E4%BD%9C/A1-G12-%E6%AD%A3%E6%96%87.md",
+      "sha256": "869ed28ae1fbcce8ce4e1dcec1eeb6f437f69f36f6e884b57a41fea98dcc947c",
+      "extracted_lines_1based": [
+        2289,
+        3126
+      ],
+      "extracted_sha256": "4516c0a952f18bab3cb277de7e86eb5854e27861a2d8b17d9260489091568c8e"
+    },
+    {
+      "file": "A1组-习题.md",
+      "url": "https://github.com/prince19992516/-2026/blob/03bcde0d1b14aebb28cef924f487136c5470026a/%E6%95%99%E6%9D%90/%E7%AC%AC06%E7%AB%A0-%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8A%9B%E9%87%8F/%E5%B7%A5%E4%BD%9C/A1%E7%BB%84-%E4%B9%A0%E9%A2%98.md",
+      "sha256": "0f38538ab3d9d91af4766765998fd16e484cfc11c505707a3dbd12a20c2f867c",
+      "extracted_lines_1based": [
+        260,
+        327
+      ],
+      "extracted_sha256": "a538fe4d6fed309aed7cb39cacba2ef48ce2994e5a6255c95dc6274a4a819bfd"
+    },
+    {
+      "file": "A1组-习题参考解答.md",
+      "url": "https://github.com/prince19992516/-2026/blob/03bcde0d1b14aebb28cef924f487136c5470026a/%E6%95%99%E6%9D%90/%E7%AC%AC06%E7%AB%A0-%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8A%9B%E9%87%8F/%E5%B7%A5%E4%BD%9C/A1%E7%BB%84-%E4%B9%A0%E9%A2%98%E5%8F%82%E8%80%83%E8%A7%A3%E7%AD%94.md",
+      "sha256": "3534b21e0d40b28d9f609801393ccec95e051d6908fb3ab10caba377bac3c0fa",
+      "extracted_lines_1based": [
+        1298,
+        1592
+      ],
+      "extracted_sha256": "f2e74d339910f347deb1db22b11e9b724ac2b3de006abe1e371aca3303a15442"
+    },
+    {
+      "file": "A1组-实验-6.4.ipynb",
+      "url": "https://github.com/prince19992516/-2026/blob/03bcde0d1b14aebb28cef924f487136c5470026a/%E6%95%99%E6%9D%90/%E7%AC%AC06%E7%AB%A0-%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8A%9B%E9%87%8F/%E5%B7%A5%E4%BD%9C/A1%E7%BB%84-%E5%AE%9E%E9%AA%8C-6.4.ipynb",
+      "sha256": "30c6d1843b480341b9f5ab5c9626c8ab3ba766436c528cacff059b376688e3a2"
+    },
+    {
+      "file": "A1组-习题参考解答代码-6.4.ipynb",
+      "url": "https://github.com/prince19992516/-2026/blob/03bcde0d1b14aebb28cef924f487136c5470026a/%E6%95%99%E6%9D%90/%E7%AC%AC06%E7%AB%A0-%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8A%9B%E9%87%8F/%E5%B7%A5%E4%BD%9C/A1%E7%BB%84-%E4%B9%A0%E9%A2%98%E5%8F%82%E8%80%83%E8%A7%A3%E7%AD%94%E4%BB%A3%E7%A0%81-6.4.ipynb",
+      "sha256": "2832caf95653dc1ae57a3bf38810e34c5982d9d7fa8909121cc0d287147ec236"
+    },
+    {
+      "file": "B1组-修正清单.md",
+      "url": "https://github.com/prince19992516/-2026/blob/03bcde0d1b14aebb28cef924f487136c5470026a/%E6%95%99%E6%9D%90/%E7%AC%AC06%E7%AB%A0-%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8A%9B%E9%87%8F/%E5%B7%A5%E4%BD%9C/B1%E7%BB%84-%E4%BF%AE%E6%AD%A3%E6%B8%85%E5%8D%95.md",
+      "sha256": "20d4af0e53529524376bdfc039b647bc7909445f2483ffc010614cc8f93e9969"
+    },
+    {
+      "file": "B1组-验证报告.md",
+      "url": "https://github.com/prince19992516/-2026/blob/03bcde0d1b14aebb28cef924f487136c5470026a/%E6%95%99%E6%9D%90/%E7%AC%AC06%E7%AB%A0-%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8A%9B%E9%87%8F/%E5%B7%A5%E4%BD%9C/B1%E7%BB%84-%E9%AA%8C%E8%AF%81%E6%8A%A5%E5%91%8A.md",
+      "sha256": "0782459732043603661cafcfe8f50342dbda127f46f2bb7cb4941c784aa08b4a"
+    },
+    {
+      "file": "B2组-修正清单.md",
+      "url": "https://github.com/prince19992516/-2026/blob/03bcde0d1b14aebb28cef924f487136c5470026a/%E6%95%99%E6%9D%90/%E7%AC%AC06%E7%AB%A0-%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8A%9B%E9%87%8F/%E5%B7%A5%E4%BD%9C/B2%E7%BB%84-%E4%BF%AE%E6%AD%A3%E6%B8%85%E5%8D%95.md",
+      "sha256": "4b93c8069dcc5623ef444142e7b042f2880e4471634410e67081c6c0f083e2f8"
+    },
+    {
+      "file": "B2组-验证报告.md",
+      "url": "https://github.com/prince19992516/-2026/blob/03bcde0d1b14aebb28cef924f487136c5470026a/%E6%95%99%E6%9D%90/%E7%AC%AC06%E7%AB%A0-%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8A%9B%E9%87%8F/%E5%B7%A5%E4%BD%9C/B2%E7%BB%84-%E9%AA%8C%E8%AF%81%E6%8A%A5%E5%91%8A.md",
+      "sha256": "f06c6a5bd02de5ee1fc28be9df8e7c48419311cb8d378791340db9d9025e0360"
+    },
+    {
+      "file": "C1组G3-批判报告.md",
+      "url": "https://github.com/prince19992516/-2026/blob/03bcde0d1b14aebb28cef924f487136c5470026a/%E6%95%99%E6%9D%90/%E7%AC%AC06%E7%AB%A0-%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8A%9B%E9%87%8F/%E5%B7%A5%E4%BD%9C/C1%E7%BB%84G3-%E6%89%B9%E5%88%A4%E6%8A%A5%E5%91%8A.md",
+      "sha256": "a7714b1d703bce18239184a86c505069f80e0d4dfc30a0807d7573890b046340"
+    },
+    {
+      "file": "C1组G3-手动推导.md",
+      "url": "https://github.com/prince19992516/-2026/blob/03bcde0d1b14aebb28cef924f487136c5470026a/%E6%95%99%E6%9D%90/%E7%AC%AC06%E7%AB%A0-%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8A%9B%E9%87%8F/%E5%B7%A5%E4%BD%9C/C1%E7%BB%84G3-%E6%89%8B%E5%8A%A8%E6%8E%A8%E5%AF%BC.md",
+      "sha256": "6c56953f691716613d1ed606e6cb79091404b456ffabc08546f14d2286511520"
+    },
+    {
+      "file": "C2组-G13-批判报告 .md",
+      "url": "https://github.com/prince19992516/-2026/blob/03bcde0d1b14aebb28cef924f487136c5470026a/%E6%95%99%E6%9D%90/%E7%AC%AC06%E7%AB%A0-%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8A%9B%E9%87%8F/%E5%B7%A5%E4%BD%9C/C2%E7%BB%84-G13-%E6%89%B9%E5%88%A4%E6%8A%A5%E5%91%8A%20.md",
+      "sha256": "9923bf3bc3ca3f441e18ddb06291d2bb6004520b97f97485eb40c7ae33ec59ce"
+    },
+    {
+      "file": "数据/A1组-6.4-来源63-deeponet_dataset_coefficients.csv",
+      "url": "https://github.com/prince19992516/-2026/blob/03bcde0d1b14aebb28cef924f487136c5470026a/%E6%95%99%E6%9D%90/%E7%AC%AC06%E7%AB%A0-%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8A%9B%E9%87%8F/%E5%B7%A5%E4%BD%9C/%E6%95%B0%E6%8D%AE/A1%E7%BB%84-6.4-%E6%9D%A5%E6%BA%9063-deeponet_dataset_coefficients.csv",
+      "sha256": "7925a5ba026752a0fa136d4508808e4391ba58b8ef68384cfb43719f3de89c5c"
+    }
+  ],
+  "scope": "A1/G12第6.4节；先下载全章Markdown，再提取6.4后修改。全章原件留作本地工作底稿，不入提交包。"
+}

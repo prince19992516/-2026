@@ -1,0 +1,18 @@
+{
+  "section": "6.1 PINN：原理与实现",
+  "group": "A1",
+  "data_type": "synthetic",
+  "external_data": false,
+  "data_files": [],
+  "reference_solution": "u*(x) = sin(pi*x)",
+  "domain": "x in [0,1]",
+  "pde": "-u''(x) = pi^2 sin(pi x), u(0)=u(1)=0",
+  "generated_by": "../A1组-实验-6.1.ipynb",
+  "notes": "本节全部数值由解析制造解与程序生成，没有外部数据文件；图片与表格由 Notebook 运行产生。",
+  "environment": {
+    "python": "3.12.10",
+    "torch": "2.6.0+cu124",
+    "numpy": "1.26.4",
+    "matplotlib": "3.8.3"
+  }
+}
