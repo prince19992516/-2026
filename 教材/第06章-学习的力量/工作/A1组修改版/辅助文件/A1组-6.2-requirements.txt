@@ -1,0 +1,9 @@
+# A1组修改版-6.2 依赖清单（UTF-8）
+# 放在 辅助文件/ 的理由：交付根目录禁止独立 .txt；本文件用于复现 Python 3.12.x 环境，属于辅助材料。
+# Python 解释器需单独选择 3.12.x（实测为 3.12.15）；下方补丁版本是历史运行记录，不是硬性要求。
+--extra-index-url https://download.pytorch.org/whl/cpu
+numpy==2.5.4
+matplotlib==3.11.2
+torch==2.14.1+cpu
+ipykernel>=6.29
+nbformat>=5.10

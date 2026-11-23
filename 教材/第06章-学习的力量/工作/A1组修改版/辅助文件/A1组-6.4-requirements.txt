@@ -1,0 +1,12 @@
+# 运行内核必须是 Python 3.12.x；本次实际运行 Python 3.12.14。
+# Python解释器本身不能由requirements安装；两个Notebook均检查主/次版本。
+# 放置理由：用于安装第三方依赖；全部实验/核验代码仍在.ipynb中。
+--extra-index-url https://download.pytorch.org/whl/cpu
+numpy==2.2.6
+scipy==1.15.3
+matplotlib==3.10.3
+torch==2.6.0+cpu
+threadpoolctl==3.8.0
+ipykernel==7.4.0
+nbformat==5.11.1
+nbclient==0.11.0
