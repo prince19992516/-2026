@@ -1,0 +1,45 @@
+{
+  "batch_id": "A1-6.4-revision-20261122T133810+0800",
+  "norm_rows": [
+    {
+      "n": 50,
+      "node_relative_l2": 0.00032905176293594935,
+      "reconstructed_relative_l2": 0.0001471965304132077,
+      "ratio": 2.2354586892248114
+    },
+    {
+      "n": 100,
+      "node_relative_l2": 8.22507622119642e-05,
+      "reconstructed_relative_l2": 3.678616573255065e-05,
+      "ratio": 2.2359156105031
+    },
+    {
+      "n": 200,
+      "node_relative_l2": 2.0561929525892602e-05,
+      "reconstructed_relative_l2": 9.195731087649862e-06,
+      "ratio": 2.2360298849438824
+    },
+    {
+      "n": 400,
+      "node_relative_l2": 5.140434790865181e-06,
+      "reconstructed_relative_l2": 2.298882126629547e-06,
+      "ratio": 2.2360584439367104
+    },
+    {
+      "n": 800,
+      "node_relative_l2": 1.285105659196288e-06,
+      "reconstructed_relative_l2": 5.747173663481941e-07,
+      "ratio": 2.2360654722545883
+    }
+  ],
+  "residual_bound_equality_error": 0.0014142135623730948,
+  "residual_bound_equality_rhs": 0.001414213562373095,
+  "observation_overlap": 1,
+  "inverse_loss_ge_0_1": [
+    {
+      "setting": "E1",
+      "seed": 2027,
+      "final_loss": 0.16528045805388963
+    }
+  ]
+}
